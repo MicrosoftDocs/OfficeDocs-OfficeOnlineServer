@@ -1,0 +1,60 @@
+Error Type,Topic Guid,Message
+Warning,3616a668-f76f-45c6-914c-3103cbded5d2,Found a an ul list inside a table in html file:3616a668-f76f-45c6-914c-3103cbded5d2.xml
+Warning,3616a668-f76f-45c6-914c-3103cbded5d2,Found nested table in md file:3616a668-f76f-45c6-914c-3103cbded5d2.md
+Warning,3616a668-f76f-45c6-914c-3103cbded5d2,Fixing missing end table tag in file:3616a668-f76f-45c6-914c-3103cbded5d2.md
+Warning,3616a668-f76f-45c6-914c-3103cbded5d2,Fixing missing end table tag in file:3616a668-f76f-45c6-914c-3103cbded5d2.md
+Warning,3616a668-f76f-45c6-914c-3103cbded5d2,Fixing missing end table tag in file:3616a668-f76f-45c6-914c-3103cbded5d2.md
+Warning,3616a668-f76f-45c6-914c-3103cbded5d2,Fixing missing end table tag in file:3616a668-f76f-45c6-914c-3103cbded5d2.md
+Warning,3616a668-f76f-45c6-914c-3103cbded5d2,Found invalid tables saving file:3616a668-f76f-45c6-914c-3103cbded5d2.md
+Warning,6b0b434f-5d19-4e63-9296-cf104b2f3da8,Found a an ul list inside a table in html file:6b0b434f-5d19-4e63-9296-cf104b2f3da8.xml
+Warning,6b0b434f-5d19-4e63-9296-cf104b2f3da8,Found nested table in md file:6b0b434f-5d19-4e63-9296-cf104b2f3da8.md
+Warning,6b0b434f-5d19-4e63-9296-cf104b2f3da8,Fixing missing end table tag in file:6b0b434f-5d19-4e63-9296-cf104b2f3da8.md
+Warning,6b0b434f-5d19-4e63-9296-cf104b2f3da8,Fixing missing end table tag in file:6b0b434f-5d19-4e63-9296-cf104b2f3da8.md
+Warning,6b0b434f-5d19-4e63-9296-cf104b2f3da8,Fixing missing end table tag in file:6b0b434f-5d19-4e63-9296-cf104b2f3da8.md
+Warning,6b0b434f-5d19-4e63-9296-cf104b2f3da8,Fixing missing end table tag in file:6b0b434f-5d19-4e63-9296-cf104b2f3da8.md
+Warning,6b0b434f-5d19-4e63-9296-cf104b2f3da8,Fixing missing end table tag in file:6b0b434f-5d19-4e63-9296-cf104b2f3da8.md
+Warning,6b0b434f-5d19-4e63-9296-cf104b2f3da8,Fixing missing end table tag in file:6b0b434f-5d19-4e63-9296-cf104b2f3da8.md
+Warning,6b0b434f-5d19-4e63-9296-cf104b2f3da8,Fixing missing end table tag in file:6b0b434f-5d19-4e63-9296-cf104b2f3da8.md
+Warning,6b0b434f-5d19-4e63-9296-cf104b2f3da8,Fixing missing end table tag in file:6b0b434f-5d19-4e63-9296-cf104b2f3da8.md
+Warning,6b0b434f-5d19-4e63-9296-cf104b2f3da8,Fixing missing end table tag in file:6b0b434f-5d19-4e63-9296-cf104b2f3da8.md
+Warning,6b0b434f-5d19-4e63-9296-cf104b2f3da8,Fixing missing end table tag in file:6b0b434f-5d19-4e63-9296-cf104b2f3da8.md
+Warning,6b0b434f-5d19-4e63-9296-cf104b2f3da8,Found invalid tables saving file:6b0b434f-5d19-4e63-9296-cf104b2f3da8.md
+Warning,7ced238b-2866-4961-af1c-6b597a55ce7a,Found a an ul list inside a table in html file:7ced238b-2866-4961-af1c-6b597a55ce7a.xml
+Warning,84c08727-b496-48b6-b54b-a366fad151d7,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<p>Type the following where &lt;friendlyName&gt; is the friendly name of the certificate that you're using.</p> in md file:84c08727-b496-48b6-b54b-a366fad151d7.md total found:0
+Warning,84c08727-b496-48b6-b54b-a366fad151d7,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<b>&lt;SPSiteURL&gt;</b> in md file:84c08727-b496-48b6-b54b-a366fad151d7.md total found:0
+Warning,84c08727-b496-48b6-b54b-a366fad151d7,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<b>&lt;CertificateIssuer&gt;</b> in md file:84c08727-b496-48b6-b54b-a366fad151d7.md total found:0
+Warning,84c08727-b496-48b6-b54b-a366fad151d7,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<b>&lt;X509Certificate&gt;</b> in md file:84c08727-b496-48b6-b54b-a366fad151d7.md total found:0
+Warning,84c08727-b496-48b6-b54b-a366fad151d7,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<b>&lt;RegisteredIssuer&gt;</b> in md file:84c08727-b496-48b6-b54b-a366fad151d7.md total found:0
+Warning,84c08727-b496-48b6-b54b-a366fad151d7,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<p>Perform the following procedure twice - once for each &lt;RegisteredIssuer&gt; GUID.</p> in md file:84c08727-b496-48b6-b54b-a366fad151d7.md total found:0
+Warning,a5276781-133b-413c-beca-b851e17c2081,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<p>Run the following command- where &lt;WacServerName&gt; is the fully qualified domain name (FQDN) of the URL that you set for the internal URL. This is the point of entry for  traffic. For this test environment- you need to specify the -AllowHTTP parameter to allow  to receive discovery information from the  farm by using HTTP. If you don't specify -AllowHTTP-  will try to use HTTPS to communicate with the  farm- and this command won't work.</p> in md file:a5276781-133b-413c-beca-b851e17c2081.md total found:0
+Warning,a5276781-133b-413c-beca-b851e17c2081,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<p>The  Excel SOAP API is needed for scheduled data refresh with -  and for Excel Web Part rendering. To enable the Excel SOAP API-  you need to add the WopiLegacySoapSupport property to the  farm properties using by .
+The input parameter is the URL to ExcelServiceInternal.asmx. This URL can address multiple OOS servers via load balancing.
+Simply replace the &lt;string&gt; with your Office Online Server path.
+</p> in md file:a5276781-133b-413c-beca-b851e17c2081.md total found:0
+Warning,a5276781-133b-413c-beca-b851e17c2081,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<p>Run the following command- where &lt;WacServerName&gt; is the fully qualified domain name (FQDN) of the URL that you set for the internal URL. This is the point of entry for  traffic. </p> in md file:a5276781-133b-413c-beca-b851e17c2081.md total found:0
+Warning,a5276781-133b-413c-beca-b851e17c2081,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<p>The  Excel SOAP API is needed for scheduled data refresh with -  and for Excel Web Part rendering. To enable the Excel SOAP API-  you need to add the WopiLegacySoapSupport property to the  farm properties using by .
+The input parameter is the URL to ExcelServiceInternal.asmx. This URL can address multiple OOS servers via load balancing.
+Simply replace the &lt;string&gt; with your Office Online Server path.
+</p> in md file:a5276781-133b-413c-beca-b851e17c2081.md total found:0
+Warning,aeba2638-be88-4030-80fe-7e4bcd30309b,Found nested table in md file:aeba2638-be88-4030-80fe-7e4bcd30309b.md
+Warning,aeba2638-be88-4030-80fe-7e4bcd30309b,Fixing missing end table tag in file:aeba2638-be88-4030-80fe-7e4bcd30309b.md
+Warning,aeba2638-be88-4030-80fe-7e4bcd30309b,Found invalid tables saving file:aeba2638-be88-4030-80fe-7e4bcd30309b.md
+Warning,b0385c4e-61fc-4607-a48c-64d8f4e80651,Found nested table in md file:b0385c4e-61fc-4607-a48c-64d8f4e80651.md
+Warning,b0385c4e-61fc-4607-a48c-64d8f4e80651,Fixing missing end table tag in file:b0385c4e-61fc-4607-a48c-64d8f4e80651.md
+Warning,b0385c4e-61fc-4607-a48c-64d8f4e80651,Found invalid tables saving file:b0385c4e-61fc-4607-a48c-64d8f4e80651.md
+Warning,e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5,Found a an ul list inside a table in html file:e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5.xml
+
+
+Warning,9a78496b-50c0-471c-b112-6dbc7231635d,Topic title:configure-excel-online-data-refresh-by-using-embedded-data-connections-in-office-online-server bigger then max length:80 new topic titile name:configure-excel-online-data-refresh-by-using-embedded-data-connections-in-office
+Warning,84c08727-b496-48b6-b54b-a366fad151d7,Topic title:configure-server-to-server-authentication-between-office-online-server-and-sharepoint-server-2016 bigger then max length:80 new topic titile name:configure-server-to-server-authentication-between-office-online-server-and-share
+Warning,0d33c049-3f9e-42e9-be48-aeecd4ad7b66,Topic title:configure-excel-online-data-refresh-by-using-external-data-connections-in-office-online-server bigger then max length:80 new topic titile name:configure-excel-online-data-refresh-by-using-external-data-connections-in-office
+Warning,N/A,Sql Query:use [DDCMS_MOD_O16ITPRO] SELECT tkw.[topicGuid] as topicGuid,kwf.[keyword] as f1Keyword
+                                        FROM [TopicKeywordsF] tkw join [dbo].[KeywordsF] kwf on tkw.[kwdGuid] = kwf.[kwdGuid]
+                                        join [dbo].[Topics] topics on topics.[topicGuid] = tkw.[topicGuid]
+                                        join [dbo].[Projects] pro on pro.[projectGuid] = topics.[homeProjectGuid]
+                                        where pro.[projectName] = 'OffWebAppsServItPro' or pro.[projectName]='PowerShell_OffWebApp1' retuned no rows for project:OffWebAppsServItPro server:ocpubcms for database:DDCMS_MOD_O16ITPRO
+Warning,N/A,Sql Query:use [DDCMS_MOD_O16ITPRO] SELECT tkw.[topicGuid] as topicGuid,kwf.[keyword] as f1Keyword
+                                        FROM [TopicKeywordsF] tkw join [dbo].[KeywordsF] kwf on tkw.[kwdGuid] = kwf.[kwdGuid]
+                                        join [dbo].[Topics] topics on topics.[topicGuid] = tkw.[topicGuid]
+                                        join [dbo].[Projects] pro on pro.[projectGuid] = topics.[homeProjectGuid]
+                                        where pro.[projectName] = 'OffWebAppsServItPro' or pro.[projectName]='PowerShell_OffWebApp1' retuned no rows for project:OffWebAppsServItPro server:ocpubcms for database:DDCMS_MOD_O16ITPRO
