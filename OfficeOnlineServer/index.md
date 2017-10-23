@@ -1,1 +1,1 @@
-# Welcome to OfficeDocs-OfficeOnlineServer!
+# Welcome!
