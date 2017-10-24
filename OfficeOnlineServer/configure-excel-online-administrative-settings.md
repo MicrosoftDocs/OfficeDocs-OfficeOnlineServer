@@ -6,13 +6,19 @@ ms.assetid: 9cb81758-9d0b-4970-9ca0-a75eedf6093b
 
 
 # Configure Excel Online administrative settings
- **Summary:** Configure administrative settings for workbooks rendered in .
-There are several settings that you can use to customize . These settings help you adjust the resource usage of your farm and enforce some of your organization's governance policies.
+ **Summary:** Configure administrative settings for Excel workbooks rendered in Excel Online.
+There are several settings that you can use to customize Excel Online. These settings help you adjust the resource usage of your Office Online Server farm and enforce some of your organization's governance policies.
   
     
     
 
-In , most of these settings are available as parameters for the New-OfficeWebAppsFarm and Set-OfficeWebAppsFarm cmdlets, and there is an additional cmdlet (OfficeWebAppsExcelBIServer) that configures access to servers. (Note that this is a subset of the settings that were available in Excel Services in SharePoint Server 2013.)
+
+In Office Online Server, most of these settings are available as parameters for the New-OfficeWebAppsFarm and Set-OfficeWebAppsFarm Microsoft PowerShell cmdlets, and there is an additional cmdlet (OfficeWebAppsExcelBIServer) that configures access to SQL Server Analysis Services (SSAS) servers. (Note that this is a subset of the settings that were available in Excel Services in SharePoint Server 2013.)
+  
+    
+    
+
+
 Here's what you can do:
   
     
@@ -44,7 +50,7 @@ Here's what you can do:
 ## Prevent a workbook from loading in Excel Online if data refresh fails
 <a name="ExcelAbortOnRefreshOnOpenFail"> </a>
 
-By default, doesn't load files if an automatic data refresh operation fails when someone opens the file. This helps prevent users from seeing out-of-date information or possibly information that they should not have access to.
+By default, Excel Online doesn't load Excel files if an automatic data refresh operation fails when someone opens the file. This helps prevent users from seeing out-of-date information or possibly information that they should not have access to.
   
     
     
@@ -53,7 +59,7 @@ The load fails only in the following conditions:
     
     
 
-- The user has read-only permissions for the file in .
+- The user has read-only permissions for the file in SharePoint Server.
     
   
 - There are data connections in the workbook file that are automatically refreshed when someone opens the workbook.
@@ -152,7 +158,7 @@ Set-OfficeWebAppsFarm -ExcelConcurrentDataRequestsPerSessionMax:10
 ## Set the Excel Online workbook calculation mode
 <a name="ExcelDefaultWorkbookCalcMode"> </a>
 
-You can specify the calculation mode of workbooks rendered in . The available values are:  _File_,  _Manual_,  _Auto_, and  _AutoDataTables_ (automatic except data tables). Settings other than _File_ override the workbook settings.
+You can specify the calculation mode of workbooks rendered in Excel Online. The available values are:  _File_,  _Manual_,  _Auto_, and  _AutoDataTables_ (automatic except data tables). Settings other than _File_ override the workbook settings.
   
     
     
@@ -179,7 +185,7 @@ Set-OfficeWebAppsFarm -ExcelDefaultWorkbookCalcMode:Auto
 ## Set the maximum Excel Online image size
 <a name="ExcelChartAndImagesSizeMax"> </a>
 
-You can specify the maximum size, in megabytes, of a chart or image that can be opened by . The value must be an integer greater than 0.
+You can specify the maximum size, in megabytes, of a chart or image that can be opened by Excel Online. The value must be an integer greater than 0.
   
     
     
@@ -207,25 +213,25 @@ Set-OfficeWebAppsFarm -ExcelChartAndImagesSizeMax:5
 ## Configure an Analysis Services (data model) server for Excel Online
 <a name="SSAS"> </a>
 
-You can configure servers to work with by using the OfficeWebAppsExcelBIServer cmdlets:
+You can configure Analysis Services servers to work with Excel Online by using the OfficeWebAppsExcelBIServer cmdlets:
   
     
     
 
-- **New-OfficeWebAppsExcelBIServer** Adds an server location to the Allow List for Excel Calculation Services in for advanced BI functionality.
+- **New-OfficeWebAppsExcelBIServer** Adds an Analysis Services server location to the Allow List for Excel Calculation Services in Office Online Server for advanced BI functionality.
     
   
-- **Get-OfficeWebAppsExcelBIServer** Gets the servers in the Allow List.
+- **Get-OfficeWebAppsExcelBIServer** Gets the Analysis Services servers in the Allow List.
     
   
 - **Remove-OfficeWebAppsExcelBIServer** Removes a server from the Allow List.
     
   
-To use this feature, you must also configure each computer in your farm as an  [Analysis Services administrator](https://go.microsoft.com/fwlink/p/?LinkId=717498).
+To use this feature, you must also configure each computer in your Office Online Server farm as an  [Analysis Services administrator](https://go.microsoft.com/fwlink/p/?LinkId=717498).
   
     
     
-The New and Remove cmdlets take a parameter of -ServerID, which is the server name of the server that you want to add or remove.
+The New and Remove cmdlets take a parameter of -ServerID, which is the server name of the Analysis Services server that you want to add or remove.
   
     
     
@@ -256,11 +262,11 @@ The OfficeWebAppsExcelBIServer cmdlets also support  [common parameters](https:/
 ## Configure Analysis Services EffectiveUserName in Excel Online
 <a name="EffectiveUserName"> </a>
 
-EffectiveUserName is a connection string property that contains the name of the user who is accessing a report. In , you can use this property in conjunction with to pass the identity of the user who is viewing the report to . This allows per-user identity without the need to configure Kerberos constrained delegation.
+EffectiveUserName is a SQL Server Analysis Services connection string property that contains the name of the user who is accessing a report. In Office Online Server, you can use this property in conjunction with Excel Online to pass the identity of the user who is viewing the report to Analysis Services. This allows per-user identity without the need to configure Kerberos constrained delegation.
   
     
     
-To enable this option, you need to use the SQL Server 2016 version of . The actual data source can be in an earlier version of .
+To enable this option, you need to use the SQL Server 2016 version of SQL Server Management Studio. The actual data source can be in an earlier version of Analysis Services.
   
     
     
@@ -269,17 +275,17 @@ To configure this option, you have to do the following:
     
     
 
-- Configure each computer in your farm as an  [Analysis Services administrator](https://go.microsoft.com/fwlink/p/?LinkId=717498).
+- Configure each computer in your Office Online Server farm as an  [Analysis Services administrator](https://go.microsoft.com/fwlink/p/?LinkId=717498).
     
   
-- Use to enable EffectiveUserName in (described below).
+- Use PowerShell to enable EffectiveUserName in Excel Online (described below).
     
   
-The Set-OfficeWebAppsFarm is used to enable or disable EffectiveUserName in .
+The Set-OfficeWebAppsFarm is used to enable or disable EffectiveUserName in Excel Online.
   
     
     
-To enable EffectiveUserName in , run the following command:
+To enable EffectiveUserName in Excel Online, run the following command:
   
     
     
@@ -290,7 +296,7 @@ To enable EffectiveUserName in , run the following command:
 Set-OfficeWebAppsFarm -ExcelUseEffectiveUserName:$True
 ```
 
-To disable EffectiveUserName in , run the following command:
+To disable EffectiveUserName in Excel Online, run the following command:
   
     
     
@@ -305,11 +311,11 @@ Set-OfficeWebAppsFarm -ExcelUseEffectiveUserName:$False
 ## Working with large workbooks
 <a name="LargeWorkbooks"> </a>
 
-When opening a workbook in , there is a time limit of one minute before will time out and fail to load the workbook. Occasionally, this time limit may not be enough to load large workbooks. If you run into problems loading large workbooks, you can adjust the timeout value.
+When opening a workbook in Excel Online, there is a time limit of one minute before Excel Online will time out and fail to load the workbook. Occasionally, this time limit may not be enough to load large workbooks. If you run into problems loading large workbooks, you can adjust the timeout value.
   
     
     
-To change the timeout value, you must update the settings.xml file on each computer running . (This file is normally located at C:\\ProgramData\\Microsoft\\OfficeWebApps\\Data\\FarmState\\settings.xml.)
+To change the timeout value, you must update the settings.xml file on each computer running Office Online Server. (This file is normally located at C:\\ProgramData\\Microsoft\\OfficeWebApps\\Data\\FarmState\\settings.xml.)
   
     
     

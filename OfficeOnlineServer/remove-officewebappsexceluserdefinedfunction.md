@@ -39,7 +39,7 @@ Remove-OfficeWebAppsExcelUserDefinedFunction -Identity c:\\myudf.dll
 |**Parameter**|**Required**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
 | _Identity_ <br/> |Required  <br/> |Microsoft.Office.Web.Apps.Administration.UserDefinedFunction  <br/> |The path and filename of the UDF.  <br/> |
-| _Confirm_ <br/> |Optional  <br/> |System.Management.Automation.SwitchParameter  <br/> ||
-| _WhatIf_ <br/> |Optional  <br/> |System.Management.Automation.SwitchParameter  <br/> ||
+| _Confirm_ <br/> |Optional  <br/> |System.Management.Automation.SwitchParameter  <br/> |Prompts you for confirmation before executing the command. For more information, type the following command: **get-help about_commonparameters** <br/> |
+| _WhatIf_ <br/> |Optional  <br/> |System.Management.Automation.SwitchParameter  <br/> |Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: **get-help about_commonparameters** <br/> |
    
 

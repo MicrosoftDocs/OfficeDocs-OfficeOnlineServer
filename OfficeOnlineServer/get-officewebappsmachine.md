@@ -7,7 +7,7 @@ ms.assetid: 02fadf5e-0382-4e73-8d07-e67d088b1a02
 
 # Get-OfficeWebAppsMachine
 
-Returns details about the current server that is in an farm.
+Returns details about the current server that is in an Office Online Server farm.
   
     
     
@@ -21,7 +21,7 @@ Get-OfficeWebAppsMachine
 
 ## Detailed Description
 
-The **Get-OfficeWebAppsMachine** cmdlet returns details about the current server that is in an farm. These details include the roles and health status of the current server and the name of the master server for the farm.
+The **Get-OfficeWebAppsMachine** cmdlet returns details about the current server that is in an Office Online Server farm. These details include the roles and health status of the current server and the name of the master server for the farm.
   
     
     
@@ -37,7 +37,7 @@ The **Get-OfficeWebAppsMachine** cmdlet returns details about the current server
 Get-OfficeWebAppsMachine
 ```
 
-This example returns details about the current server that is in an farm.
+This example returns details about the current server that is in an Office Online Server farm.
   
     
     
@@ -52,7 +52,7 @@ This example returns details about the current server that is in an farm.
 (Get-OfficeWebAppsFarm).Machines
 ```
 
-This example returns details about all servers that are in a farm.
+This example returns details about all servers that are in a Office Online Server farm.
   
     
     

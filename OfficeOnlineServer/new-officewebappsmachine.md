@@ -8,7 +8,7 @@ ms.assetid: b0385c4e-61fc-4607-a48c-64d8f4e80651
 
 # New-OfficeWebAppsMachine
 
-Adds the current server to an existing farm.
+Adds the current server to an existing Office Online Server farm.
   
     
     
@@ -22,7 +22,7 @@ New-OfficeWebAppsMachine [-MachineToJoin] <String> [-Confirm [<SwitchParameter>]
 
 ## Detailed Description
 
-The **New-OfficeWebAppsMachine** cmdlet adds the current server to an existing farm and optionally sets one or more roles on the new server.
+The **New-OfficeWebAppsMachine** cmdlet adds the current server to an existing Office Online Server farm and optionally sets one or more roles on the new server.
   
     
     
@@ -33,11 +33,11 @@ The **New-OfficeWebAppsMachine** cmdlet adds the current server to an existing f
 
 |**Parameter**|**Required**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
-|**MachineToJoin** <br/> |Required  <br/> |System.String  <br/> |Specifies the name of any server that is already a member of the farm.  <br/> |
-|**Confirm** <br/> |Optional  <br/> |System.Management.Automation.SwitchParameter  <br/> ||
+|**MachineToJoin** <br/> |Required  <br/> |System.String  <br/> |Specifies the name of any server that is already a member of the Office Online Server farm.  <br/> |
+|**Confirm** <br/> |Optional  <br/> |System.Management.Automation.SwitchParameter  <br/> |Prompts you for confirmation before executing the command. For more information, type the following command: **get-help about_commonparameters** <br/> |
 |**Force** <br/> |Optional  <br/> |System.Management.Automation.SwitchParameter  <br/> |Assumes the answer to any user prompt is Yes.  <br/> |
-|**Roles** <br/> |Optional  <br/> |System.String[]  <br/> |Specifies one or more server roles, separated by commas, to assign to the new server. If no roles are specified, then the server is assigned all roles.  <br/> The role types are as follows:  <br/> **FrontEnd** <br/> **WordBackEnd** <br/> **ExcelBackEnd** <br/> **PowerPointBackEnd** <br/> > [!IMPORTANT]> As a best practice, we recommend that all servers in an farm run all roles. Assigning roles is not useful until the farm contains approximately 50 servers.           |
-|**WhatIf** <br/> |Optional  <br/> |System.Management.Automation.SwitchParameter  <br/> ||
+|**Roles** <br/> |Optional  <br/> |System.String[]  <br/> |Specifies one or more server roles, separated by commas, to assign to the new server. If no roles are specified, then the server is assigned all roles.  <br/> The role types are as follows:  <br/> **FrontEnd** <br/> **WordBackEnd** <br/> **ExcelBackEnd** <br/> **PowerPointBackEnd** <br/> > [!IMPORTANT]> As a best practice, we recommend that all servers in an Office Online Server farm run all roles. Assigning roles is not useful until the Office Online Server farm contains approximately 50 servers.           |
+|**WhatIf** <br/> |Optional  <br/> |System.Management.Automation.SwitchParameter  <br/> |Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: **get-help about_commonparameters** <br/> |
    
 
 ## AutoGenParams
@@ -64,7 +64,7 @@ The **New-OfficeWebAppsMachine** cmdlet adds the current server to an existing f
 New-OfficeWebAppsMachine -MachineToJoin server1.contoso.com
 ```
 
-This example adds the current server to the farm that is running on the server named server1.contoso.com.
+This example adds the current server to the Office Online Server farm that is running on the server named server1.contoso.com.
   
     
     

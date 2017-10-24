@@ -7,7 +7,7 @@ ms.assetid: f1d523ab-45c6-4e3c-b274-22c0d229a6a0
 
 # New-OfficeWebAppsHost
 
-Adds a host domain to the Allow List for an farm.
+Adds a host domain to the Allow List for an Office Online Server farm.
   
     
     
@@ -21,7 +21,7 @@ New-OfficeWebAppsHost -Domain <String>
 
 ## Detailed Description
 
-The **New-OfficeWebAppsHost** cmdlet adds a host domain to the list of host domains to which allows file operations requests, such as file retrieval, metadata retrieval, and file changes. This list, known as the Allow List, is a security feature that prevents unwanted hosts from connecting to a farm and using it for file operations without your knowledge.
+The **New-OfficeWebAppsHost** cmdlet adds a host domain to the list of host domains to which Office Online Server allows file operations requests, such as file retrieval, metadata retrieval, and file changes. This list, known as the Allow List, is a security feature that prevents unwanted hosts from connecting to a Office Online Server farm and using it for file operations without your knowledge.
   
     
     
@@ -32,13 +32,13 @@ The **New-OfficeWebAppsHost** cmdlet adds a host domain to the list of host doma
     
     
 
-The wildcard * is assumed for any domain that is added to the Allow List so that requests to all subdomains are also allowed. For example, if you add the domain contoso.com to the Allow List, also allows requests to the domains corp.contoso.com and dev.contoso.com. Requests to other domains (such as fabrikam.com) are not allowed.
+The wildcard * is assumed for any domain that is added to the Allow List so that requests to all subdomains are also allowed. For example, if you add the domain contoso.com to the Allow List, Office Online Server also allows requests to the domains corp.contoso.com and dev.contoso.com. Requests to other domains (such as fabrikam.com) are not allowed.
   
     
     
 
 > [!CAUTION]
-> If there are no domains on the Allow List, allows file requests to hosts in any domain. Do not leave this list blank if your farm is accessible from the Internet. Otherwise anyone can use your farm to view and edit content. 
+> If there are no domains on the Allow List, Office Online Server allows file requests to hosts in any domain. Do not leave this list blank if your Office Online Server farm is accessible from the Internet. Otherwise anyone can use your Office Online Server farm to view and edit content. 
   
     
     

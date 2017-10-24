@@ -6,21 +6,21 @@ ms.assetid: 9a78496b-50c0-471c-b112-6dbc7231635d
 
 
 # Configure Excel Online data refresh by using embedded data connections in Office Online Server
- **Summary:** Configure to use a Secure Store target application for external data refresh.
- supports two methods of using to connect to external data:
+ **Summary:** Configure Excel Online to use a Secure Store target application for external data refresh.
+Excel Online supports two methods of using Secure Store Service to connect to external data:
   
     
     
 
 
-- You can specify a target application in a workbook. (This is known as an embedded connection.) This article describes how to do this.
+- You can specify a Secure Store target application in a workbook. (This is known as an embedded connection.) This article describes how to do this.
     
   
-- You can use an Data Connection (ODC) file that specifies a Secure Store target application. For more information, see  [Configure Excel Online data refresh by using external data connections in Office Online Server](configure-excel-online-data-refresh-by-using-external-data-connections-in-office.md).
+- You can use an Office Data Connection (ODC) file that specifies a Secure Store target application. For more information, see  [Configure Excel Online data refresh by using external data connections in Office Online Server](configure-excel-online-data-refresh-by-using-external-data-connections-in-office.md).
     
   
 
-To configure data access to use embedded data connections, you use the following process:
+To configure Excel Online data access to use embedded data connections, you use the following process:
   
     
     
@@ -35,19 +35,25 @@ To configure data access to use embedded data connections, you use the following
 3.  [Configure an Excel workbook to use an embedded data connection](#ConfigureWorkbook)
     
   
+
 Note that you must have  [installed Office Online Server](deploy-office-online-server.md) and [configured SharePoint Server to use it to render documents](configure-office-online-server-for-sharepoint-server-2016.md) for this to work.
+  
+    
+    
+
+
 ## Configure a data access account
 <a name="part1"> </a>
 
-You must have an account that can be granted access to the data source to which you want to connect your workbook. This can be a Windows Active Directory account, a logon, or other set of credentials as required by your data source. This account will be stored in Secure Store.
+You must have an account that can be granted access to the data source to which you want to connect your Excel workbook. This can be a Windows Active Directory account, a SQL Server logon, or other set of credentials as required by your data source. This account will be stored in Secure Store.
   
     
     
-Once you have created the account, the next step is to grant that account read access to the required data. (In this article, we use the example of accessing a database through an Active Directory account. If you are using a data source other than , see the instructions for your data source to create a logon with data-read permissions for the data access account.)
+Once you have created the account, the next step is to grant that account read access to the required data. (In this article, we use the example of accessing a SQL Server database through an Active Directory account. If you are using a data source other than SQL Server, see the instructions for your data source to create a logon with data-read permissions for the data access account.)
   
     
     
-Follow these steps to create a logon and grant Read access to the database.
+Follow these steps to create a SQL Server logon and grant Read access to the database.
   
     
     
@@ -55,7 +61,7 @@ Follow these steps to create a logon and grant Read access to the database.
 ### To create a SQL Server logon for the data access account
 
 
-1. In , connect to the database engine.
+1. In SQL Server Management Studio, connect to the database engine.
     
   
 2. In Object Explorer, expand **Security**.
@@ -84,7 +90,7 @@ Now that you have created a data access account and granted it access to a data 
 ## Create a Secure Store target application
 <a name="part2"> </a>
 
-You must create a target application in Secure Store that contains the credentials that you created for data access. This target application can then be specified in data-connected workbooks and will be used by when it refreshes data in the workbook.
+You must create a target application in Secure Store that contains the credentials that you created for data access. This target application can then be specified in data-connected Excel workbooks and will be used by Excel Online when it refreshes data in the workbook.
   
     
     
@@ -94,7 +100,7 @@ When you create the target application, you have to specify which users will be 
     
 
 > [!NOTE]
-> The users that you list in the target application do not have direct access to the stored credentials. Instead, uses the credentials on their behalf to refresh data in data-connected workbooks that specify this target application. 
+> The users that you list in the target application do not have direct access to the stored credentials. Instead, Excel Online uses the credentials on their behalf to refresh data in data-connected workbooks that specify this target application. 
   
     
     
@@ -164,7 +170,7 @@ Use the following procedure to set the credentials for the target application.
 3. Click **OK**.
     
   
-Once you have set the credentials for the target application, the target application is ready to use. The next step is to specify this target application in the authentication settings in your data-connected workbook.
+Once you have set the credentials for the target application, the target application is ready to use. The next step is to specify this target application in the Excel Online authentication settings in your data-connected Excel workbook.
   
     
     
@@ -172,7 +178,7 @@ Once you have set the credentials for the target application, the target applica
 ## Configure an Excel workbook to use an embedded data connection
 <a name="ConfigureWorkbook"> </a>
 
-You must configure the authentication settings in the workbook before you publish it to . Doing so enables the workbook to use a Secure Store target application to refresh data that is rendered using . Use the following procedure to configure the authentication settings.
+You must configure the Excel Online authentication settings in the workbook before you publish it to SharePoint Server 2016. Doing so enables the workbook to use a Secure Store target application to refresh data that is rendered using Excel Online. Use the following procedure to configure the authentication settings.
   
     
     
@@ -180,7 +186,7 @@ You must configure the authentication settings in the workbook before you publis
 ### To configure Excel Online authentication settings
 
 
-1. In a data-connected workbook, on the **Data** tab, click **Connections**.
+1. In a data-connected Excel workbook, on the **Data** tab, click **Connections**.
     
   
 2. On the **Workbook Connections** dialog box, select the data connection that you want to update, and then click **Properties**.
@@ -192,7 +198,7 @@ You must configure the authentication settings in the workbook before you publis
 4. On the **Excel Services Authentication Settings** dialog box, select the **Use a stored account** option, type the Application ID of the target application in the text box, and then click **OK**.
     
     > [!NOTE]
-      > If you are using , select the **SSS** option.
+      > If you are using Excel 2010, select the **SSS** option.
 5. On the **Connection Properties** dialog box, click **OK**.
     
     > [!NOTE]
@@ -200,7 +206,7 @@ You must configure the authentication settings in the workbook before you publis
 6. On the Workbook Connections dialog box, click **Close**.
     
   
-With the target application specified in the authentication settings, uses the credentials associated with that target application to refresh the data in the workbook after you have published it to .
+With the target application specified in the Excel Online authentication settings, Excel Online uses the credentials associated with that target application to refresh the data in the workbook after you have published it to SharePoint Server 2016.
   
     
     

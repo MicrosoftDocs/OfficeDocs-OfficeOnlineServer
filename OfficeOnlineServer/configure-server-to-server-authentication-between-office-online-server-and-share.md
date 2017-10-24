@@ -6,13 +6,19 @@ ms.assetid: 84c08727-b496-48b6-b54b-a366fad151d7
 
 
 # Configure server-to-server authentication between Office Online Server and SharePoint Server 2016
- **Summary:** Configure server-to-server authentication between and .
-Server-to-server authentication between and establishes trust between the two servers. This trust is a necessary prerequisite for some features, such as Office Data Connection (ODC) file support and the IT Management Dashboard, which is part of . This article guides you through the steps to set up this trust.
+ **Summary:** Configure server-to-server authentication between Office Online Server and SharePoint Server 2016.
+Server-to-server authentication between Office Online Server and SharePoint Server 2016 establishes trust between the two servers. This trust is a necessary prerequisite for some Excel Online features, such as Office Data Connection (ODC) file support and the IT Management Dashboard, which is part of SQL Server Power Pivot for SharePoint. This article guides you through the steps to set up this trust.
   
     
     
 
-To configure server-to-server authentication, your farm and farm must be in the same Active Directory forest. You also must have a User Profile service application configured on the farm.
+
+To configure server-to-server authentication, your Office Online Server farm and SharePoint Server farm must be in the same Active Directory forest. You also must have a User Profile service application configured on the SharePoint Server farm.
+  
+    
+    
+
+
 The basic actions required for configuring server-to-server authentication are:
   
     
@@ -31,11 +37,17 @@ The basic actions required for configuring server-to-server authentication are:
 4.  [Configure SharePoint Server to use the certificate for server-to-server authentication](configure-server-to-server-authentication-between-office-online-server-and-share.md#ConfigureSharePoint)
     
   
-You'll start with importing the certificate to .
+
+You'll start with importing the certificate to Office Online Server.
+  
+    
+    
+
+
 ## Import the certificate to Office Online Server
 <a name="ImportCerts"> </a>
 
-The first step is to import your certificate for use by . Follow the  *Import your certificate*  and *Grant network service permission to use the key*  procedures on each server in your farm.
+The first step is to import your certificate for use by Office Online Server. Follow the  *Import your certificate*  and *Grant network service permission to use the key*  procedures on each server in your Office Online Server farm.
   
     
     
@@ -49,15 +61,15 @@ You can use either a private key SSL certificate or a self-signed certificate. W
 
 #### Use a private key SSL certificate
 
-Install the certificate on each server running .
+Install the certificate on each server running Office Online Server.
   
     
     
 
-### To install the certificate on Server
+### To install the certificate on Office Online Server
 
 
-1. On the server running , open .
+1. On the server running Office Online Server, open IIS Manager.
     
   
 2. In the left pane, click the server name.
@@ -81,7 +93,7 @@ Install the certificate on each server running .
 8. Click **OK**.
     
   
-Repeat this procedure on each server running .
+Repeat this procedure on each server running Office Online.
   
     
     
@@ -168,7 +180,7 @@ Next, use the Microsoft Management Console (MMC) to grant the network service pe
 10. Click **OK**.
     
   
-Be sure you follow the  *Import your certificate*  and *Grant network service permission to use the key*  procedures on each server in your farm.
+Be sure you follow the  *Import your certificate*  and *Grant network service permission to use the key*  procedures on each server in your Office Online Server farm.
   
     
     
@@ -180,12 +192,12 @@ Keep the Microsoft Management Console open for the next procedure.
 ## Export the certificate for use on SharePoint Server
 <a name="ExportCerts"> </a>
 
-The next step is to export the certificate so that you can use it to register as a trusted token issuer.
+The next step is to export the certificate so that you can use it to register Office Online Server as a trusted token issuer.
   
     
     
 
-### To export the certificate for use with
+### To export the certificate for use with SharePoint Server 2016
 
 
 1. Right-click the certificate that you just imported, click **All Tasks**, and then click **Export**.
@@ -206,11 +218,11 @@ The next step is to export the certificate so that you can use it to register as
 6. Click **Finish**, and then click **OK**.
     
   
-Copy the certificate file that you created to a location where you can access it from .
+Copy the certificate file that you created to a location where you can access it from SharePoint Server.
   
     
     
-Next, you need to specify this certificate as the S2S certificate for .
+Next, you need to specify this certificate as the S2S certificate for Office Online Server.
   
     
     
@@ -219,10 +231,10 @@ Next, you need to specify this certificate as the S2S certificate for .
 <a name="ConfigureWAC"> </a>
 
 
-### To specify the S2S certificate for
+### To specify the S2S certificate for Office Online Server
 
 
-1. Open a window as Administrator.
+1. Open a Microsoft PowerShell window as Administrator.
     
   
 2. Type the following where <friendlyName> is the friendly name of the certificate that you're using.
@@ -236,11 +248,11 @@ Set-OfficeWebAppsFarm -S2SCertificateName "<friendlyName>" -Confirm:$false -Forc
   
     
     
-If you're using HTTP instead of HTTPS for your farm, you have to allow outbound HTTP connections from . (If you're using SSL, you can skip this procedure.)
+If you're using HTTP instead of HTTPS for your Office Online Server farm, you have to allow outbound HTTP connections from Office Online Server. (If you're using SSL, you can skip this procedure.)
   
     
     
-To enable outbound HTTP connections from , run the following command:
+To enable outbound HTTP connections from Office Online Server, run the following PowerShell command:
   
     
     
@@ -262,7 +274,7 @@ iisreset
   
     
     
-If you plan to store ODC files in an HTTP path, you have to configure to allow Secure Store connections over HTTP.
+If you plan to store ODC files in an HTTP path, you have to configure Office Online Server to allow Secure Store connections over HTTP.
   
     
     
@@ -273,7 +285,7 @@ If you plan to store ODC files in an HTTP path, you have to configure to allow S
     
     
 
-To enable to use HTTP paths with Secure Store, run the following command:
+To enable Office Online Server to use HTTP paths with Secure Store, run the following PowerShell command:
   
     
     
@@ -295,7 +307,7 @@ iisreset
 ## Configure SharePoint Server to use the certificate for server-to-server authentication
 <a name="ConfigureSharePoint"> </a>
 
-You need to register and as trusted token issuers. This is done through . Here are the parameters that you'll use:
+You need to register SharePoint Server and SQL Server as trusted token issuers. This is done through PowerShell. Here are the parameters that you'll use:
   
     
     
@@ -309,14 +321,14 @@ You need to register and as trusted token issuers. This is done through . Here a
 - **<X509Certificate>** - The path and file name of the certificate file that you exported.
     
   
-- **<RegisteredIssuer>** - The GUID of the trusted token issuer. is 67e3df25-268a-4324-a550-0de1c7f97287@bd2372e4-0a11-495c-9541-8377c6def195 and is 67e3df25-268a-4324-a550-0de1c7f97287@ffab2d74-c6ae-4375-819a-8555d49b699a
+- **<RegisteredIssuer>** - The GUID of the trusted token issuer. SharePoint Server is 67e3df25-268a-4324-a550-0de1c7f97287@bd2372e4-0a11-495c-9541-8377c6def195 and SQL Server is 67e3df25-268a-4324-a550-0de1c7f97287@ffab2d74-c6ae-4375-819a-8555d49b699a
     
   
 Perform the following procedure twice - once for each <RegisteredIssuer> GUID.
   
     
     
-Perform this procedure on a Front-end server in your farm.
+Perform this procedure on a Front-end server in your SharePoint Server farm.
   
     
     
@@ -324,7 +336,7 @@ Perform this procedure on a Front-end server in your farm.
 ### To register a trusted token issuer
 
 
-1. Open the as Administrator.
+1. Open the SharePoint 2016 Management Shell as Administrator.
     
   
 2. Run the following script using the parameters noted above:

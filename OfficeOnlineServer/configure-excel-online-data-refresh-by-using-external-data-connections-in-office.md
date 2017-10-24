@@ -6,8 +6,8 @@ ms.assetid: 0d33c049-3f9e-42e9-be48-aeecd4ad7b66
 
 
 # Configure Excel Online data refresh by using external data connections in Office Online Server
- **Summary:** Configure data refresh by using Secure Store and an external Office Data Connection (ODC) file.
- provides two methods of using to refresh the external data source in a workbook:
+ **Summary:** Configure Excel Online data refresh by using Secure Store and an external Office Data Connection (ODC) file.
+Excel Online provides two methods of using Secure Store Service to refresh the external data source in a workbook:
   
     
     
@@ -16,16 +16,28 @@ ms.assetid: 0d33c049-3f9e-42e9-be48-aeecd4ad7b66
 - You can specify a Secure Store target application in a workbook. (This is known as an embedded connection.) For more information, see  [Configure Excel Online data refresh by using embedded data connections in Office Online Server](configure-excel-online-data-refresh-by-using-embedded-data-connections-in-office.md).
     
   
-- You can use an Office Data Connection (ODC) file that specifies a target application. This article describes how to do this. 
+- You can use an Office Data Connection (ODC) file that specifies a Secure Store target application. This article describes how to do this. 
     
   
 
-By using an ODC file for your data connection, you separate your workbooks from the data connection information. This allows you to share a single ODC file among multiple workbooks and also allows you to centrally manage your data connections.
+By using an ODC file for your data connection, you separate your Excel workbooks from the data connection information. This allows you to share a single ODC file among multiple workbooks and also allows you to centrally manage your data connections.
   
     
     
 
-Before you can use with an ODC file, you must have  [installed Office Online Server](deploy-office-online-server.md) and [configured it to work with SharePoint Server](configure-office-online-server-for-sharepoint-server-2016.md). To use an ODC file, you must also  [configure server-to-server authentication between Office Online Server and SharePoint Server](configure-server-to-server-authentication-between-office-online-server-and-share.md).Using with an ODC file consists of the following steps:
+
+Before you can use Excel Online with an ODC file, you must have  [installed Office Online Server](deploy-office-online-server.md) and [configured it to work with SharePoint Server](configure-office-online-server-for-sharepoint-server-2016.md). To use an ODC file, you must also  [configure server-to-server authentication between Office Online Server and SharePoint Server](configure-server-to-server-authentication-between-office-online-server-and-share.md).
+  
+    
+    
+
+
+Using Excel Online with an ODC file consists of the following steps:
+  
+    
+    
+
+
 1.  [Configure a data access account](#part1)
     
   
@@ -42,15 +54,15 @@ Before you can use with an ODC file, you must have  [installed Office Online Ser
 ## Configure a data access account
 <a name="part1"> </a>
 
-You must have an account that can be granted access to the data source to which you want to connect your workbook. This can be an Active Directory account, a logon, or other set of credentials as required by your data source. This account will be stored in .
+You must have an account that can be granted access to the data source to which you want to connect your Excel workbook. This can be an Active Directory account, a SQL Server logon, or other set of credentials as required by your data source. This account will be stored in Secure Store.
   
     
     
-After you have created the account, the next step is to grant that account read access to the required data. (in this article, we use the example of accessing a database through an Active Directory account. If you are using a data source other than , see the instructions for your data source to create a logon with data read permissions for the data access account.)
+After you have created the account, the next step is to grant that account read access to the required data. (in this article, we use the example of accessing a SQL Server database through an Active Directory account. If you are using a data source other than SQL Server, see the instructions for your data source to create a logon with data read permissions for the data access account.)
   
     
     
-Follow these steps to create a logon and grant Read access to the database.
+Follow these steps to create a SQL Server logon and grant Read access to the database.
   
     
     
@@ -58,7 +70,7 @@ Follow these steps to create a logon and grant Read access to the database.
 ### To create a SQL Server logon for the data access account
 
 
-1. In , connect to the database engine.
+1. In SQL Server Management Studio, connect to the database engine.
     
   
 2. In Object Explorer, expand **Security**.
@@ -79,7 +91,7 @@ Follow these steps to create a logon and grant Read access to the database.
 7. Click **OK**.
     
   
-Now that you have created a data access account and granted it access to a data source, the next step is to create a target application.
+Now that you have created a data access account and granted it access to a data source, the next step is to create a Secure Store target application.
   
     
     
@@ -87,22 +99,22 @@ Now that you have created a data access account and granted it access to a data 
 ## Create a Secure Store target application
 <a name="part2"> </a>
 
-You must create a target application in that contains the credentials that you created for data access. This target application can then be specified in an ODC file and will be used by when it refreshes data in the workbook.
+You must create a target application in Secure Store that contains the credentials that you created for data access. This target application can then be specified in an ODC file and will be used by Excel Online when it refreshes data in the workbook.
   
     
     
-When you create the target application, you have to specify which users will be authorized to use the credentials stored in . You can list users individually, or you can use an Active Directory group. We recommend that you use an Active Directory group for ease of administration.
+When you create the target application, you have to specify which users will be authorized to use the credentials stored in Secure Store. You can list users individually, or you can use an Active Directory group. We recommend that you use an Active Directory group for ease of administration.
   
     
     
 
 > [!NOTE]
-> The users that you list in the target application do not have direct access to the stored credentials. Instead, uses the credentials on their behalf to refresh data in data-connected workbooks that specify this target application. 
+> The users that you list in the target application do not have direct access to the stored credentials. Instead, Excel Online uses the credentials on their behalf to refresh data in data-connected workbooks that specify this target application. 
   
     
     
 
-Use the following procedure to create a target application.
+Use the following procedure to create a Secure Store target application.
   
     
     
@@ -110,10 +122,10 @@ Use the following procedure to create a target application.
 ### To create a target application
 
 
-1. On the home page, in the **Application Management** section, click **Manage service applications**.
+1. On the the SharePoint Central Administration website home page, in the **Application Management** section, click **Manage service applications**.
     
   
-2. Click the .
+2. Click the Secure Store Service service application.
     
   
 3. On the ribbon, click **New**.
@@ -167,7 +179,7 @@ Use the following procedure to set the credentials for the target application.
 3. Click **OK**.
     
   
-Once you have set the credentials for the target application, the target application is ready to use. The next step is to create an ODC file that specifies this target application for data refresh.
+Once you have set the credentials for the target application, the target application is ready to use. The next step is to create an ODC file that specifies this target application for Excel Online data refresh.
   
     
     
@@ -175,7 +187,7 @@ Once you have set the credentials for the target application, the target applica
 ## Create and publish an ODC file
 <a name="part3"> </a>
 
-Now that the target application is configured, the next step is to create the ODC file and publish it to a library. Use the following procedure to create an ODC file that specifies the target application that you just created.
+Now that the Secure Store target application is configured, the next step is to create the ODC file and publish it to a SharePoint Server 2016 library. Use the following procedure to create an ODC file that specifies the target application that you just created.
   
     
     
@@ -183,7 +195,7 @@ Now that the target application is configured, the next step is to create the OD
 ### To create and publish an ODC file
 
 
-1. In , on the **Data** tab, in the **Get External Data** section, click **From Other Sources**, and then select your data source.
+1. In Excel, on the **Data** tab, in the **Get External Data** section, click **From Other Sources**, and then select your data source.
     
   
 2. Complete the wizard to create a data connection to your data source.
@@ -198,10 +210,10 @@ Now that the target application is configured, the next step is to create the OD
 5. On the **Connection Properties** dialog box, on the **Definition** tab, click **Authentication Settings**.
     
   
-6. On the **Excel Services Authentication Settings** dialog box, select the **Use a stored account** option, and in the **Application ID** box, type the Application ID of the target application that you created.
+6. On the **Excel Services Authentication Settings** dialog box, select the **Use a stored account** option, and in the **Application ID** box, type the Application ID of the Secure Store target application that you created.
     
     > [!NOTE]
-      > In , select the **SSS** option.
+      > In Excel 2010, select the **SSS** option.
 7. Click **OK**.
     
   
@@ -215,19 +227,19 @@ Now that the target application is configured, the next step is to create the OD
 ## Configure an Excel workbook to use the published ODC file as a data connection
 <a name="part4"> </a>
 
-In order for a workbook to use the ODC file that you just created, you must connect to it as a data source. Once it is connected, you can publish the workbook to a document library and it will maintain its connection to the ODC file. then uses the connection information specified in the ODC file when it refreshes data in the workbook.
+In order for a workbook to use the ODC file that you just created, you must connect to it as a data source. Once it is connected, you can publish the workbook to a SharePoint Server 2016 document library and it will maintain its connection to the ODC file. Excel Online then uses the connection information specified in the ODC file when it refreshes data in the workbook.
   
     
     
-Use the following procedure to connect to the ODC file in .
+Use the following procedure to connect to the ODC file in Excel.
   
     
     
 
-### To use an ODC file as a data source in
+### To use an ODC file as a data source in Excel
 
 
-1. In , on the **Data** tab, in the **Get External Data** section, click **Existing Connections**.
+1. In Excel, on the **Data** tab, in the **Get External Data** section, click **Existing Connections**.
     
   
 2. On the **Existing Connections** dialog box, click **Browse for More**.
@@ -256,7 +268,7 @@ Use the following procedure to connect to the ODC file in .
 9. Click **Close**.
     
   
-Once you have completed the data connection wizard, you can create your report and then publish it to a document library. When the workbook is rendered using , uses the connection information specified in the ODC file to refresh the data.
+Once you have completed the data connection wizard, you can create your report and then publish it to a document library. When the workbook is rendered using Excel Online, Excel Online uses the connection information specified in the ODC file to refresh the data.
   
     
     

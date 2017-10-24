@@ -8,7 +8,7 @@ ms.assetid: aeba2638-be88-4030-80fe-7e4bcd30309b
 
 # Set-OfficeWebAppsMachine
 
-Changes the settings of the current server that is in an farm.
+Changes the settings of the current server that is in an Office Online Server farm.
   
     
     
@@ -22,7 +22,7 @@ Set-OfficeWebAppsMachine [-Confirm [<SwitchParameter>]] [-Master <String>] [-Rol
 
 ## Detailed Description
 
-The **Set-OfficeWebAppsMachine** cmdlet changes the settings of the current server that is in an farm. The settings include the roles held by the current server and the designated master server for the farm.
+The **Set-OfficeWebAppsMachine** cmdlet changes the settings of the current server that is in an Office Online Server farm. The settings include the roles held by the current server and the designated master server for the farm.
   
     
     
@@ -33,10 +33,10 @@ The **Set-OfficeWebAppsMachine** cmdlet changes the settings of the current serv
 
 |**Parameter**|**Required**|**Type**|**Description**|
 |:-----|:-----|:-----|:-----|
-|**Confirm** <br/> |Optional  <br/> |System.Management.Automation.SwitchParameter  <br/> ||
-|**Master** <br/> |Optional  <br/> |System.String  <br/> |Specifies the server that stores the master farm configuration files.  <br/> If you set the local server as the master, you must run **Set-OfficeWebAppsMachine -Master** on all of the remaining servers in the farm to point them to the new master. <br/> |
-|**Roles** <br/> |Optional  <br/> |System.String[]  <br/> |Specifies the list of server roles to assign to the local server, separated by commas.  <br/> The role types are as follows:  <br/> **All** <br/> **FrontEnd** <br/> **WordBackEnd** <br/> **ExcelBackEnd** <br/> **PowerPointBackEnd** <br/> > [!IMPORTANT]> As a best practice, we recommend that all servers in an farm run all roles. Assigning roles is not useful until the farm contains approximately 50 servers.           |
-|**WhatIf** <br/> |Optional  <br/> |System.Management.Automation.SwitchParameter  <br/> ||
+|**Confirm** <br/> |Optional  <br/> |System.Management.Automation.SwitchParameter  <br/> |Prompts you for confirmation before executing the command. For more information, type the following command: **get-help about_commonparameters** <br/> |
+|**Master** <br/> |Optional  <br/> |System.String  <br/> |Specifies the server that stores the master farm configuration files.  <br/> If you set the local server as the master, you must run **Set-OfficeWebAppsMachine -Master** on all of the remaining servers in the Office Online Server farm to point them to the new master. <br/> |
+|**Roles** <br/> |Optional  <br/> |System.String[]  <br/> |Specifies the list of server roles to assign to the local server, separated by commas.  <br/> The role types are as follows:  <br/> **All** <br/> **FrontEnd** <br/> **WordBackEnd** <br/> **ExcelBackEnd** <br/> **PowerPointBackEnd** <br/> > [!IMPORTANT]> As a best practice, we recommend that all servers in an Office Online Server farm run all roles. Assigning roles is not useful until the Office Online Server farm contains approximately 50 servers.           |
+|**WhatIf** <br/> |Optional  <br/> |System.Management.Automation.SwitchParameter  <br/> |Displays a message that describes the effect of the command instead of executing the command. For more information, type the following command: **get-help about_commonparameters** <br/> |
    
 
 ## AutoGenParams
@@ -62,7 +62,7 @@ The **Set-OfficeWebAppsMachine** cmdlet changes the settings of the current serv
 (Get-OfficeWebAppsFarm).Machines
 ```
 
-This example shows the roles held by each server in the farm. 
+This example shows the roles held by each server in the Office Online Server farm. 
   
     
     
