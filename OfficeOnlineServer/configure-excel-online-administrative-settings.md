@@ -1,12 +1,25 @@
 ---
 title: Configure Excel Online administrative settings
+ms.author: mikeplum
+author: mikeplum
+manager: laurawi
+ms.date: 12/20/2016
+ms.audience: ITPro
+ms.topic: How To
 ms.prod: SHAREPOINT
+ms.technology: Office Online Server
 ms.assetid: 9cb81758-9d0b-4970-9ca0-a75eedf6093b
 ---
 
 
 # Configure Excel Online administrative settings
+
  **Summary:** Configure administrative settings for Excel workbooks rendered in Excel Online.
+  
+    
+    
+
+
 There are several settings that you can use to customize Excel Online. These settings help you adjust the resource usage of your Office Online Server farm and enforce some of your organization's governance policies.
   
     

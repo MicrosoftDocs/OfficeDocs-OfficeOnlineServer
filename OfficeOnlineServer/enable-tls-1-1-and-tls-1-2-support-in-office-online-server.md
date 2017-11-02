@@ -1,11 +1,20 @@
 ---
 title: Enable TLS 1.1 and TLS 1.2 support in Office Online Server
+ms.author: mikeplum
+author: mikeplum
+ms.date: 11/16/2016
 ms.assetid: b06dd801-736a-4621-8945-894449794f51
 ---
 
 
 # Enable TLS 1.1 and TLS 1.2 support in Office Online Server
+
  **Summary:** This article describes how to enable Transport Layer Security (TLS) protocol versions 1.1 and 1.2 in Office Online Server.
+  
+    
+    
+
+
 To enable TLS protocol versions 1.1 and 1.2 in your Office Online Server environment, you need to configure settings on each server in your Office Online Server farm.
   
     

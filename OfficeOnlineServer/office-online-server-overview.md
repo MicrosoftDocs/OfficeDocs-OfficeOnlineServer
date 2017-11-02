@@ -1,12 +1,25 @@
 ---
 title: Office Online Server overview
+ms.author: mikeplum
+author: mikeplum
+manager: laurawi
+ms.date: 12/20/2016
+ms.audience: ITPro
+ms.topic: How To
 ms.prod: OFFICERESOURCEKIT
+ms.technology: Office Online Server
 ms.assetid: 4b199a88-387f-4121-820d-7af580e2a3e8
 ---
 
 
 # Office Online Server overview
+
  **Summary:** Learn about Office Online Server and how it provides browser-based Office functionality to supported hosts.
+  
+    
+    
+
+
  **Audience**: IT Professionals
   
     

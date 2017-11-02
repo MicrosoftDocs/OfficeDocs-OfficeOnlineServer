@@ -1,12 +1,25 @@
 ---
 title: Office Online Server
+ms.author: mikeplum
+author: mikeplum
+manager: laurawi
+ms.date: 5/12/2017
+ms.audience: ITPro
+ms.topic: How To
 ms.prod: OFFICERESOURCEKIT
+ms.technology: Office Online Server
 ms.assetid: e75c9827-f5ce-4099-a08c-b42fde72ea98
 ---
 
 
 # Office Online Server
+
  **Summary:** Contains articles that will help you work with Office Online Server (the next version of Office Web Apps Server).
+  
+    
+    
+
+
  **Audience**: IT Professionals
   
     
@@ -24,7 +37,7 @@ ms.assetid: e75c9827-f5ce-4099-a08c-b42fde72ea98
 |:-----|:-----|
 | [Plan Office Online Server](plan-office-online-server.md) <br/> |Describes planning considerations for setting up your Office Online Server farm.  <br/> |
 | [Deploy Office Online Server](deploy-office-online-server.md) <br/> |Explains how to deploy Office Online Server in a test or production environment.  <br/> |
-| [Configure Office Online Server for SharePoint Server 2016](configure-office-online-server-for-sharepoint-server-2016.md) <br/> |Explains how to configure SharePoint Server to use Office Online Server for document editing.  <br/> |
+| [Configure Office Online Server for SharePoint Server 2016](configure-office-online-server-for-sharepoint-server-2016/configure-office-online-server-for-sharepoint-server-2016.md) <br/> |Explains how to configure SharePoint Server to use Office Online Server for document editing.  <br/> |
 | [Apply software updates to Office Online Server](apply-software-updates-to-office-online-server.md) <br/> |Explains how to apply software updates to your Office Online Server farm.  <br/> |
 | [Office Online Server release schedule](office-online-server-release-schedule.md) <br/> |Explains the release schedule for new Office Online Server builds, support dates, and upgrade requirements.  <br/> |
    

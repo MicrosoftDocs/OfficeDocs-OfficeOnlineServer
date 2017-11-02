@@ -1,12 +1,25 @@
 ---
 title: Data authentication for Excel Online in Office Online Server
+ms.author: mikeplum
+author: mikeplum
+manager: laurawi
+ms.date: 8/8/2017
+ms.audience: ITPro
+ms.topic: How To
 ms.prod: SHAREPOINT
+ms.technology: Office Online Server
 ms.assetid: 7ced238b-2866-4961-af1c-6b597a55ce7a
 ---
 
 
 # Data authentication for Excel Online in Office Online Server
+
  **Summary** Learn how Excel Online supports connections with SQL Server Analysis Services (SSAS), SQL Server databases, and OLE DB and ODBC data sources.
+  
+    
+    
+
+
 Retrieving data from a data source requires a user to be authenticated by the data source and then authorized to access the data that is contained therein. In the case of a workbook, Excel Online authenticates to the data source on behalf of the user who is viewing it in order to refresh the data to which the workbook is connected.
   
     
@@ -118,7 +131,7 @@ Each kind of connection has its advantages and drawbacks discussed here. Choose 
 |**Connection type**|**Embedded connections**|**ODC files**|
 |:-----|:-----|:-----|
 |Advantages  <br/> | All connection information is stored in the workbook. <br/>  Embedded connections require little administrative overhead to support. <br/>  Embedded connections are easy to create. <br/> | Linked connections can be centrally stored, managed, audited, shared and access to them can be controlled by using a SharePoint document library. <br/>  Workbook authors can use existing connections without having to create queries and connection strings. <br/>  If the data connection details for a data source change, an administrator only need update one ODC file. With that change, all workbooks that refer to the ODC file will use the updated connection information when the next refresh occurs. (An example of this scenario is when the database server is moved or the database name is changed.) <br/> |
-|Drawbacks  <br/> | If the data connection details for a data source change, all workbooks with embedded connections to that data source will have to be republished with updated connection information. <br/>  Embedded data connections are more difficult to audit by SharePoint administrators. <br/> | Linked connections may require the help of a SharePoint administrator to share, manage and secure. <br/>  Linked connections are saved in clear text and may contain database passwords. Extra care must be taken to help secure these files. <br/>  Requires [server-to-server authentication](configure-server-to-server-authentication-between-office-online-server-and-share.md) between Office Online Server and SharePoint Server. This adds configuration and administration overhead. <br/> |
+|Drawbacks  <br/> | If the data connection details for a data source change, all workbooks with embedded connections to that data source will have to be republished with updated connection information. <br/>  Embedded data connections are more difficult to audit by SharePoint administrators. <br/> | Linked connections may require the help of a SharePoint administrator to share, manage and secure. <br/>  Linked connections are saved in clear text and may contain database passwords. Extra care must be taken to help secure these files. <br/>  Requires [server-to-server authentication](configure-office-online-server-for-sharepoint-server-2016/configure-server-to-server-authentication-between-office-online-server-and-share.md) between Office Online Server and SharePoint Server. This adds configuration and administration overhead. <br/> |
    
 Choose a linked data connection, by using an ODC file, for scenarios in which you must have a data connection to an enterprise-scale data source such as SQL Server or Analysis Services. Linked data connections are most useful in scenarios in which they will be shared across many users and in which administrator control of the connection is important.
   

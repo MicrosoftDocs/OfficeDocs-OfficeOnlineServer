@@ -1,12 +1,25 @@
 ---
 title: Configure Excel Online data refresh by using external data connections in Office Online Server
+ms.author: mikeplum
+author: mikeplum
+manager: laurawi
+ms.date: 3/28/2016
+ms.audience: ITPro
+ms.topic: How To
 ms.prod: SHAREPOINT
+ms.technology: Office Online Server
 ms.assetid: 0d33c049-3f9e-42e9-be48-aeecd4ad7b66
 ---
 
 
 # Configure Excel Online data refresh by using external data connections in Office Online Server
+
  **Summary:** Configure Excel Online data refresh by using Secure Store and an external Office Data Connection (ODC) file.
+  
+    
+    
+
+
 Excel Online provides two methods of using Secure Store Service to refresh the external data source in a workbook:
   
     
@@ -26,7 +39,7 @@ By using an ODC file for your data connection, you separate your Excel workbooks
     
 
 
-Before you can use Excel Online with an ODC file, you must have  [installed Office Online Server](deploy-office-online-server.md) and [configured it to work with SharePoint Server](configure-office-online-server-for-sharepoint-server-2016.md). To use an ODC file, you must also  [configure server-to-server authentication between Office Online Server and SharePoint Server](configure-server-to-server-authentication-between-office-online-server-and-share.md).
+Before you can use Excel Online with an ODC file, you must have  [installed Office Online Server](deploy-office-online-server.md) and [configured it to work with SharePoint Server](configure-office-online-server-for-sharepoint-server-2016/configure-office-online-server-for-sharepoint-server-2016.md). To use an ODC file, you must also  [configure server-to-server authentication between Office Online Server and SharePoint Server](configure-office-online-server-for-sharepoint-server-2016/configure-server-to-server-authentication-between-office-online-server-and-share.md).
   
     
     

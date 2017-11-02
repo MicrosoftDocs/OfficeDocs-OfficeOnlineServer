@@ -1,11 +1,21 @@
 ---
 title: Office Online Server release schedule
+ms.author: mikeplum
+author: mikeplum
+manager: pamgreen
+ms.date: 10/16/2017
 ms.assetid: 52a07e4e-62e5-4aa0-837f-490900b9c768
 ---
 
 
 # Office Online Server release schedule
+
  **Summary:** Learn about the Office Online Server release schedule and upgrade requirements.
+  
+    
+    
+
+
 Microsoft plans to release new builds of Office Online Server twice each year, with each new build supported for approximately six months from its general availability (GA) release date. Each new build will be supported with security and critical updates until the next build is released.
   
     

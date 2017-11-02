@@ -1,12 +1,25 @@
 ---
 title: Configure Excel Online data refresh by using embedded data connections in Office Online Server
+ms.author: mikeplum
+author: mikeplum
+manager: laurawi
+ms.date: 3/28/2016
+ms.audience: ITPro
+ms.topic: How To
 ms.prod: SHAREPOINT
+ms.technology: Office Online Server
 ms.assetid: 9a78496b-50c0-471c-b112-6dbc7231635d
 ---
 
 
 # Configure Excel Online data refresh by using embedded data connections in Office Online Server
+
  **Summary:** Configure Excel Online to use a Secure Store target application for external data refresh.
+  
+    
+    
+
+
 Excel Online supports two methods of using Secure Store Service to connect to external data:
   
     
@@ -36,7 +49,7 @@ To configure Excel Online data access to use embedded data connections, you use 
     
   
 
-Note that you must have  [installed Office Online Server](deploy-office-online-server.md) and [configured SharePoint Server to use it to render documents](configure-office-online-server-for-sharepoint-server-2016.md) for this to work.
+Note that you must have  [installed Office Online Server](deploy-office-online-server.md) and [configured SharePoint Server to use it to render documents](configure-office-online-server-for-sharepoint-server-2016/configure-office-online-server-for-sharepoint-server-2016.md) for this to work.
   
     
     
