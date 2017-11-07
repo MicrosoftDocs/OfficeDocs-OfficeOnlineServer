@@ -32,22 +32,6 @@ This article picks up where  [Deploy Office Online Server](../deploy-office-onli
   
     
     
-
-
-In this article:
-  
-    
-    
-
-
--  [Before you configure SharePoint Server to use Office Online Server](configure-office-online-server-for-sharepoint-server-2016.md#Before)
-    
-  
--  [Configure SharePoint Server to use Office Online Server](configure-office-online-server-for-sharepoint-server-2016.md#ConfigureMain)
-    
-  
--  [Disconnect SharePoint Server 2016 from Office Online Server](configure-office-online-server-for-sharepoint-server-2016.md#disconnect)
-    
   
 
 ## Before you configure SharePoint Server to use Office Online Server
