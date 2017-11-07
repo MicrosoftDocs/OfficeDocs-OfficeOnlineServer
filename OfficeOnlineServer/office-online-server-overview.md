@@ -67,17 +67,12 @@ The following illustration summarizes the viewing and editing capabilities of Of
 
 **Viewing and editing capabilities of Office Web Apps**
 
-  
-    
-    
 
-  
-    
-    
+
 ![A graphic that summarizes the viewing and editing capabilities of Office Web Apps on different kinds of devices. It highlights those that are optimized for touch screens.](images/WAC-SupportedViewEdit-Platforms.gif)
-  
-    
-    
+
+
+
 Excel Online includes external data connectivity and data refresh features similar to those found in Excel Services in SharePoint Server 2013. (Excel Services has been removed from SharePoint in SharePoint Server 2016 - you use Excel Online instead.)
   
     
