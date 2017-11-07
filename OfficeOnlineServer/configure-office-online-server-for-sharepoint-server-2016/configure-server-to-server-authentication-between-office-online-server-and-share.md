@@ -254,10 +254,9 @@ Next, you need to specify this certificate as the S2S certificate for Office Onl
   
 2. Type the following where <friendlyName> is the friendly name of the certificate that you're using.
     
-  ```
-  
+```
 Set-OfficeWebAppsFarm -S2SCertificateName "<friendlyName>" -Confirm:$false -Force
-  ```
+```
 
  **Using HTTP with Office Online Server**
   
