@@ -199,9 +199,6 @@ Choose Kerberos delegation for secure and fast authentication to enterprise-scal
     
   
 - The c2wtshost.exe.config file (located at \\Program Files\\Windows Identity Foundation\\v3.5) must be updated and the comment tags removed from  _NT AUTHORITY\\Network Service_ allowedCallers list:
-    
-  ```
-  
 <allowedCallers>
       <clear/>
       <add value="NT AUTHORITY\\Network Service" />
@@ -209,8 +206,6 @@ Choose Kerberos delegation for secure and fast authentication to enterprise-scal
       <!-- <add value="NT AUTHORITY\\System" /> -->
       <!-- <add value="NT AUTHORITY\\Authenticated Users" /> -->
     </allowedCallers>
-
-  ```
 
 
 #### Secure Store
