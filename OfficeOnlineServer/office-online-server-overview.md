@@ -36,27 +36,6 @@ Office Online Server delivers browser-based versions of Word, PowerPoint, Excel,
 > **Are you looking for help with Office Online on your desktop or mobile device?** You can find this information by searching for "Office Online" on [Office Support](https://go.microsoft.com/fwlink/p/?LinkId=324961). 
   
     
-    
-
-
-In this article:
-  
-    
-    
-
-
--  [About Office Online Server](office-online-server-overview.md#about)
-    
-  
--  [How SharePoint Server uses Office Online Server for viewing and editing Office documents](office-online-server-overview.md#sharepoint)
-    
-  
--  [How Exchange Server and Outlook Web App use Office Online Server for previewing Office file attachments](office-online-server-overview.md#exchange)
-    
-  
--  [How Office Online Server enables users to view Office files in shared folders and websites by using Online Viewers](office-online-server-overview.md#onlineviewers)
-    
-  
 
 ## About Office Online Server
 <a name="about"> </a>
