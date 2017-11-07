@@ -16,7 +16,7 @@ ms.assetid: 84c08727-b496-48b6-b54b-a366fad151d7
 
 # Configure server-to-server authentication between Office Online Server and SharePoint Server 2016
 
- **Summary:** Configure server-to-server authentication between Office Online Server and SharePoint Server 2016.
+ **Summary:** Configure server-to-server authentication between Office Online Server and SharePoint 2016.
   
     
     
