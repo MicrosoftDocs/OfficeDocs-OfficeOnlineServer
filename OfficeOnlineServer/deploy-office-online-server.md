@@ -32,20 +32,7 @@ Office Online Server is the next version of Office Web Apps Server. Deploying Of
     
 
 
-In this article:
-  
-    
-    
 
-
--  [Prepare servers to run Office Online Server](deploy-office-online-server.md#prerequisites)
-    
-  
--  [Deploy the Office Online Server farm](deploy-office-online-server.md#DeploymentTypes)
-    
-  
--  [If you see "500 Web Service Exceptions" or "500.21 - Internal Server Error" messages](deploy-office-online-server.md#ErrorMessages)
-    
   
 
 ## Prepare servers to run Office Online Server
@@ -74,15 +61,8 @@ Perform these procedures on all servers that will run Office Online Server. This
 Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45,Windows-Identity-Foundation,Server-Media-Foundation
 
   ```
-
-
     
-  
-    
-    
-
-    
-    **Windows Server 2016:**
+   **Windows Server 2016:**
     
 
 
@@ -90,15 +70,8 @@ Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-
   
 Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,NET-Framework-Features,NET-Framework-45-Features,NET-Framework-Core,NET-Framework-45-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45,Windows-Identity-Foundation,Server-Media-Foundation
   ```
-
-
-    
-  
-    
-    
-
-    
-    If prompted, restart the server.
+ 
+   If prompted, restart the server.
     
   
 2. Install the following software:
