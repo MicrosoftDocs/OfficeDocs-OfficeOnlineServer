@@ -1,7 +1,7 @@
 ---
 title: Configure Excel Online administrative settings
 ms.author: mikeplum
-author: mikeplum
+author: MikePlumleyMSFT
 manager: laurawi
 ms.date: 12/20/2016
 ms.audience: ITPro

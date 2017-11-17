@@ -1,13 +1,12 @@
----
+﻿---
 title: Data authentication for Excel Online in Office Online Server
 ms.author: mikeplum
-author: mikeplum
+author: MikePlumleyMSFT
 manager: laurawi
 ms.date: 8/8/2017
 ms.audience: ITPro
-ms.topic: How To
-ms.prod: SHAREPOINT
-ms.technology: Office Online Server
+ms.topic: article
+ms.prod: office-online-server
 ms.assetid: 7ced238b-2866-4961-af1c-6b597a55ce7a
 ---
 

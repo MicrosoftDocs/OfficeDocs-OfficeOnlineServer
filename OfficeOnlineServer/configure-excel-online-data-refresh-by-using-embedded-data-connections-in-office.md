@@ -1,7 +1,7 @@
 ---
 title: Configure Excel Online data refresh by using embedded data connections in Office Online Server
 ms.author: mikeplum
-author: mikeplum
+author: MikePlumleyMSFT
 manager: laurawi
 ms.date: 3/28/2016
 ms.audience: ITPro

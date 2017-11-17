@@ -1,13 +1,12 @@
 ---
 title: Office Online Server
 ms.author: mikeplum
-author: mikeplum
+author: MikePlumleyMSFT
 manager: laurawi
 ms.date: 5/12/2017
 ms.audience: ITPro
-ms.topic: How To
-ms.prod: OFFICERESOURCEKIT
-ms.technology: Office Online Server
+ms.topic: article
+ms.prod: office-online-server
 ms.assetid: e75c9827-f5ce-4099-a08c-b42fde72ea98
 ---
 

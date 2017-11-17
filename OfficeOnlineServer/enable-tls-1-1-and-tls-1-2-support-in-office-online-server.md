@@ -1,7 +1,7 @@
 ---
 title: Enable TLS 1.1 and TLS 1.2 support in Office Online Server
 ms.author: mikeplum
-author: mikeplum
+author: MikePlumleyMSFT
 ms.date: 11/16/2016
 ms.assetid: b06dd801-736a-4621-8945-894449794f51
 ---

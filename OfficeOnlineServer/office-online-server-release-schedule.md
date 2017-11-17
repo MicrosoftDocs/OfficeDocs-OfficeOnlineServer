@@ -1,7 +1,7 @@
 ---
 title: Office Online Server release schedule
 ms.author: mikeplum
-author: mikeplum
+author: MikePlumleyMSFT
 manager: pamgreen
 ms.date: 10/16/2017
 ms.assetid: 52a07e4e-62e5-4aa0-837f-490900b9c768
