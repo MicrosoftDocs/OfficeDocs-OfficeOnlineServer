@@ -16,7 +16,7 @@
 ## [Enable TLS 1.1 and TLS 1.2 support in Office Online Server](enable-tls-1-1-and-tls-1-2-support-in-office-online-server.md)
 ## [Windows PowerShell for Office Online Server](windows-powershell-for-office-online-server/windows-powershell-for-office-online-server.md)
 ### [Get-OfficeWebAppsExcelBIServer](https://docs.microsoft.com/en-us/powershell/module/officewebapps/get-officewebappsexcelbiserver?view=officewebapps-ps)
-### [Get-OfficeWebAppsExcelUserDefinedFunction]((https://docs.microsoft.com/en-us/powershell/module/officewebapps/get-officewebappsexceluserdefinedfunction?view=officewebapps-ps)
+### [Get-OfficeWebAppsExcelUserDefinedFunction](https://docs.microsoft.com/en-us/powershell/module/officewebapps/get-officewebappsexceluserdefinedfunction?view=officewebapps-ps)
 ### [Get-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/get-officewebappsfarm?view=officewebapps-ps)
 ### [Get-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/Get-OfficeWebAppsHost?view=officewebapps-ps)
 ### [Get-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/Get-OfficeWebAppsMachine?view=officewebapps-ps)
