@@ -1,13 +1,12 @@
 ---
 title: Windows PowerShell for Office Online Server
 ms.author: mikeplum
-author: mikeplum
+author: MikePlumleyMSFT
 manager: laurawi
 ms.date: 3/28/2016
 ms.audience: ITPro
 ms.topic: Navigation
-ms.prod: OFFICERESOURCEKIT
-ms.technology: Office Online Server
+ms.prod: office-online-server
 ms.assetid: 56bfd3b3-f563-423d-aea0-65b331f73b96
 ---
 

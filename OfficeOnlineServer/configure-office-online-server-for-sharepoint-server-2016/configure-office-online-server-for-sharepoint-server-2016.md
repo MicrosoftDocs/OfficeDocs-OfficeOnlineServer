@@ -1,15 +1,12 @@
 ---
 title: Configure Office Online Server for SharePoint Server 2016
 ms.author: mikeplum
-author: mikeplum
+author: MikePlumleyMSFT
 manager: laurawi
 ms.date: 9/20/2016
 ms.audience: ITPro
-ms.topic: How To
-ms.prod: OFFICERESOURCEKIT
-ms.technology:
-- Office Online Server
-- SharePoint Server 2016
+ms.topic: article
+ms.prod: office-online-server
 ms.assetid: a5276781-133b-413c-beca-b851e17c2081
 ---
 

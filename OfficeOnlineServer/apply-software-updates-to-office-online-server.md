@@ -1,13 +1,12 @@
 ---
 title: Apply software updates to Office Online Server
 ms.author: mikeplum
-author: mikeplum
+author: MikePlumleyMSFT
 manager: laurawi
 ms.date: 5/12/2017
 ms.audience: ITPro
-ms.topic: How To
-ms.prod: OFFICERESOURCEKIT
-ms.technology: Office Online Server
+ms.topic: article
+ms.prod: office-online-server
 ms.assetid: 5d15dbd9-374e-422a-a870-43270dd0a2db
 ---
 
