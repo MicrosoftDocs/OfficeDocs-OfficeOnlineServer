@@ -1,4 +1,4 @@
-﻿---
+---
 title: Data authentication for Excel Online in Office Online Server
 ms.author: mikeplum
 author: MikePlumleyMSFT
