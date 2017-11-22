@@ -1,5 +1,6 @@
 ---
 title: Office Online Server release schedule
+description: Learn about the Office Online Server release schedule and upgrade requirements.
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen

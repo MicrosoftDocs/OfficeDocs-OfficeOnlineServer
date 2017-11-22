@@ -1,5 +1,6 @@
 ---
 title: Office Online Server overview
+description: Learn about Office Online Server and how it provides browser-based Office functionality to supported hosts.
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: laurawi
