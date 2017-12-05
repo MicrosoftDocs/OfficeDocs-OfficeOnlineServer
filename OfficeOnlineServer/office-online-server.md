@@ -42,7 +42,12 @@ ms.assetid: e75c9827-f5ce-4099-a08c-b42fde72ea98
 | [Office Online Server release schedule](office-online-server-release-schedule.md) <br/> |Explains the release schedule for new Office Online Server builds, support dates, and upgrade requirements.  <br/> |
    
 
-Office Online Server can be downloaded from the  [Volume Licensing Service Center (VLSC)](https://go.microsoft.com/fwlink/p/?LinkId=256561).
+Office Online Server can be downloaded from the  [Volume Licensing Service Center (VLSC)](https://go.microsoft.com/fwlink/p/?LinkId=256561). Office Online Server is a component of Office; therefore, it will be shown under each of the Office product pages including Office Standard 2016, Office Professional Plus 2016, and Office 2016 for Mac Standard. 
+
+For customers whose licenses qualfiy for OOS, but cannot obtain it through the VLSC, the following actions are possible: 
+
+- VL Open customers can contact their [Support Center](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx).
+- Direct customers can submit a request from their Office 365 admin center or [contact support](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=25670613-9263-4c87-8254-7c4563a1e0ac&ui=en-US&rs=en-US&ad=US&ocmsassetID=HA103836042).
   
     
     
