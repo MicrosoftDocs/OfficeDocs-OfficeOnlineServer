@@ -198,7 +198,7 @@ Set-OfficeWebAppsFarm -ExcelDefaultWorkbookCalcMode:Auto
 ## Set the maximum Excel Online image size
 <a name="ExcelChartAndImagesSizeMax"> </a>
 
-You can specify the maximum size, in megabytes, of a chart or image that can be opened by Excel Online. The value needs to be an integer greater than 0.
+You can specify the maximum size, in megabytes, of a chart or image that can be opened by Excel Online. The value must be an integer greater than 0.
   
     
     
