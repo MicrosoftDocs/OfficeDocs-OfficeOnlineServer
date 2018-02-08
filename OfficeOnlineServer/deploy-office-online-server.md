@@ -108,11 +108,11 @@ Complete these steps on any servers that will run Office Online Server.
 ### To install Office Online Server
 
 
-1. Download Office Online Server from the  [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). The download is located under those Office products on the VLSC portal.
-    
+1. Download Office Online Server from the  [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). Office Online Server is a component of Office, so it is available under each of the product pages including Office Standard 2016, Office Professional Plus 2016, and Office 2015 for Mac Standard.
+  
   
 2. Run Setup.exe.
-    
+
   
 3. On the **Read the Microsoft Software License Terms** page, select **I accept the terms of this agreement** and click **Continue**. 
     
