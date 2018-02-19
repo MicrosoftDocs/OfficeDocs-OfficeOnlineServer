@@ -37,7 +37,7 @@
       "searchScope": ["Office Online Server"],
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/OfficeDocs-OfficeOnlineServer",
-      "feedback_product_url": "MicrosoftDocs/OfficeDocs-OfficeOnlineServer"     
+      "feedback_product_url": "https://github.com/MicrosoftDocs/OfficeDocs-OfficeOnlineServer/issues"     
     },
     "fileMetadata": {},
     "template": [],
