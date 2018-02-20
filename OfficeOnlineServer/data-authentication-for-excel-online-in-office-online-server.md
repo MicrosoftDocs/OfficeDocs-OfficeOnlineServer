@@ -3,7 +3,7 @@ title: Data authentication for Excel Online in Office Online Server
 description: Learn how Excel Online supports connections with SQL Server Analysis Services (SSAS), SQL Server databases, and OLE DB and ODBC data sources.
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: laurawi
+manager: pamgreen
 ms.date: 8/8/2017
 ms.audience: ITPro
 ms.topic: article

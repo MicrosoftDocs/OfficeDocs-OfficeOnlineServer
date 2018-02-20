@@ -3,7 +3,7 @@ title: Office Online Server
 description: Contains articles that will help you work with Office Online Server (the next version of Office Web Apps Server).
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: laurawi
+manager: pamgreen
 ms.date: 5/12/2017
 ms.audience: ITPro
 ms.topic: article
