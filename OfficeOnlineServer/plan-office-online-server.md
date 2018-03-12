@@ -131,6 +131,7 @@ Office Online Server is supported when you deploy it using Windows Server Hyper-
     
   
 - When using Hyper-V for multi-server Office Online Server farms, each virtual machine should be on a separate virtual machine host. This way, the Office Online Server farm will still be available if one of the hosts fails.
+
     
   
 

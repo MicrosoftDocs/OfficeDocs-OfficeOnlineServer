@@ -47,7 +47,7 @@ Office Online Server can be downloaded from the  [Volume Licensing Service Cente
 For customers whose licenses qualfiy for OOS, but cannot obtain it through the VLSC, the following actions are possible: 
 
 - VL Open customers can contact their [Support Center](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx).
-- Direct customers can submit a request from their Office 365 admin center or [contact support](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=25670613-9263-4c87-8254-7c4563a1e0ac&ui=en-US&rs=en-US&ad=US&ocmsassetID=HA103836042).
+- Customers who purchased O365 online from Microsoft can submit a request from their Office 365 admin center or [contact support](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=25670613-9263-4c87-8254-7c4563a1e0ac&ui=en-US&rs=en-US&ad=US&ocmsassetID=HA103836042).
   
     
     
