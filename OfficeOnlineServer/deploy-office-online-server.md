@@ -158,7 +158,7 @@ To install the language packs, follow these steps.
 
 
 
-To patch language packs, deploy Office Online Updates after installing the Office Online Language Packs.
+To **patch language packs**, deploy Office Online Updates after installing the Office Online Language Packs.
     
   
 
