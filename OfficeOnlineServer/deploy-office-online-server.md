@@ -155,6 +155,10 @@ To install the language packs, follow these steps.
     
   
 4. When Setup finishes installing Office Online Server, choose **Close**.
+
+
+
+To patch language packs, deploy Office Online Updates after installing the Office Online Language Packs.
     
   
 
