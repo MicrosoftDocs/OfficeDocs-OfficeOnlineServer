@@ -173,10 +173,7 @@ Ideally, try to find a load balancing solution that supports the following featu
     
   
 - Enabling client affinity or front-end affinity
-    
   
-- Enabling SSL offloading
-    
   
 If you use a load balancer, you'll need to install the certificate on the load balancer as described under  [Securing Office Online Server communications by using HTTPS ](plan-office-online-server.md#certificate).
   
@@ -342,9 +339,8 @@ When you set up a new Office Online Server farm, SSL offloading is set to Off by
 - Improved performance
     
   
-Note that when you use HTTP, traffic from the load balancer to the servers that run Office Online Server isn't encrypted, so you need to make sure the network itself is secure. Use of a private subnet can help protect traffic.
-  
-    
+> [!NOTE] When you use HTTP, traffic from the load balancer to the servers that run Office Online Server isn't encrypted, so you need to make sure the network itself is secure. Use of a private subnet can help protect traffic.
+
     
 
 ### Restrict which servers can join an Office Online Server farm based on OU membership
