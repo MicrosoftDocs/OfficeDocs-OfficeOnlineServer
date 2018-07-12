@@ -515,16 +515,9 @@ Add-WindowsFeature NET-Framework-45-Core, NET-Framework-45-ASPNET, Web-Asp-Net45
 
 ## See also
 <a name="ErrorMessages"> </a>
-
-
-#### 
-
-
-  
-    
-    
- [Apply software updates to Office Online Server](apply-software-updates-to-office-online-server.md)
-  
-    
-    
- [Office Online Server release schedule](office-online-server-release-schedule.md)
+   
+[Apply software updates to Office Online Server](apply-software-updates-to-office-online-server.md)
+     
+[Office Online Server release schedule](office-online-server-release-schedule.md)
+ 
+[Plan Office Online Server](https://docs.microsoft.com/en-us/officeonlineserver/plan-office-online-server) 
