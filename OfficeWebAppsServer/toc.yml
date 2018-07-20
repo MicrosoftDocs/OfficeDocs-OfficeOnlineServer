@@ -1,0 +1,87 @@
+- name: Office Web Apps
+  href: office-web-apps-server.md
+  items:
+  - name: 'Content roadmap: Office Web Apps Server'
+    href: content-roadmap-for-office-web-apps-server.md
+  - name: 'Deploy the infrastructure: Office Web Apps Server'
+    href: deploy-the-infrastructure-office-web-apps-server.md
+    items:
+    - name: 'Overview: Office Web Apps Server'
+      href: office-web-apps-server-overview.md
+    - name: Plan Office Web Apps Server
+      href: plan-office-web-apps-server.md
+    - name: Deploy Office Web Apps Server
+      href: deploy-office-web-apps-server.md
+    - name: Technical reference
+      href: technical-reference-for-office-web-apps-server.md
+      items:
+      - name: Windows PowerShell for Office Web Apps Server
+        href: windows-powershell-for-office-web-apps-server.md
+        items:
+        - name: Get-OfficeWebAppsFarm
+          href: get-officewebappsfarm.md
+        - name: Get-OfficeWebAppsHost
+          href: get-officewebappshost.md
+        - name: Get-OfficeWebAppsMachine
+          href: get-officewebappsmachine.md
+        - name: New-OfficeWebAppsFarm
+          href: new-officewebappsfarm.md
+        - name: New-OfficeWebAppsHost
+          href: new-officewebappshost.md
+        - name: New-OfficeWebAppsMachine
+          href: new-officewebappsmachine.md
+        - name: Remove-OfficeWebAppsHost
+          href: remove-officewebappshost.md
+        - name: Remove-OfficeWebAppsMachine
+          href: remove-officewebappsmachine.md
+        - name: Repair-OfficeWebAppsFarm
+          href: repair-officewebappsfarm.md
+        - name: Set-OfficeWebAppsFarm
+          href: set-officewebappsfarm.md
+        - name: Set-OfficeWebAppsMachine
+          href: set-officewebappsmachine.md
+  - name: Use Office Web Apps with SharePoint 2013
+    href: use-office-web-apps-with-sharepoint-2013.md
+    items:
+    - name: Office Web Apps on-premises with SharePoint 2013
+      href: how-office-web-apps-work-on-premises-with-sharepoint-2013.md
+    - name: What’s new with Office Web Apps when used with SharePoint 2013?
+      href: what’s-new-with-office-web-apps-when-used-with-sharepoint-2013.md
+    - name: Plan Office Web Apps
+      href: plan-office-web-apps-used-with-sharepoint-2013.md
+    - name: Configure Office Web Apps for SharePoint 2013
+      href: configure-office-web-apps-for-sharepoint-2013.md
+    - name: Set the default open behavior for browser enabled documents
+      href: set-the-default-open-behavior-for-browser-enabled-documents-office-web-apps-when-used-with-sharepoint-2013.md
+    - name: 'Video: Configure Office Web Apps for SharePoint 2013'
+      href: video-configure-office-web-apps-for-sharepoint-2013.md
+    - name: Technical reference
+      href: technical-reference-for-office-web-apps-with-sharepoint-2013.md
+      items:
+      - name: Windows PowerShell for Office Web Apps
+        href: windows-powershell-for-office-web-apps-sharepoint-2013.md
+        items:
+        - name: Use Windows PowerShell to administer SharePoint 2013
+          href: use-windows-powershell-to-administer-sharepoint-2013.md
+        - name: Get-SPWOPIBinding
+          href: get-spwopibinding.md
+        - name: Get-SPWOPISuppressionSetting
+          href: get-spwopisuppressionsetting.md
+        - name: Get-SPWOPIZone
+          href: get-spwopizone.md
+        - name: New-SPWOPIBinding
+          href: new-spwopibinding.md
+        - name: New-SPWOPISuppressionSetting
+          href: new-spwopisuppressionsetting.md
+        - name: Remove-SPWOPIBinding
+          href: remove-spwopibinding.md
+        - name: Remove-SPWOPISuppressionSetting
+          href: remove-spwopisuppressionsetting.md
+        - name: Set-SPWOPIBinding
+          href: set-spwopibinding.md
+        - name: Set-SPWOPIZone
+          href: set-spwopizone.md
+        - name: Update-SPWOPIProofKey
+          href: update-spwopiproofkey.md
+  - name: Apply software updates to Office Web Apps Server
+    href: apply-software-updates-to-office-web-apps-server.md

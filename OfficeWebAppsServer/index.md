@@ -1,1 +1,3 @@
-# Welcome to OfficeDocs-OfficeWebAppsServer!
+﻿---
+redirect_url: 'office-web-apps-server'
+---
