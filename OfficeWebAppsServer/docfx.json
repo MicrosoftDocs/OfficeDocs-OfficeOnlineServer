@@ -1,47 +1,65 @@
 {
-  "build": {
-    "content": [
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "_themes/**",
-          "_themes.pdf/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ]
-      }
-    ],
-    "resource": [
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "_themes/**",
-          "_themes.pdf/**"
-        ]
-      }
-    ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {
-      "breadcrumb_path": "/Office/Web-Apps-Server/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
-      "feedback_system": "None"
-    },
-    "fileMetadata": {},
-    "template": [],
-    "dest": "OfficeDocs-OfficeWebAppsServer",
-    "markdownEngineName": "markdig"
-  }
+    "build":  {
+                  "content":  [
+                                  {
+                                      "files":  [
+                                                    "**/*.md",
+                                                    "**/*.yml",
+                                                    "toc.yml"
+                                                ],
+                                      "exclude":  [
+                                                      "**/obj/**",
+                                                      "**/includes/**",
+                                                      "_themes/**",
+                                                      "_themes.pdf/**",
+                                                      "README.md",
+                                                      "LICENSE",
+                                                      "LICENSE-CODE",
+                                                      "ThirdPartyNotices",
+                                                      "**/toc.md"
+                                                  ]
+                                  }
+                              ],
+                  "resource":  [
+                                   {
+                                       "files":  [
+                                                     "**/*.png",
+                                                     "**/*.jpg",
+                                                     "**/*.gif",
+                                                     "**/*.bmp",
+                                                     "**/*.jpeg"
+                                                 ],
+                                       "exclude":  [
+                                                       "**/obj/**",
+                                                       "**/includes/**",
+                                                       "_themes/**",
+                                                       "_themes.pdf/**"
+                                                   ]
+                                   }
+                               ],
+                  "overwrite":  [
+
+                                ],
+                  "externalReference":  [
+
+                                        ],
+                  "globalMetadata":  {
+                                         "breadcrumb_path":  "/office/Web-Apps-Server-loc/breadcrumb/toc.json",
+                                         "extendBreadcrumb":  true,
+                                         "ROBOTS":  "INDEX,FOLLOW",
+                                         "ms.topic":  "conceptual",
+                                         "author":  "mikeplum",
+                                         "ms.author":  "mikeplum",
+                                         "ms.prod":  "office-web-app-server",
+                                         "ms.technology":  "server-general"
+                                     },
+                  "fileMetadata":  {
+
+                                   },
+                  "template":  [
+
+                               ],
+                  "dest":  "Web-Apps-Server-loc",
+                  "markdownEngineName":  "markdig"
+              }
 }
