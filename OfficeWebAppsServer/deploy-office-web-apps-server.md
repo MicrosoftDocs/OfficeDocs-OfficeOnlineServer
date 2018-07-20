@@ -83,15 +83,15 @@ Windows Server 2008 R2, Windows Server 2012, and Windows Server 2012 R2 have sli
 
 2.  Open the Windows PowerShell prompt as an administrator and run these commands to install the required roles and services.
     
-       ```PowerShell
-       Import-Module ServerManager
-       ```
+    ```PowerShell
+        Import-Module ServerManager
+    ```
     
     Then, run this command:
     
-       ```PowerShell
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-WebServer,Web-Common-Http,Web-Static-Content,Web-App-Dev,Web-Asp-Net,Web-Net-Ext,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,Web-Security,Web-Windows-Auth,Web-Filtering,Web-Stat-Compression,Web-Dyn-Compression,Web-Mgmt-Console,Ink-Handwriting,IH-Ink-Support,NET-Framework,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-Win-CFAC
-       ```
+    ```
     
     If prompted, restart the server.
 
@@ -99,9 +99,9 @@ Windows Server 2008 R2, Windows Server 2012, and Windows Server 2012 R2 have sli
 
 1.  Open the Windows PowerShell prompt as an administrator and run this command to install the required roles and services.
     
-       ```PowerShell
-       Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
-       ```
+    ```PowerShell
+        Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
+    ```
     
     If prompted, restart the server.
 
@@ -113,9 +113,9 @@ Windows Server 2008 R2, Windows Server 2012, and Windows Server 2012 R2 have sli
 
 2.  Open the Windows PowerShell prompt as an administrator and run this command to install the required roles and services.
     
-       ```PowerShell
-       Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
-       ```
+    ```PowerShell
+        Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
+    ```
     
     If prompted, restart the server.
 
@@ -204,9 +204,9 @@ You can use this Office Web Apps Server farm to provide Office Web Apps function
 
 Use the **New-OfficeWebAppsFarm** command to create a new Office Web Apps Server farm that consists of a single server, as shown in the following example.
 
-   ```PowerShell
-   New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp -EditingEnabled
-   ```
+```PowerShell
+    New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp -EditingEnabled
+```
 
 **Parameters**
 
@@ -216,7 +216,7 @@ Use the **New-OfficeWebAppsFarm** command to create a new Office Web Apps Server
 
   - **–EditingEnabled** enables editing in Office Web Apps when used with SharePoint 2013. This parameter isn't used by Lync Server 2013 because that host doesn't support editing.
 
-Additional parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Additional parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 If you see “500 Web Service Exceptions” or “500.21 – Internal Server Error” messages
 
@@ -224,12 +224,14 @@ If you see “500 Web Service Exceptions” or “500.21 – Internal Server Err
 
 After the farm is created, details about the farm are displayed in the Windows PowerShell prompt. To verify that Office Web Apps Server is installed and configured correctly, use a web browser to access the Office Web Apps Server discovery URL, as shown in the following example. The discovery URL is the *InternalUrl* parameter you specified when you configured your Office Web Apps Server farm, followed by **/hosting/discovery**, for example:
 
+```
     http://servername/hosting/discovery
+```
 
 If Office Web Apps Server is working as expected, you should see a Web Application Open Platform Interface Protocol (WOPI)-discovery XML file in your web browser. The first few lines of that file should resemble the following example.
 
-   ```XML
-   <?xml version="1.0" encoding="utf-8" ?> 
+```XML 
+    <?xml version="1.0" encoding="utf-8" ?> 
     - <wopi-discovery>
     - <net-zone name="internal-http">
     - <app name="Excel" favIconUrl="http://servername/x/_layouts/images/FavIcon_Excel.ico" checkLicense="true">
@@ -237,13 +239,15 @@ If Office Web Apps Server is working as expected, you should see a Web Applicati
     <action name="view" ext="xls" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
     <action name="view" ext="xlsb" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
     <action name="view" ext="xlsm" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
-   ```
+```
 
 ## Step 3: Configure the host
 
 The farm is now ready to provide Office Web Apps functionality to hosts over HTTP. Visit [Configure Office Web Apps for SharePoint 2013](configure-office-web-apps-for-sharepoint-2013.md) for more information about how to configure hosts.
 
+
 ## Deploy a single-server Office Web Apps Server farm that uses HTTPS
+<a name="singlehttps"> </a>
 
 For most production environments, we strongly recommend the use of HTTPS for its security features. Also, HTTPS is required if you want to provide Office Web Apps Server functionality to Lync Server 2013, which lets users view PowerPoint broadcasts in a browser. Here’s how to install a single-server Office Web Apps Server farm that uses HTTPS. You'll need to install a certificate on the server as described in [Securing Office Web Apps Server communications by using HTTPS](plan-office-web-apps-server.md).
 
@@ -257,9 +261,9 @@ This Office Web Apps Server farm will provide Office Web Apps functionality to S
 
 Use the **New-OfficeWebAppsFarm** command to create a new Office Web Apps Server farm that consists of a single server, as shown in the following example.
 
-   ```PowerShell
-   New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -CertificateName "OfficeWebApps Certificate" -EditingEnabled
-   ```
+```PowerShell
+    New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -CertificateName "OfficeWebApps Certificate" -EditingEnabled
+```
 
 **Parameters**
 
@@ -271,7 +275,7 @@ Use the **New-OfficeWebAppsFarm** command to create a new Office Web Apps Server
 
   - **–EditingEnabled** is optional and enables editing in Office Web Apps when used with SharePoint 2013. This parameter isn't used by Lync Server 2013 because that host doesn't support editing.
 
-Additional parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Additional parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 If you see “500 Web Service Exceptions” or “500.21 – Internal Server Error” messages
 
@@ -279,11 +283,13 @@ If you see “500 Web Service Exceptions” or “500.21 – Internal Server Err
 
 After the farm is created, details about the farm are displayed in the Windows PowerShell prompt. To verify that Office Web Apps Server is installed and configured correctly, use a web browser to access the Office Web Apps Server discovery URL, as shown in the following example. The discovery URL is the *InternalUrl* parameter you specified when you configured your Office Web Apps Server farm, followed by **/hosting/discovery**, for example:
 
+```
     https://server.contoso.com/hosting/discovery
+```
 
 If Office Web Apps Server works as expected, you should see a Web Application Open Platform Interface Protocol (WOPI)-discovery XML file in your web browser. The first few lines of that file should resemble the following example:
 
-```XML 
+```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <wopi-discovery><net-zone 
 name="internal-https"><app name="Excel" checkLicense="true" 
@@ -295,11 +301,8 @@ urlsrc="https://wac.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><r
 default="true" ext="xls"/><action name="view" 
 ```
 
-
 > [!NOTE]
 > Depending on the security settings of your web browser, you might see a message that prompts you to select <STRONG>Show all content</STRONG> before the contents of the discovery XML file are displayed.
-
-
 
 ## Step 3: Configure the host
 
@@ -310,6 +313,7 @@ The farm is now ready to provide Office Web Apps functionality to hosts over HTT
   - [Deploying Office Web Apps Server and Lync Server 2013](https://go.microsoft.com/fwlink/p/?linkid=256902)
 
 ## Deploy a multi-server, load-balanced Office Web Apps Server farm that uses HTTPS
+<a name="multihttps"> </a>
 
 If you anticipate lots of traffic to your Office Web Apps Server farm, and you want it to be available over the Internet as well as on your internal network, this type of topology is the way to go. This section shows how to install a multi-server Office Web Apps Server farm that uses a load balancer and HTTPS. If you’re interested, [read more about this topology](plan-office-web-apps-server.md).
 
@@ -323,9 +327,9 @@ Before you begin, make sure your load balancer is configured as described in [Lo
 
 Use the **New-OfficeWebAppsFarm** command to create a new Office Web Apps Server farm on the first server, as shown in the following example.
 
-   ```PowerShell
-   New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -SSLOffloaded -EditingEnabled
-   ```
+```PowerShell
+    New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -SSLOffloaded -EditingEnabled
+```
 
 **Parameters**
 
@@ -337,7 +341,7 @@ Use the **New-OfficeWebAppsFarm** command to create a new Office Web Apps Server
 
   - **–EditingEnabled** is optional and enables editing in Office Web Apps when used with SharePoint 2013. This parameter isn't used by Lync Server 2013 because that host doesn't support editing.
 
-Other parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Other parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 If you see “500 Web Service Exceptions” or “500.21 – Internal Server Error” messages
 
@@ -345,30 +349,29 @@ If you see “500 Web Service Exceptions” or “500.21 – Internal Server Err
 
 After the first server is running Office Web Apps Server, run the **New-OfficeWebAppsMachine** command on each server you want to add to the Office Web Apps Server farm. For the **–MachineToJoin** parameter, use the computer name of a server that's already in the Office Web Apps Server farm. For example, if server1.contoso.com is already in the farm, use the following:
 
-   ```PowerShell
-   New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
-   ```
+```PowerShell
+    New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
+```
 
-Want more information about these parameters? You can find them in [New-OfficeWebAppsMachine](new-officewebappsmachine.md).
+Want more information about these parameters? You can find them in [New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps).
 
 ## Step 3: Verify that the Office Web Apps Server farm was created successfully
 
 After the farm is created, details about the farm are displayed in the Windows PowerShell prompt. To verify that Office Web Apps Server is installed and configured correctly, use a web browser to access the Office Web Apps Server discovery URL, as shown in the following example. The discovery URL is the *InternalUrl* parameter you specified when you configured your Office Web Apps Server farm, followed by **/hosting/discovery**. For example:
 
+```
     https://server.contoso.com/hosting/discovery
+```
 
 If Office Web Apps Server works as expected, you should see a Web Application Open Platform Interface Protocol (WOPI)-discovery XML file in your web browser. The first few lines of that file should resemble the following example:
 
 ```XML
-<?xml version="1.0" encoding="UTF-8"?>
-<wopi-discovery><net-zone name="internal-https"><app name="Excel" checkLicense="true" favIconUrl="https://officewebapps.contoso.com/x/_layouts/images/FavIcon_Excel.ico"><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="ods"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xls"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xlsb"/> 
+    <?xml version="1.0" encoding="UTF-8"?>
+    <wopi-discovery><net-zone name="internal-https"><app name="Excel" checkLicense="true" favIconUrl="https://officewebapps.contoso.com/x/_layouts/images/FavIcon_Excel.ico"><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="ods"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xls"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xlsb"/> 
 ```
-
 
 > [!NOTE]
 > Depending on the security settings of your web browser, you might see a message that prompts you to select <STRONG>Show all content</STRONG> before the contents of the discovery XML file are displayed.
-
-
 
 ## Step 4: Configure the host
 
@@ -384,24 +387,25 @@ If features of the .NET Framework 3.5 were installed and then removed, you might
 
 **For Windows Server 2008 R2**
 
-   ```PowerShell
-   %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
-   ```
-   ```PowerShell
-   iisreset /restart /noforce
-   ```
+```PowerShell
+    %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
+```
+
+```PowerShell
+    iisreset /restart /noforce
+```
 
 **For Windows Server 2012 or Windows Server 2012 R2**
 
-   ```PowerShell
-   dism /online /enable-feature /featurename:IIS-ASPNET45
-   ```
+```PowerShell
+    dism /online /enable-feature /featurename:IIS-ASPNET45
+```
 
 ## See also
 
 
-[New-OfficeWebAppsFarm](new-officewebappsfarm.md)  
-[New-OfficeWebAppsMachine](new-officewebappsmachine.md)  
+[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
+[New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  
 
 
 [Content roadmap for Office Web Apps Server](content-roadmap-for-office-web-apps-server.md)  

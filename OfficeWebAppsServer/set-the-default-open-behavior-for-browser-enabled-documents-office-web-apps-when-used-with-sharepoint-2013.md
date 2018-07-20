@@ -1,5 +1,5 @@
 ﻿---
-title: Set the default open behavior for browser-enabled documents (Office Web Apps when used with SharePoint 2013)
+title: Open behavior for browser-enabled documents in Office Web Apps
 TOCTitle: Set the default open behavior for browser enabled documents
 ms:assetid: e27e0bc8-5fb5-4bb1-8157-d7c90654175e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee837425(v=office.15)
@@ -8,12 +8,9 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 ---
 
-# Set the default open behavior for browser-enabled documents (Office Web Apps when used with SharePoint 2013)
-
- 
+# Set the default open behavior for browser-enabled documents (Office Web Apps when used with SharePoint 2013) 
 
 _**Applies to:** SharePoint Server 2013, SharePoint Foundation 2013, Office Web Apps_
-
 
 **Summary:** Explains how to configure the default open behavior for Office documents in SharePoint site collections and document libraries.
 
@@ -25,7 +22,7 @@ To open a document in a SharePoint 2013 document library, you just click its tit
 
 By default, after you configure SharePoint 2013 to use Office Web Apps Server, clicking a Word, PowerPoint, Excel, or OneNote file opens it in the browser. PDF documents open in the Word Web App. There are two ways to change the default behavior so that files open in the client applications (or the default PDF reader) instead:
 
-  - **For the SharePoint 2013 farm**   You can adjust the default open behavior on a per-file-type basis for the SharePoint 2013 farm by using the [New-SPWOPIBinding](new-spwopibinding.md) and [Set-SPWOPIBinding](set-spwopibinding.md) Windows PowerShell cmdlets. These cmdlets can also be used to [adjust the behavior of PDF documents](http://go.microsoft.com/fwlink/p/?linkid=330246).
+  - **For the SharePoint 2013 farm**   You can adjust the default open behavior on a per-file-type basis for the SharePoint 2013 farm by using the [New-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps) and [Set-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIBinding?view=sharepoint-ps) Windows PowerShell cmdlets. These cmdlets can also be used to [adjust the behavior of PDF documents](http://go.microsoft.com/fwlink/p/?linkid=330246).
 
   - **In site collections or document libraries**   Site collection administrators and users can use the OpenInClient feature in SharePoint 2013 to specify whether Office files will be opened in the client application or in the browser. Users can change this setting in the document library properties, and site collection administrators can change it in Site Collection Administration or by using the [Enable-SPFeature](https://technet.microsoft.com/en-us/library/ff607803\(v=office.15\)) cmdlet to enable the OpenInClient feature. See the next section for several different methods to enable the OpenInClient feature.
 
@@ -43,7 +40,7 @@ Use one of the following procedures to set the OpenInClient feature in SharePoin
 
 
 > [!NOTE]
-> Some of these procedures use the SharePoint 2013 Management Shell to run SharePoint cmdlets. If you choose to use the Windows PowerShell console, you must add the Microsoft.SharePoint.PowerShell snap-in by using the <STRONG>Add-PSSnapin</STRONG> cmdlet. For more information about how to use Windows PowerShell with SharePoint 2013, see <A href="use-windows-powershell-to-administer-sharepoint-2013.md">Use Windows PowerShell to administer SharePoint 2013</A>.
+> Some of these procedures use the SharePoint 2013 Management Shell to run SharePoint cmdlets. If you choose to use the Windows PowerShell console, you must add the Microsoft.SharePoint.PowerShell snap-in by using the <STRONG>Add-PSSnapin</STRONG> cmdlet. For more information about how to use Windows PowerShell with SharePoint 2013, see <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Use Windows PowerShell to administer SharePoint 2013</A>.
 
 
 
@@ -77,7 +74,7 @@ Use one of the following procedures to set the OpenInClient feature in SharePoin
     
 
     > [!NOTE]
-    > If you don’t have permissions, contact your Setup administrator or SQL Server administrator to request them. For additional information about Windows PowerShell permissions, see <A href="use-windows-powershell-to-administer-sharepoint-2013.md">Permissions</A> and <A href="https://technet.microsoft.com/en-us/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
+    > If you don’t have permissions, contact your Setup administrator or SQL Server administrator to request them. For additional information about Windows PowerShell permissions, see <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</A> and <A href="https://technet.microsoft.com/en-us/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
 
 
 
@@ -104,32 +101,32 @@ Use one of the following procedures to set the OpenInClient feature in SharePoin
 3.  At the Windows PowerShell command prompt, type one of the following commands:
     
       - To enable the OpenInClient feature for a specific site collection (to open documents in the client application), type this command:
-        
-           ```PowerShell
-           Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
-           ```
+
+      ```PowerShell  
+            Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
+      ```
         
         where \<SiteCollURL\> is the URL of the site collection.
     
       - To enable the OpenInClient feature for all site collections (to open documents in the client application), type this command:
-        
-           ```PowerShell
+
+      ```PowerShell        
             Get-SPSite -limit ALL |foreach{ Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url $_.URL }
-           ```
+      ```
     
       - To disable the OpenInClient feature for a specific site collection (to open documents in the browser), type this command:
-        
-           ```PowerShell
+
+      ```PowerShell  
             Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
-           ```
+      ```
         
         where \<SiteCollURL\> is the URL of the site collection.
     
       - To disable the OpenInClient feature for all site collections (to open documents in the browser), type this command:
-        
-           ```PowerShell
+
+      ```PowerShell  
             Get-SPSite -limit ALL |foreach{ Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url $_.URL }
-           ```
+      ```
 
  **Set the default open behavior for a document library by using the document library settings page**
 
@@ -163,7 +160,7 @@ Use one of the following procedures to set the OpenInClient feature in SharePoin
     
 
     > [!NOTE]
-    > If you don’t have permissions, contact your Setup administrator or SQL Server administrator to request them. For additional information about Windows PowerShell permissions, see <A href="use-windows-powershell-to-administer-sharepoint-2013.md">Permissions</A> and <A href="https://technet.microsoft.com/en-us/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
+    > If you don’t have permissions, contact your Setup administrator or SQL Server administrator to request them. For additional information about Windows PowerShell permissions, see <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</A> and <A href="https://technet.microsoft.com/en-us/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
 
 
 
@@ -189,9 +186,9 @@ Use one of the following procedures to set the OpenInClient feature in SharePoin
 
 3.  At the Windows PowerShell command prompt, type this command:
     
-       ```PowerShell
+      ```PowerShell
         Get-SPWeb -site <SiteCollURL> | % {$_.Lists} | where {$_.IrmEnabled -eq $true} | % {$_.DefaultItemOpen =[Microsoft.Sharepoint.DefaultItemOpen]::<DefaultItemOpenSetting>; $_.Update()}
-       ```
+      ```
     
     where:
     
@@ -202,11 +199,11 @@ Use one of the following procedures to set the OpenInClient feature in SharePoin
 ## See also
 
 
-[Get-SPWOPIBinding](get-spwopibinding.md)  
+[Get-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIBinding?view=sharepoint-ps)  
 
 
 [Content roadmap for Office Web Apps Server](content-roadmap-for-office-web-apps-server.md)  
-[Use Windows PowerShell to administer SharePoint 2013](use-windows-powershell-to-administer-sharepoint-2013.md)  
+[Use Windows PowerShell to administer SharePoint 2013](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps)  
 [Office Web Apps Server](office-web-apps-server.md)  
 
 

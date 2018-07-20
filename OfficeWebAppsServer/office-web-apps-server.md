@@ -19,7 +19,7 @@ _**Applies to:** Office Web Apps, Office Web Apps Server, SharePoint Foundation 
 
 **Audience:** IT Professionals
 
-![Office 2013 logo](images/JJ219456.a106e261-2cd0-43b7-af77-92de7e4b6fb9(Office.15).png "Office 2013 logo")Use the articles in the following table to learn about Office Web Apps Server and Office Web Apps with SharePoint 2013.
+![Office 2013 logo](images/JJ219457.a106e261-2cd0-43b7-af77-92de7e4b6fb9(Office.15).png "Office 2013 logo")Use the articles in the following table to learn about Office Web Apps Server and Office Web Apps with SharePoint 2013.
 
 
 ### Office Web Apps Server and Office Web Apps with SharePoint 2013 overview articles on TechNet
@@ -62,7 +62,7 @@ _**Applies to:** Office Web Apps, Office Web Apps Server, SharePoint Foundation 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><img src="images/JJ219456.6b2d6dfa-7dc8-40fb-8335-af68b575f8cb(Office.15).png" title="Getting started" alt="Getting started" /></p></td>
+<td><p><img src="images/JJ219457.6b2d6dfa-7dc8-40fb-8335-af68b575f8cb(Office.15).png" title="Getting started" alt="Getting started" /></p></td>
 <td><p><strong>Getting started</strong></p></td>
 <td><p>Download Office Web Apps Server.</p>
 <ul>
@@ -81,7 +81,7 @@ _**Applies to:** Office Web Apps, Office Web Apps Server, SharePoint Foundation 
 </ul></td>
 </tr>
 <tr class="even">
-<td><p><img src="images/JJ219456.6fa793ee-ede9-4476-901c-de96ea37fc3a(Office.15).png" title="Chat icon" alt="Chat icon" /></p></td>
+<td><p><img src="images/JJ219457.6fa793ee-ede9-4476-901c-de96ea37fc3a(Office.15).png" title="Chat icon" alt="Chat icon" /></p></td>
 <td><p><strong>Provide feedback</strong></p></td>
 <td><p>To provide feedback about the documentation for Office 2013 or Office 365 ProPlus, choose the <strong>Was this page helpful?</strong> link at the bottom of the page. This delivers your feedback directly to the documentation team.</p></td>
 </tr>

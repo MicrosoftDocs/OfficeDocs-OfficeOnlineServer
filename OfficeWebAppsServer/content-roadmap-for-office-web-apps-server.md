@@ -43,7 +43,7 @@ The following table describes resources that are available to IT professionals w
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><img src="images/JJ219456.6b2d6dfa-7dc8-40fb-8335-af68b575f8cb(Office.15).png" title="Getting started" alt="Getting started" /></p></td>
+<td><p><img src="images/JJ219457.6b2d6dfa-7dc8-40fb-8335-af68b575f8cb(Office.15).png" title="Getting started" alt="Getting started" /></p></td>
 <td><p><strong>Start here</strong></p></td>
 <td><p>You want to deploy SharePoint 2013, Lync Server 2013, Exchange Server 2013 or you have a custom solution and you want to know how get Office Web Apps. Let us <a href="http://go.microsoft.com/fwlink/p/?linkid=294929">introduce you to Office Web Apps Server</a>. <a href="office-web-apps-server-overview.md">Office Web Apps Server</a> is an Office server product that provides browser-based file viewing and editing services for Office files. Office Web Apps Server works with products and services that support <a href="http://go.microsoft.com/fwlink/p/?linkid=299202">WOPI, the Web app Open Platform Interface protocol</a>. These products, known as hosts, include <a href="office-web-apps-server-overview.md">SharePoint 2013</a>, <a href="office-web-apps-server-overview.md">Lync Server 2013</a>, and <a href="office-web-apps-server-overview.md">Exchange Server 2013</a>. You can see a high-level overview of what Office Web Apps Server is and how it works in the <a href="http://go.microsoft.com/fwlink/p/?linkid=299305">Office Web Apps Server poster</a>.</p>
 <p><strong>Office Web Apps Server Poster</strong></p>
@@ -100,7 +100,7 @@ The following table describes resources that are available to IT professionals w
 <li><p>If you'll deploy Office Web Apps Server to use with SharePoint 2013, <a href="plan-office-web-apps-used-with-sharepoint-2013.md">plan Office Web Apps when used with SharePoint 2013</a>.</p></li>
 <li><p><a href="https://technet.microsoft.com/en-us/library/cc263526(v=office.15)">Browser support</a> for Office Web Apps is the same as for SharePoint 2013.</p></li>
 <li><p>Office Web Apps can be used only by SharePoint 2013 web applications that use <a href="plan-office-web-apps-used-with-sharepoint-2013.md">claims-based authentication</a>.</p></li>
-<li><p>Viewing files by using Office Web Apps is free, but you'll need to <a href="plan-office-web-apps-used-with-sharepoint-2013.md">purchase an editing license</a> if you want to <a href="new-officewebappsfarm.md">enable Office Web Apps for editing</a> when Office Web Apps Server is used with SharePoint 2013 on-premises.</p></li>
+<li><p>Viewing files by using Office Web Apps is free, but you'll need to <a href="plan-office-web-apps-used-with-sharepoint-2013.md">purchase an editing license</a> if you want to <a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps">enable Office Web Apps for editing</a> when Office Web Apps Server is used with SharePoint 2013 on-premises.</p></li>
 </ul>
 <p><br />
 </p>
@@ -132,7 +132,7 @@ The following table describes resources that are available to IT professionals w
 <td><p>The first step is to <a href="deploy-office-web-apps-server.md">prepare servers to run Office Web Apps Server</a>. Next <a href="deploy-office-web-apps-server.md">install Office Web Apps Server</a> and apply the latest Office Web Apps Server update. Then <a href="deploy-office-web-apps-server.md">install language packs for Office Web Apps Server</a>.</p>
 <p><br />
 </p>
-<p>To evaluate how Office Web Apps Server works, you can <a href="deploy-office-web-apps-server.md">deploy a single-server Office Web Apps Server farm in a test environment</a>. Or, to deploy something more secure, you can <a href="deploy-office-web-apps-server.md">deploy a single-server Office Web Apps Server farm that uses HTTPS</a>. If you have to support lots of users, you can <a href="deploy-office-web-apps-server.md">deploy a multi-server, load-balanced Office Web Apps Server farm that uses HTTPS</a>.</p>
+<p>To evaluate how Office Web Apps Server works, you can <a href="deploy-office-web-apps-server.md">deploy a single-server Office Web Apps Server farm in a test environment</a>. Or, to deploy something more secure, you can <a href=deploy-office-web-apps-server#deploy-a-single-server-office-web-apps-server-farm-that-uses-http">deploy a single-server Office Web Apps Server farm that uses HTTPS</a>. If you have to support lots of users, you can <a href="deploy-office-web-apps-server#deploy-a-single-server-office-web-apps-server-farm-that-uses-https">deploy a multi-server, load-balanced Office Web Apps Server farm that uses HTTPS</a>.</p>
 <p><br />
 </p>
 <p>After you've deployed Office Web Apps Server, you have to configure the host. You can <a href="configure-office-web-apps-for-sharepoint-2013.md">configure SharePoint 2013</a>, <a href="http://go.microsoft.com/fwlink/p/?linkid=256611">configure Exchange Server 2013</a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=256902">configure Lync Server 2013</a> to use Office Web Apps Server.</p>
@@ -163,10 +163,10 @@ The following table describes resources that are available to IT professionals w
 <p>If you've deployed Office Web Apps Server to use with SharePoint 2013, the default open of Office documents will be in the browser. But, you can <a href="set-the-default-open-behavior-for-browser-enabled-documents-office-web-apps-when-used-with-sharepoint-2013.md">change this behavior so that Office documents open in a client</a>.</p>
 <p><br />
 </p>
-<p>If your organization decides to use Excel Services instead of Excel Web App to view workbooks in the browser, you can use the Windows PowerShell cmdlet <a href="new-spwopisuppressionsetting.md">New-SPWOPISuppressionSetting</a> to turn off Excel Web App for Excel workbooks.</p>
+<p>If your organization decides to use Excel Services instead of Excel Web App to view workbooks in the browser, you can use the Windows PowerShell cmdlet <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPISuppressionSetting?view=sharepoint-ps">New-SPWOPISuppressionSetting</a> to turn off Excel Web App for Excel workbooks.</p>
 <p><br />
 </p>
-<p>If you want to <a href="configure-office-web-apps-for-sharepoint-2013.md">disconnect SharePoint 2013 from Office Web Apps Server</a>, use the Windows PowerShell cmdlet <a href="remove-spwopibinding.md">Remove-SPWOPIBinding</a>.</p></td>
+<p>If you want to <a href="configure-office-web-apps-for-sharepoint-2013.md">disconnect SharePoint 2013 from Office Web Apps Server</a>, use the Windows PowerShell cmdlet <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Remove-SPWOPIBinding?view=sharepoint-ps">Remove-SPWOPIBinding</a>.</p></td>
 </tr>
 <tr class="even">
 <td><img src="images/Dn135237.17bfbe9e-7e0e-48dd-887b-b94f8d8f9f22(Office.15).png" title="Troubleshoot icon" alt="Troubleshoot icon" /></td>
@@ -181,13 +181,13 @@ The following table describes resources that are available to IT professionals w
 </p>
 <p>Office Web Apps Server</p>
 <ul>
-<li><p><a href="windows-powershell-for-office-web-apps-server.md">Windows PowerShell for Office Web Apps Server</a></p></li>
+<li><p><a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/?view=officewebapps-ps">Windows PowerShell for Office Web Apps Server</a></p></li>
 </ul>
 <p><br />
 </p>
 <p>SharePoint 2013</p>
 <ul>
-<li><p><a href="windows-powershell-for-office-web-apps-sharepoint-2013.md">Windows PowerShell for Office Web Apps (SharePoint 2013)</a></p></li>
+<li><p><a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Windows PowerShell for Office Web Apps (SharePoint 2013)</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -210,7 +210,7 @@ The following table describes resources that are available to IT professionals w
 </ul></td>
 </tr>
 <tr class="even">
-<td><p><img src="images/JJ219456.6fa793ee-ede9-4476-901c-de96ea37fc3a(Office.15).png" title="Chat icon" alt="Chat icon" /></p></td>
+<td><p><img src="images/JJ219457.6fa793ee-ede9-4476-901c-de96ea37fc3a(Office.15).png" title="Chat icon" alt="Chat icon" /></p></td>
 <td><p><strong>Ask questions and provide feedback</strong></p></td>
 <td><p>If you have questions about how to deploy and manage Office Web Apps Server, you can submit your questions in the <a href="http://go.microsoft.com/fwlink/p/?linkid=259426">Office 2013 and Office 365 ProPlus - Planning, Deployment, and Compatibility forum</a> on TechNet.</p></td>
 </tr>

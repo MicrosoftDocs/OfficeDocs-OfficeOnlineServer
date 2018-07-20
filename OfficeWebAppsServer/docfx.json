@@ -44,14 +44,14 @@
 
                                         ],
                   "globalMetadata":  {
-                                         "breadcrumb_path":  "/office/Web-Apps-Server/breadcrumb/toc.json",
+                                         "breadcrumb_path":  "/office/Web-Apps-Server-loc/breadcrumb/toc.json",
                                          "extendBreadcrumb":  true,
-                                         "uhfheaderid": "MSDocsHeader-Docs",
                                          "ROBOTS":  "INDEX,FOLLOW",
                                          "ms.topic":  "conceptual",
-                                         "author":  "dstrome",
-                                         "ms.author":  "dstrome",
-                                         "ms.prod":  "Office"
+                                         "author":  "mikeplum",
+                                         "ms.author":  "mikeplum",
+                                         "ms.prod":  "office-web-app-server",
+                                         "ms.technology":  "server-general"
                                      },
                   "fileMetadata":  {
 
@@ -59,7 +59,7 @@
                   "template":  [
 
                                ],
-                  "dest":  "Web-Apps-Server",
+                  "dest":  "Web-Apps-Server-loc",
                   "markdownEngineName":  "markdig"
               }
 }

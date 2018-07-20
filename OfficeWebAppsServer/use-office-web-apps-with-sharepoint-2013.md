@@ -21,7 +21,7 @@ _**Applies to:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 
 
 When used with SharePoint 2013 on-premises, Office Web Apps provides updated versions of Word Web App, Excel Web App, PowerPoint Web App, and OneNote Web App. Users can view and optionally edit Office documents by using a supported web browser on computers and on different mobile devices, such as Windows Phones, iPhones, and iPads. In addition to new features in Office Web Apps, the architecture and deployment methods have also changed, which allow Office Web Apps to provide viewing functionality for Lync Server 2013.
 
-![Office 2013 logo](images/JJ219456.a106e261-2cd0-43b7-af77-92de7e4b6fb9(Office.15).png "Office 2013 logo")The articles in the following table are intended for IT Pros who plan to configure SharePoint 2013 to use Office Web Apps on-premises in their organizations.
+![Office 2013 logo](images/JJ219457.a106e261-2cd0-43b7-af77-92de7e4b6fb9(Office.15).png "Office 2013 logo")The articles in the following table are intended for IT Pros who plan to configure SharePoint 2013 to use Office Web Apps on-premises in their organizations.
 
 ### Office Web Apps articles on TechNet
 
@@ -89,7 +89,7 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 </tr>
 <tr class="even">
 <td><p></p>
-<img src="images/JJ219456.6b2d6dfa-7dc8-40fb-8335-af68b575f8cb(Office.15).png" title="Getting started" alt="Getting started" /></td>
+<img src="images/JJ219457.6b2d6dfa-7dc8-40fb-8335-af68b575f8cb(Office.15).png" title="Getting started" alt="Getting started" /></td>
 <td><p><strong>Getting started</strong></p></td>
 <td><p>Download Office Web Apps Server.</p>
 <ul>
@@ -108,7 +108,7 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 </tr>
 <tr class="odd">
 <td><p></p>
-<img src="images/JJ219456.6fa793ee-ede9-4476-901c-de96ea37fc3a(Office.15).png" title="Chat icon" alt="Chat icon" /></td>
+<img src="images/JJ219457.6fa793ee-ede9-4476-901c-de96ea37fc3a(Office.15).png" title="Chat icon" alt="Chat icon" /></td>
 <td><p><strong>Provide feedback</strong></p></td>
 <td><p>To provide feedback about the documentation for Office 2013 Office 365 ProPlus, choose the <strong>Feedback</strong> link at the bottom of the page. This delivers your feedback directly to the documentation team.</p></td>
 </tr>

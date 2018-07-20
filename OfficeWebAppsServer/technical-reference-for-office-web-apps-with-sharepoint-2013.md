@@ -22,7 +22,7 @@ _**Applies to:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 
 When used with SharePoint 2013 on-premises, Office Web Apps provides updated versions of Word Web App, Excel Web App, PowerPoint Web App, and OneNote Web App. Users can view and, optionally, edit Office documents by using a supported web browser on computers and on different mobile devices, such as Windows Phones, iPhones, and iPads.
 
 
-![Office 2013 logo](images/JJ219456.a106e261-2cd0-43b7-af77-92de7e4b6fb9(Office.15).png "Office 2013 logo")The following table lists and describes technical reference articles for IT Pros who use Office Web Apps with SharePoint 2013.
+![Office 2013 logo](images/JJ219457.a106e261-2cd0-43b7-af77-92de7e4b6fb9(Office.15).png "Office 2013 logo")The following table lists and describes technical reference articles for IT Pros who use Office Web Apps with SharePoint 2013.
 
 ### Office Web Apps technical reference articles on TechNet
 
@@ -39,7 +39,7 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="windows-powershell-for-office-web-apps-sharepoint-2013.md">Windows PowerShell for Office Web Apps (SharePoint 2013)</a></p></td>
+<td><p><a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Windows PowerShell for Office Web Apps (SharePoint 2013)</a></p></td>
 <td><p>Lists the Windows PowerShell cmdlets for configure SharePoint 2013 to use Office Web Apps.</p></td>
 </tr>
 </tbody>
@@ -64,7 +64,7 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 </ul></td>
 </tr>
 <tr class="even">
-<td><p><img src="images/JJ219456.6b2d6dfa-7dc8-40fb-8335-af68b575f8cb(Office.15).png" title="Getting started" alt="Getting started" /></p></td>
+<td><p><img src="images/JJ219457.6b2d6dfa-7dc8-40fb-8335-af68b575f8cb(Office.15).png" title="Getting started" alt="Getting started" /></p></td>
 <td><p><strong>Getting started</strong></p></td>
 <td><p>Download Office Web Apps Server.</p>
 <ul>
@@ -82,7 +82,7 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p><img src="images/JJ219456.6fa793ee-ede9-4476-901c-de96ea37fc3a(Office.15).png" title="Chat icon" alt="Chat icon" /></p></td>
+<td><p><img src="images/JJ219457.6fa793ee-ede9-4476-901c-de96ea37fc3a(Office.15).png" title="Chat icon" alt="Chat icon" /></p></td>
 <td><p><strong>Provide feedback</strong></p></td>
 <td><p>To provide feedback about the documentation for Office 2013 Office 365 ProPlus, choose the <strong>Feedback</strong> link at the bottom of the page. This delivers your feedback directly to the documentation team.</p></td>
 </tr>
