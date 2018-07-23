@@ -44,7 +44,7 @@
 
                                         ],
                   "globalMetadata":  {
-                                         "breadcrumb_path":  "/office/Web-Apps-Server-loc/breadcrumb/toc.json",
+                                         "breadcrumb_path":  "/webappsserver/breadcrumb/toc.json",
                                          "extendBreadcrumb":  true,
                                          "ROBOTS":  "INDEX,FOLLOW",
                                          "ms.topic":  "conceptual",
