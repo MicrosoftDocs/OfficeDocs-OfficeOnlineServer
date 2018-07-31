@@ -12,9 +12,9 @@ ms.assetid: a5276781-133b-413c-beca-b851e17c2081
 ---
 
 
-# Configure Office Online Server for SharePoint Server 2016
+# Configure Office Online Server for SharePoint Server
 
- **Summary:** Learn how to configure SharePoint Server 2016 to use Office Online Server (the next version of Office Web Apps Server).
+ **Summary:** Learn how to configure SharePoint Server to use Office Online Server (the next version of Office Web Apps Server).
   
     
     
@@ -26,7 +26,7 @@ ms.assetid: a5276781-133b-413c-beca-b851e17c2081
     
 
 
-This article picks up where  [Deploy Office Online Server](../deploy-office-online-server.md) left off. In that article, you set up the server that runs Office Online Server on-premises. In this one, you'll configure SharePoint Server 2016 to use Office Online Server. First, you'll need to run a few Microsoft PowerShell cmdlets from SharePoint Server 2016, after which users will be able to open Office files from SharePoint Server 2016 document libraries in a browser.
+This article picks up where  [Deploy Office Online Server](../deploy-office-online-server.md) left off. In that article, you set up the server that runs Office Online Server on-premises. In this one, you'll configure SharePoint Server to use Office Online Server. First, you'll need to run a few Microsoft PowerShell cmdlets from SharePoint Server 2016, after which users will be able to open Office files from SharePoint Server document libraries in a browser.
   
     
     
@@ -37,10 +37,10 @@ This article picks up where  [Deploy Office Online Server](../deploy-office-onli
 
 A few things to check before getting started: 
   
-    
+- These instructions also apply to SharePoint Server 2013, however SharePoint Server 2013 cannot use the Excel Online external data connectivity and data refresh functionality in Office Online Server.
     
 
-- Install SharePoint Server 2016. See  [Install and configure SharePoint Server 16 Preview](http://technet.microsoft.com/library/8a911115-de8a-4cf3-9701-f5ba78fa8bfc.aspx) for guidance.
+- Install SharePoint Server 2016. See  [Install SharePoint Server](https://docs.microsoft.com/en-us/SharePoint/install/install) for guidance.
     
   
 - Make sure all SharePoint Server 2016 web applications use claims-based authentication. Office Online rendering and editing won't work on SharePoint Server 2016 web applications that use classic mode authentication. 
@@ -53,7 +53,10 @@ A few things to check before getting started:
     
   
 - Low memory conditions can cause Office document previews to fail in Office Online. 
-    
+
+- SharePoint Server 2013 cannot use the Excel Online external data connectivity and data refresh functionality in Office Online Server. That's only available with SharePoint Server 2016.
+
+- Office Online Server uses OAuth tokens to communicate with SharePoint Server. These tokens can potentially be intercepted and replayed, providing an attacker with the same rights as the user making the request from SharePoint Server to Office Online Server. It is strongly recommended that you configure Office Online Server to use HTTPS (TLS) only.
   
 
 ## Configure SharePoint Server to use Office Online Server
