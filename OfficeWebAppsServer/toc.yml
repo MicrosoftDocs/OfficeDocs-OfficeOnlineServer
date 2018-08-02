@@ -1,0 +1,41 @@
+- name: Office Web Apps
+  href: office-web-apps-server.md
+  items:
+  - name: 'Content roadmap: Office Web Apps Server'
+    href: content-roadmap-for-office-web-apps-server.md
+  - name: 'Deploy the infrastructure: Office Web Apps Server'
+    href: deploy-the-infrastructure-office-web-apps-server.md
+    items:
+    - name: 'Overview: Office Web Apps Server'
+      href: office-web-apps-server-overview.md
+    - name: Plan Office Web Apps Server
+      href: plan-office-web-apps-server.md
+    - name: Deploy Office Web Apps Server
+      href: deploy-office-web-apps-server.md
+    - name: Technical reference
+      href: technical-reference-for-office-web-apps-server.md
+      items:
+      - name: Windows PowerShell for Office Web Apps Server
+        href: https://docs.microsoft.com/en-us/powershell/module/officewebapps/?view=officewebapps-ps
+  - name: Use Office Web Apps with SharePoint 2013
+    href: use-office-web-apps-with-sharepoint-2013.md
+    items:
+    - name: Office Web Apps on-premises with SharePoint 2013
+      href: how-office-web-apps-work-on-premises-with-sharepoint-2013.md
+    - name: What’s new with Office Web Apps when used with SharePoint 2013?
+      href: what’s-new-with-office-web-apps-when-used-with-sharepoint-2013.md
+    - name: Plan Office Web Apps
+      href: plan-office-web-apps-used-with-sharepoint-2013.md
+    - name: Configure Office Web Apps for SharePoint 2013
+      href: configure-office-web-apps-for-sharepoint-2013.md
+    - name: Set the default open behavior for browser enabled documents
+      href: set-the-default-open-behavior-for-browser-enabled-documents-office-web-apps-when-used-with-sharepoint-2013.md
+    - name: 'Video: Configure Office Web Apps for SharePoint 2013'
+      href: video-configure-office-web-apps-for-sharepoint-2013.md
+    - name: Technical reference
+      href: technical-reference-for-office-web-apps-with-sharepoint-2013.md
+      items:
+      - name: Windows PowerShell for Office Web Apps
+        href: https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps
+  - name: Apply software updates to Office Web Apps Server
+    href: apply-software-updates-to-office-web-apps-server.md
