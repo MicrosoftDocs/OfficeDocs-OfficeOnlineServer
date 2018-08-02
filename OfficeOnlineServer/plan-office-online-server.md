@@ -340,9 +340,8 @@ When you set up a new Office Online Server farm, SSL offloading is set to Off by
 - Improved performance
     
   
-> [!NOTE] When you use HTTP, traffic from the load balancer to the servers that run Office Online Server isn't encrypted, so you need to make sure the network itself is secure. Use of a private subnet can help protect traffic.
-
-    
+> [!NOTE]
+> When you use HTTP, traffic from the load balancer to the servers that run Office Online Server isn't encrypted, so you need to make sure the network itself is secure. Use of a private subnet can help protect traffic. 
 
 ### Restrict which servers can join an Office Online Server farm based on OU membership
 <a name="certificate"> </a>
