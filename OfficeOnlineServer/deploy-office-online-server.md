@@ -134,10 +134,10 @@ If you plan to use Kerberos Constrained Delegation with Excel Online, be sure to
     
     
 
-### Step 3: Install language packs for Office Web Apps Server
+### Step 3: Install language packs for Office Online Server
 <a name="installlangpack"> </a>
 
-Office Online Server Language Packs let users view web-based Office files in multiple languages, whether they're opened from SharePoint document libraries or Outlook Web App
+Office Online Server Language Packs let users view web-based Office files in multiple languages, whether they're opened from SharePoint document libraries or Outlook on the web.
   
     
     
@@ -194,7 +194,8 @@ If you're only deploying Office Online Server for testing or internal use, and y
     
 You can use this Office Online Server farm to provide Office Online functionality to SharePoint Server 2016 and Exchange Server 2016.
   
-    
+> [!NOTE]
+> It is strongly recommended to use HTTPS (TLS) regardless of environment as Office Online Server uses OAuth tokens to communicate with external services, such as SharePoint or Exchange Server. OAuth tokens contain information that can potentially be intercepted and replayed by an attacker, granting the attacker the same rights as the user making the request to Office Online Server.
     
 
 #### Step 1: Create the Office Online Server farm
