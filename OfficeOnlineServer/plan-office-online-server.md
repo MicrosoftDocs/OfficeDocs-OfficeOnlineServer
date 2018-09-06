@@ -433,12 +433,21 @@ We recommend that you manage updates by using Windows Server Update Services (WS
     
 If you do not use WSUS or System Center Configuration Manager, set Microsoft automatic updates on each server in the Office Online Server farm to **Automatically download but notify user for install**. When you're notified of an Office Online Server update, follow the steps in  [Apply software updates to Office Online Server](apply-software-updates-to-office-online-server.md). To have Windows updates applied and keep your servers secure, accept the Windows updates when you're notified that updates are available.
   
-    
-    
+## ULS Logs Changes from 2018 Update
 
-  
-    
-    
+The 2018 update of Office Online Server will see a few changes on the format of ULS logs, detailed below:
+
+|**Column**|**Changes**|
+|:----|:----|
+|TimestampUtc|<ul><li>**Date format changed** for MM/dd/yyyy to yyyy-MM-dd to make sorting more natural</li><li>Time is now always written in **UTC**</li><li>Column name changed from Timestamp to TimestampUtc</li><li>Timestamps no longer have a trailing ' ' or '*' indicating continuations (see Message column below)</li></ul>|
+|Process|<ul><li>Process name is no longer truncated to 32 characters</li><li>ProxyTraceTag no longer appends the process ID that sent the proxied trace</li><li>IIS W3WP processes get the AppPool ID appended. Ex: w3wp.exe#StatusViewer-status-MSOSP80 (0x631C)</li></ul>|
+|ThreadId|<ul><li>Column name changed from TID to ThreadId</li></ul>|
+|Area|<ul><li>Area is no longer truncated to 32 characters</li></ul>|
+|Category|<ul><li>Category is no longer truncated to 32 characters</li></ul>|
+|EventId|<ul><li>Column name changed from EventID to EventId</li></ul>|
+|Level|(no changes)|
+|Message|<ul><li>Message length has been expanded from 800 to 31000 characters in size</li><li>**Messages over 31000 characters are truncated**, not continued in a second message</li><li>Since messages don't continue, there are no '...'s</li></ul>|
+|Correlation|<ul><li>**Correlations use a new stack** that pushes/pops/peeks appropriately</li><li>Correlation Stack no longer has a max depth of 32</li><li>Correlations can follow Tasks across threads, and cross AppDomain boundaries</li></ul>|    
 
 ## See also
 <a name="BKMK_Updates"> </a>
