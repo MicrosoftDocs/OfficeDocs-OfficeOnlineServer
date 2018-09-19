@@ -50,7 +50,7 @@ The following table shows the Office Online Server build release history and cur
 |16.0.6814.2226  <br/> |4-May-2016  <br/> |18-November-2016  <br/> |
 |16.0.7601.6800  <br/> |18-November-2016  <br/> |18-April-2017  <br/> |
 |16.0.7766.8550  <br/> |18-April-2017  <br/> |8-November-2017 <br/> |
-|16.0.8471.8525  <br/> |8-November-2017  <br/> |17 – September – 2018 (estimated)  <br/> |
+|16.0.8471.8525  <br/> |8-November-2017  <br/> |22 – October – 2018 (estimated)  <br/> |
    
 
 ## See also
