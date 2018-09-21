@@ -26,7 +26,7 @@ ms.assetid: 5d15dbd9-374e-422a-a870-43270dd0a2db
     
 
 
-On a regular basis, Microsoft makes a series of software updates and new versions available to help improve server security, performance, and reliability. This article describes how to apply software updates or new versions to individual servers in an Office Online Server farm. 
+On a regular basis, Microsoft makes a series of software updates and new versions available to help improve server security, performance, and reliability. This article describes how to apply software updates or new versions to individual servers in an Office Online Server farm.
   
     
     
