@@ -24,7 +24,7 @@ The following table shows the Office Online Server build release history and cur
     
 
 
-(You can determine your current build by looking at the **Version** number in Add/Remove Programs.)
+(You can determine your current build by looking at the **Version** number in Add/Remove Programs)
   
     
     
