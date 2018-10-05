@@ -1,3 +1,17 @@
+---
+title: Office Online Server release schedule
+description: Learn about the Office Online Server release schedule and upgrade requirements.
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: pamgreen
+ms.date: 10/16/2017
+ms.audience: ITPro
+ms.topic: article
+ms.prod: office-online-server
+ms.assetid: 52a07e4e-62e5-4aa0-837f-490900b9c768
+---
+
+
 # Office Online Server release schedule
 
  **Summary:** Learn about the Office Online Server release schedule and upgrade requirements.
@@ -24,7 +38,7 @@ The following table shows the Office Online Server build release history and cur
     
 
 
-(You can determine your current build by looking at the **Version** number in Add/Remove Programs)
+(You can determine your current build by looking at the **Version** number in Add/Remove Programs.)
   
     
     
@@ -40,12 +54,6 @@ The following table shows the Office Online Server build release history and cur
    
 
 ## See also
-
-
-#### 
-
-
-  
-    
     
  [Apply software updates to Office Online Server](apply-software-updates-to-office-online-server.md)
+

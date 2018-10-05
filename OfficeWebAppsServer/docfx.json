@@ -51,7 +51,10 @@
                                          "author":  "mikeplum",
                                          "ms.author":  "mikeplum",
                                          "ms.prod":  "office-web-app-server",
-                                         "ms.technology":  "server-general"
+                                         "ms.technology":  "server-general",
+                                         "feedback_system": "GitHub",
+                                         "feedback_github_repo": "MicrosoftDocs/OfficeDocs-OfficeOnlineServer",
+                                         "feedback_product_url": "https://github.com/MicrosoftDocs/OfficeDocs-OfficeOnlineServer/issues" 
                                      },
                   "fileMetadata":  {
 
