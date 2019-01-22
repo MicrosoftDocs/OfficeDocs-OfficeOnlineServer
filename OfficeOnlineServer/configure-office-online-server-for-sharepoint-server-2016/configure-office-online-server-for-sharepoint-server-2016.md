@@ -1,8 +1,8 @@
 ---
 title: Configure Office Online Server for SharePoint Server 2016
 description: Learn how to configure SharePoint Server 2016 to use Office Online Server (the next version of Office Web Apps Server).
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: lohuan
+author: lorenahuangliu
 manager: pamgreen
 ms.date: 9/20/2016
 ms.audience: ITPro
