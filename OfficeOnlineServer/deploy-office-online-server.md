@@ -1,8 +1,8 @@
 ---
 title: Deploy Office Online Server
 description: Explains how to deploy Office Online Server on-premises for use by SharePoint Server 2016, Skype for Business Server, and Exchange Server.
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: lohuan
+author: lorenahuangliu
 manager: pamgreen
 ms.date: 5/12/2017
 ms.audience: ITPro
