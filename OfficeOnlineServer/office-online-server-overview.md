@@ -132,7 +132,7 @@ You can find more about Online Viewers in  [Planning for Online Viewers with Off
     
 
 > [!NOTE]
-> Microsoft hosts an Internet-only facing version of Create URL on  [Office.com](http://go.microsoft.com/fwlink/?LinkId=256548&amp;clcid=0x409). 
+> Microsoft hosts an Internet-only facing version of Create URL on  [Office.com](https://office.com). 
   
     
     
