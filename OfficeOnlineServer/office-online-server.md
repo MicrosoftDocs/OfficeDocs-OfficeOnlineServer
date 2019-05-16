@@ -1,8 +1,8 @@
 ---
 title: Office Online Server
 description: Contains articles that will help you work with Office Online Server (the next version of Office Web Apps Server).
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: lohuan
+author: lorenahuangliu
 manager: pamgreen
 ms.date: 5/12/2017
 ms.audience: ITPro
@@ -66,7 +66,7 @@ The following table shows the compatibility between Office Web Apps Server and O
 |:-----|:-----|:-----|
 |SharePoint Server 2013  <br/> |Yes  <br/> |Yes*  <br/> |
 |SharePoint Server 2016  <br/> |No  <br/> |Yes  <br/> |
-|SharePoint Server 2019 <br/> |No <br/> |Yes <br/> |
+|SharePoint Server 2019  <br/> |No  <br/> |Yes  <br/> |
 |Lync Server 2013  <br/> |Yes  <br/> |Yes  <br/> |
 |Skype for Business Server 2015  <br/> |Yes  <br/> |Yes  <br/> |
 |Exchange Server 2013  <br/> |No  <br/> |No  <br/> |
