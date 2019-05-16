@@ -20,7 +20,7 @@ ms.assetid: 52a07e4e-62e5-4aa0-837f-490900b9c768
     
 
 
-Microsoft plans to release new builds of Office Online Server twice each year, with each new build supported for approximately six months from its general availability (GA) release date. Each new build will be supported with security and critical updates until the next build is released.
+Microsoft plans to support the most current Office Online Server build with security and critical updates until the next one is released.
   
     
     
