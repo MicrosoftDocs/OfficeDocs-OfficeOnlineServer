@@ -290,7 +290,7 @@ Certificates used by Office Online Server need to meet the following requirement
     
     
 
-- The certificate must come from a trusted Certificate Authority and include the fully qualified domain name (FQDN) of your Office Online Server farm in the SAN (Subject Alternative Name) field. (If the FQDN is not in the SAN when you try to use the certificate, the browser will either show security warnings or won't process the response.)
+- The certificate must come from a trusted Certificate Authority and include the fully qualified domain name (FQDN) of each Office Online Server in the farm and include the fully qualified domain name (FQDN) of your Office Online Server farm in the SAN (Subject Alternative Name) field. (If the FQDN is not in the SAN when you try to use the certificate, the browser will either show security warnings or won't process the response.)
     
   
 - The certificate must have an exportable private key. On single-server farms, this option is selected by default when you use the Internet Information Services (IIS) Manager snap-in to import the certificate.
