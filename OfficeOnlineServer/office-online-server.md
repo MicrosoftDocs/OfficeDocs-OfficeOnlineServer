@@ -1,8 +1,8 @@
 ---
 title: Office Online Server
 description: Contains articles that will help you work with Office Online Server (the next version of Office Web Apps Server).
-ms.author: lohuan
-author: lorenahuangliu
+ms.author: samukhe
+author: santanu-wac
 manager: pamgreen
 ms.date: 5/12/2017
 ms.audience: ITPro

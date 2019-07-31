@@ -1,8 +1,8 @@
 ---
 title: Configure Excel Online data refresh by using embedded data connections in Office Online Server
 description: Configure Excel Online to use a Secure Store target application for external data refresh.
-ms.author: lohuan
-author: lorenahuangliu
+ms.author: samukhe
+author: santanu-wac
 manager: pamgreen
 ms.date: 3/28/2016
 ms.audience: ITPro

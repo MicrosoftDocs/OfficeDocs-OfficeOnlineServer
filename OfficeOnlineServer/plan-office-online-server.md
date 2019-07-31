@@ -1,8 +1,8 @@
 ---
 title: Plan Office Online Server
 description: Describes Office Online Server requirements and prerequisites, including HTTPS, certificates, virtualization, load balancing, topologies, and security.
-ms.author: lohuan
-author: lorenahuangliu
+ms.author: samukhe
+author: santanu-wac
 manager: pamgreen
 ms.date: 5/12/2017
 ms.audience: ITPro

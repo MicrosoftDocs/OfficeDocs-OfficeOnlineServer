@@ -4,5 +4,5 @@
 # So if a pull request only touches javascript files, only these owners
 # will be requested to review.
 
-/OfficeOnlineServer/  @JasonH-Msft @lorenahuangliu
-/OfficeOfficeWebAppsServer/  @JasonH-Msft @lorenahuangliu
+/OfficeOnlineServer/  @JasonH-Msft @santanu-wac
+/OfficeOfficeWebAppsServer/  @JasonH-Msft @santanu-wac
