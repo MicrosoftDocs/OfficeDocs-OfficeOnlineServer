@@ -1,8 +1,8 @@
 ---
 title: Windows PowerShell for Office Online Server
 description: Find articles about Office Online Server Microsoft PowerShell cmdlets.
-ms.author: lohuan
-author: lorenahuangliu
+ms.author: samukhe
+author: santanu-wac
 manager: pamgreen
 ms.date: 3/28/2016
 ms.audience: ITPro
