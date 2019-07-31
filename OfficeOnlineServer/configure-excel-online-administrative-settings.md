@@ -1,8 +1,8 @@
 ---
 title: Configure Excel Online administrative settings
 description: Configure administrative settings for Excel workbooks rendered in Excel Online.
-ms.author: lohuan
-author: lorenahuangliu
+ms.author: samukhe
+author: santanu-wac
 manager: pamgreen
 ms.date: 12/20/2016
 ms.audience: ITPro
