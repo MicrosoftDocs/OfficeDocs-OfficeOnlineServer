@@ -80,7 +80,7 @@ You can run Office Online Server on the following operating systems:
 - The 64-bit edition of Windows Server 2016 (Office Online Server April 2017 or later required)
     
 > [!NOTE]
-> Office Online Server only supports the "Server with Desktop Experience" installation option of Windows Server 2016. For additional information about Windows Server offerings, see [Windows Server Semi-annual Channel Overview](https://docs.microsoft.com/en-us/windows-server/get-started/semi-annual-channel-overview)
+> Office Online Server only supports the "Server with Desktop Experience" installation option of Windows Server 2016. For additional information about Windows Server offerings, see [Windows Server Semi-annual Channel Overview](https://docs.microsoft.com/en-us/windows-server/get-started/semi-annual-channel-overview).
 
 > [!NOTE]
 > Office Online Server does not support Windows Server 2019.
