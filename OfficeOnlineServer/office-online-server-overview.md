@@ -44,7 +44,7 @@ Office Online Server is an Office server product that provides browser-based fil
   
     
     
-With Office Online Server, users can also view or edit Office files that are stored outside SharePoint Server, such as those in shared folders or other web sites. This functionality is provided by a feature known as Online Viewers.
+With Office Online Server, users can also view Office files that are stored outside SharePoint Server, such as those in shared folders or other web sites. This functionality is provided by a feature known as Online Viewers.
   
     
     
