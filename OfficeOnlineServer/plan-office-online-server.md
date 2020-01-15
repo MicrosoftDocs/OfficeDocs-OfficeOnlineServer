@@ -430,11 +430,11 @@ Applying Office Online Server updates by using the Microsoft automatic updates p
   
     
     
-We recommend that you manage updates by using Windows Server Update Services (WSUS) or by using System Center Configuration Manager, which uses WSUS. WSUS allows you to fully manage the distribution of updates that are released through Microsoft Update for each server in the Office Online Server farm. By using WSUS, you can decide which updates can be automatically applied to the server farm and which updates, such as Office Online Server updates, have to be manually applied. For more information about WSUS, see  [Windows Server Update Services](https://go.microsoft.com/fwlink/p/?LinkId=294822).
+We recommend that you manage updates by using Windows Server Update Services (WSUS) or by using Microsoft Endpoint Configuration Manager, which uses WSUS. WSUS allows you to fully manage the distribution of updates that are released through Microsoft Update for each server in the Office Online Server farm. By using WSUS, you can decide which updates can be automatically applied to the server farm and which updates, such as Office Online Server updates, have to be manually applied. For more information about WSUS, see  [Windows Server Update Services](https://go.microsoft.com/fwlink/p/?LinkId=294822).
   
     
     
-If you do not use WSUS or System Center Configuration Manager, set Microsoft automatic updates on each server in the Office Online Server farm to **Automatically download but notify user for install**. When you're notified of an Office Online Server update, follow the steps in  [Apply software updates to Office Online Server](apply-software-updates-to-office-online-server.md). To have Windows updates applied and keep your servers secure, accept the Windows updates when you're notified that updates are available.
+If you do not use WSUS or Microsoft Endpoint Configuration Manager, set Microsoft automatic updates on each server in the Office Online Server farm to **Automatically download but notify user for install**. When you're notified of an Office Online Server update, follow the steps in  [Apply software updates to Office Online Server](apply-software-updates-to-office-online-server.md). To have Windows updates applied and keep your servers secure, accept the Windows updates when you're notified that updates are available.
   
 ## ULS Logs Changes from 2018 Update
 
