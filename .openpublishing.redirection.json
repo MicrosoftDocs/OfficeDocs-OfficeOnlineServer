@@ -1,0 +1,24 @@
+{
+  "redirections": [
+    {
+      "source_path": "OfficeOnlineServer/configure-office-online-server-for-sharepoint-server-2016/index.md",
+      "redirect_url": "configure-office-online-server-for-sharepoint-server-2016",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "OfficeOnlineServer/index.md",
+      "redirect_url": "office-online-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "OfficeOnlineServer/windows-powershell-for-office-online-server/index.md",
+      "redirect_url": "windows-powershell-for-office-online-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "OfficeWebAppsServer/index.md",
+      "redirect_url": "office-web-apps-server",
+      "redirect_document_id": false
+    }
+  ]
+}
