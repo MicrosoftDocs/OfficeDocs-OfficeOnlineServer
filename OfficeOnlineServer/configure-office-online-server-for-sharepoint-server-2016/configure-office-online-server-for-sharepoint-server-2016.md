@@ -1,6 +1,6 @@
 ---
-title: Configure Office Online Server for SharePoint Server 2016
-description: Learn how to configure SharePoint Server 2016 to use Office Online Server (the next version of Office Web Apps Server).
+title: Configure Office Online Server for SharePoint Server
+description: Learn how to configure SharePoint Server to use Office Online Server (the next version of Office Web Apps Server).
 ms.author: samukhe
 author: santanu-wac
 manager: pamgreen
@@ -26,7 +26,7 @@ ms.assetid: a5276781-133b-413c-beca-b851e17c2081
     
 
 
-This article picks up where  [Deploy Office Online Server](../deploy-office-online-server.md) left off. In that article, you set up the server that runs Office Online Server on-premises. In this one, you'll configure SharePoint Server to use Office Online Server. First, you'll need to run a few Microsoft PowerShell cmdlets from SharePoint Server 2016, after which users will be able to open Office files from SharePoint Server document libraries in a browser.
+This article picks up where  [Deploy Office Online Server](../deploy-office-online-server.md) left off. In that article, you set up the server that runs Office Online Server on-premises. In this one, you'll configure SharePoint Server to use Office Online Server. First, you'll need to run a few Microsoft PowerShell cmdlets from SharePoint Server, after which users will be able to open Office files from SharePoint Server document libraries in a browser.
   
     
     
@@ -40,21 +40,21 @@ A few things to check before getting started:
 - These instructions also apply to SharePoint Server 2013, however SharePoint Server 2013 cannot use the Excel Online external data connectivity and data refresh functionality in Office Online Server.
     
 
-- Install SharePoint Server 2016. See  [Install SharePoint Server](https://docs.microsoft.com/en-us/SharePoint/install/install) for guidance.
+- Install SharePoint Server. See  [Install SharePoint Server](https://docs.microsoft.com/en-us/SharePoint/install/install) for guidance.
     
   
-- Make sure all SharePoint Server 2016 web applications use claims-based authentication. Office Online rendering and editing won't work on SharePoint Server 2016 web applications that use classic mode authentication. 
+- Make sure all SharePoint Server web applications use claims-based authentication. Office Online rendering and editing won't work on SharePoint Server web applications that use classic mode authentication. 
     
   
 - To enable users to edit (not just read) Office documents in a web browser, you'll need an editing license. Also, you'll need to enable editing on the Office Online Server farm. 
     
   
-- If you log on to SharePoint Server 2016 by using the System Account, you won't be able to test the connection between SharePoint Server 2016 and Office Online Server. Log on with a different account to test the connection. 
+- If you log on to SharePoint Server by using the System Account, you won't be able to test the connection between SharePoint Server and Office Online Server. Log on with a different account to test the connection. 
     
   
 - Low memory conditions can cause Office document previews to fail in Office Online. 
 
-- SharePoint Server 2013 cannot use the Excel Online external data connectivity and data refresh functionality in Office Online Server. That's only available with SharePoint Server 2016.
+- SharePoint Server 2013 cannot use the Excel Online external data connectivity and data refresh functionality in Office Online Server. That's only available with SharePoint Server.
 
 - Office Online Server uses OAuth tokens to communicate with SharePoint Server. These tokens can potentially be intercepted and replayed, providing an attacker with the same rights as the user making the request from SharePoint Server to Office Online Server. It is strongly recommended that you configure Office Online Server to use HTTPS (TLS) only.
   
@@ -79,13 +79,13 @@ For this configuration, make sure you have set up Office Online Server by follow
     
     
 
-#### Step 1: Create the binding between SharePoint 2016 and Office Web Apps Server
+#### Step 1: Create the binding between SharePoint Server and Office Online Server
 
-To get started, open an elevated SharePoint 2016 Management Shell. (Right-click **SharePoint 2016 Management Shell**, and then click **Run as Administrator**.)
+To get started, open an elevated SharePoint Management Shell. (Right-click **SharePoint Management Shell**, and then click **Run as Administrator**.)
   
     
     
-Run the following command, where <WacServerName> is the fully qualified domain name (FQDN) of the URL that you set for the internal URL. This is the point of entry for Office Online Server traffic. For this test environment, you need to specify the -AllowHTTP parameter to allow SharePoint Server 2016 to receive discovery information from the Office Online Server farm by using HTTP. If you don't specify -AllowHTTP, SharePoint Server 2016 will try to use HTTPS to communicate with the Office Online Server farm, and this command won't work.
+Run the following command, where <WacServerName> is the fully qualified domain name (FQDN) of the URL that you set for the internal URL. This is the point of entry for Office Online Server traffic. For this test environment, you need to specify the -AllowHTTP parameter to allow SharePoint Server to receive discovery information from the Office Online Server farm by using HTTP. If you don't specify -AllowHTTP, SharePoint Server will try to use HTTPS to communicate with the Office Online Server farm, and this command won't work.
   
     
     
@@ -104,7 +104,7 @@ After running this command, you should see a list of bindings displayed at the M
 
 #### Step 2: View the WOPI zones for the SharePoint bindings
 
-Office Online Server uses zones to determine which URL (internal or external) and which protocol (HTTP or HTTPS) to use when it communicates with the host, in this case, SharePoint Server 2016. By default, SharePoint Server 2016 uses the **internal-https** zone. Run the following command to see what your current zone is.
+Office Online Server uses zones to determine which URL (internal or external) and which protocol (HTTP or HTTPS) to use when it communicates with the host, in this case, SharePoint Server. By default, SharePoint Server uses the **internal-https** zone. Run the following command to see what your current zone is.
   
     
     
@@ -120,7 +120,7 @@ The WOPI zone displayed by this command should be **internal-http**. If it's dis
 
 #### Step 3: Change the WOPI zone to internal-http
 
-If the result from Step 3 was **internal-https**, run the following command to change the zone to **internal-http**. You need to make this change because the zone of SharePoint Server 2016 must match the zone of the Office Online Server farm.
+If the result from Step 3 was **internal-https**, run the following command to change the zone to **internal-http**. You need to make this change because the zone of SharePoint Server must match the zone of the Office Online Server farm.
   
     
     
@@ -134,10 +134,10 @@ Verify that the new zone is **internal-http** by running **Get-SPWOPIZone** agai
     
     
 
-#### Step 4: Change the AllowOAuthOverHttp setting in SharePoint 2016 to True
+#### Step 4: Change the AllowOAuthOverHttp setting in SharePoint Server to True
 <a name="oauth"> </a>
 
-To use Office Online with SharePoint Server 2016 over HTTP in a test environment, you need to set AllowOAuthOverHttp to **True**. Otherwise Office Online won't work. You can check the current status by running the following example.
+To use Office Online with SharePoint Server over HTTP in a test environment, you need to set AllowOAuthOverHttp to **True**. Otherwise Office Online won't work. You can check the current status by running the following example.
   
     
     
@@ -206,10 +206,10 @@ $Farm.Update();
 ```
 
 
-#### Step 6: Verify that Office Web Apps is working
+#### Step 6: Verify that Office Online Server is working
 <a name="oauth"> </a>
 
-In SharePoint Server 2016, make sure you're not logged on as System Account because you won't be able to edit or view the documents with Office Online. Go to a SharePoint Server 2016 document library that contains Office documents and view a Word, PowerPoint, Excel, or OneNote file. The document should open in a browser that displays the file by using Office Online.
+In SharePoint Server, make sure you're not logged on as System Account because you won't be able to edit or view the documents with Office Online. Go to a SharePoint Server document library that contains Office documents and view a Word, PowerPoint, Excel, or OneNote file. The document should open in a browser that displays the file by using Office Online.
   
     
     
@@ -222,9 +222,9 @@ Before you start the following procedures, make sure that you have set up Office
     
     
 
-#### Step 1: Create the binding between SharePoint 2016 and Office Online Server
+#### Step 1: Create the binding between SharePoint Server and Office Online Server
 
-To get started, open an elevated SharePoint 2016 Management Shell. (Right-click **SharePoint 2016 Management Shell**, and then click **Run as Administrator**.)
+To get started, open an elevated SharePoint Management Shell. (Right-click **SharePoint Management Shell**, and then click **Run as Administrator**.)
   
     
     
@@ -241,9 +241,9 @@ New-SPWOPIBinding -ServerName <WacServerName>
 ```
 
 
-#### Step 2: View the WOPI zone of SharePoint 2016
+#### Step 2: View the WOPI zone of SharePoint Server
 
-Office Online Server uses zones to determine which URL (internal or external) and which protocol (HTTP or HTTPS) to use when it communicates with the host, which in this case is SharePoint Server 2016. By default, SharePoint Server 2016 uses the **internal-https** zone. Verify that this is the current zone by running the following command.
+Office Online Server uses zones to determine which URL (internal or external) and which protocol (HTTP or HTTPS) to use when it communicates with the host, which in this case is SharePoint Server. By default, SharePoint Server uses the **internal-https** zone. Verify that this is the current zone by running the following command.
   
     
     
@@ -299,15 +299,15 @@ $Farm.Update();
 
 #### Step 5: Verify that Office Web Apps is working
 
-In SharePoint Server 2016, make sure you aren't logged on as System Account because you won't be able to edit or view the documents with Office Online. Go to a SharePoint Server 2016 document library that contains Office documents and view a Word, PowerPoint, Excel, or OneNote file. The document should open in a browser that displays the file by using Office Online.
+In SharePoint Server, make sure you aren't logged on as System Account because you won't be able to edit or view the documents with Office Online. Go to a SharePoint Server document library that contains Office documents and view a Word, PowerPoint, Excel, or OneNote file. The document should open in a browser that displays the file by using Office Online.
   
     
     
 
-## Disconnect SharePoint Server 2016 from Office Online Server
+## Disconnect SharePoint Server from Office Online Server
 <a name="disconnect"> </a>
 
-If, for any reason, you want to disconnect SharePoint Server 2016 from Office Online Server, use the following command example.
+If, for any reason, you want to disconnect SharePoint Server from Office Online Server, use the following command example.
   
     
     
