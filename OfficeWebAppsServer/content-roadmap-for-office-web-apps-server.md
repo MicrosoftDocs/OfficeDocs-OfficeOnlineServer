@@ -198,7 +198,7 @@ The following table describes resources that are available to IT professionals w
 <li><p>Download the <a href="deploy-office-web-apps-server.md">pre-requisite software for Windows Server 2008 R2</a>.</p></li>
 <li><p>Download Office Web Apps Server from the <a href="https://go.microsoft.com/fwlink/p/?linkid=256561">Volume Licensing Service Center (VLSC)</a>. To download Office Web Apps Server you must have a license, under a Volume Licensing agreement, for Office Professional Plus 2013, Office Standard 2013, or Office for Mac 2011. The download is located under those Office products on the VLSC portal.</p></li>
 <li><p>Download Office Web Apps Server <a href="https://go.microsoft.com/fwlink/p/?linkid=263945">language packs</a>.</p></li>
-<li><p>Office Web Apps Server updates. Find the latest at <a href="http://go.microsoft.com/fwlink/p/?linkid=280269">Microsoft Office Updates blog</a> or on the <a href="https://go.microsoft.com/fwlink/p/?linkid=280271">TechNet Update center for Office, Office servers, and related products</a>.</p></li>
+<li><p>Office Web Apps Server updates. Find the latest at <a href="https://go.microsoft.com/fwlink/p/?linkid=280269">Microsoft Office Updates blog</a> or on the <a href="https://go.microsoft.com/fwlink/p/?linkid=280271">TechNet Update center for Office, Office servers, and related products</a>.</p></li>
 <li><p>Download the <a href="https://go.microsoft.com/fwlink/p/?linkid=299305">Office Web Apps Server poster</a>.</p></li>
 </ul></td>
 </tr>
