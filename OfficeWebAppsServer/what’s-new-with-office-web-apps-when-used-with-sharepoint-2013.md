@@ -1,4 +1,4 @@
-﻿---
+---
 title: What’s new with Office Web Apps when used with SharePoint 2013?
 TOCTitle: What’s new with Office Web Apps when used with SharePoint 2013?
 ms:assetid: fc26f45c-fdd2-45be-a924-c8a1c0a5924c
