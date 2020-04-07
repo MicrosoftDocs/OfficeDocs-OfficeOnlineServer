@@ -1,14 +1,14 @@
 ---
-title: What’s new with Office Web Apps when used with SharePoint 2013?
-TOCTitle: What’s new with Office Web Apps when used with SharePoint 2013?
+title: What's new with Office Web Apps when used with SharePoint 2013?
+TOCTitle: What's new with Office Web Apps when used with SharePoint 2013?
 ms:assetid: fc26f45c-fdd2-45be-a924-c8a1c0a5924c
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn455087(v=office.15)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn455087(v=office.15)
 ms:contentKeyID: 57419940
 ms.date: 07/24/2014
 mtps_version: v=office.15
 ---
 
-# What’s new with Office Web Apps when used with SharePoint 2013?
+# What's new with Office Web Apps when used with SharePoint 2013?
 
  
 
@@ -124,7 +124,7 @@ Users who work with Office files in document libraries in SharePoint 2013 can be
 </table>
 
 
-You can learn more about how to use mobile devices with SharePoint 2013 in [Overview of mobile devices and SharePoint Server 2013](https://technet.microsoft.com/en-us/library/fp161351\(v=office.15\)). To learn more about how to use Office Mobile Viewers on your mobile device, see [Use Office Web Apps on your Android, iPhone, or Windows Phone](http://go.microsoft.com/fwlink/p/?linkid=271045).
+You can learn more about how to use mobile devices with SharePoint 2013 in [Overview of mobile devices and SharePoint Server 2013](https://technet.microsoft.com/library/fp161351\(v=office.15\)). To learn more about how to use Office Mobile Viewers on your mobile device, see [Use Office Web Apps on your Android, iPhone, or Windows Phone](https://go.microsoft.com/fwlink/p/?linkid=271045).
 
 ## See also
 

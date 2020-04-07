@@ -25,7 +25,7 @@ Deploying [Office Web Apps Server](office-web-apps-server-overview.md) involves 
 
 In this article:
 
-  - Watch a video to see how it’s done
+  - Watch a video to see how it's done
 
   - Review these resources before you begin
 
@@ -33,11 +33,11 @@ In this article:
 
   - Deploy the Office Web Apps Server farm
 
-  - If you see “500 Web Service Exceptions” or “500.21 – Internal Server Error” messages
+  - If you see "500 Web Service Exceptions" or "500.21 – Internal Server Error" messages
 
-## Watch a video to see how it’s done
+## Watch a video to see how it's done
 
-Watch the following video to see how to set up Office Web Apps Server in a test environment. You’ll also see a preview of how to configure SharePoint 2013 to use Office Web Apps Server.
+Watch the following video to see how to set up Office Web Apps Server in a test environment. You'll also see a preview of how to configure SharePoint 2013 to use Office Web Apps Server.
 
 **Set up Office Web Apps Server in a test environment**
 
@@ -45,11 +45,11 @@ Watch the following video to see how to set up Office Web Apps Server in a test 
 
 ## Review these resources before you begin
 
-Make sure you’ve taken a look at these resources before getting started:
+Make sure you've taken a look at these resources before getting started:
 
   - For details about hardware and software requirements, [take a look at the planning guidelines](plan-office-web-apps-server.md).
 
-  - By default, Office Web Apps Server lets you view Office files but not edit them. To edit files, you'll need an editing license, which you can learn about in [Plan Office Web Apps (Used with SharePoint 2013)](plan-office-web-apps-used-with-sharepoint-2013.md) and [Configure licensing in SharePoint Server 2013](https://technet.microsoft.com/en-us/library/jj219627\(v=office.15\)).
+  - By default, Office Web Apps Server lets you view Office files but not edit them. To edit files, you'll need an editing license, which you can learn about in [Plan Office Web Apps (Used with SharePoint 2013)](plan-office-web-apps-used-with-sharepoint-2013.md) and [Configure licensing in SharePoint Server 2013](https://technet.microsoft.com/library/jj219627\(v=office.15\)).
 
 
 > [!NOTE]
@@ -73,7 +73,7 @@ Windows Server 2008 R2, Windows Server 2012, and Windows Server 2012 R2 have sli
 
 1.  Install the following software:
     
-      - [Windows Server 2008 R2 Service Pack 1](http://go.microsoft.com/fwlink/p/?linkid=252370)
+      - [Windows Server 2008 R2 Service Pack 1](https://go.microsoft.com/fwlink/p/?linkid=252370)
     
       - [.NET Framework 4.5](https://go.microsoft.com/fwlink/p/?linkid=256560)
     
@@ -133,7 +133,7 @@ Complete these steps on any servers that will run Office Web Apps Server.
 
 3.  On the **Read the Microsoft Software License Terms** page, select **I accept the terms of this agreement** and click **Continue**.
 
-4.  On the **Choose a file location** page, select the folder where you want the Office Web Apps Server files to be installed (for example, C:\\Program Files\\Microsoft Office Web Apps) and select **Install Now**. If the folder you specified doesn’t exist, Setup creates it for you.
+4.  On the **Choose a file location** page, select the folder where you want the Office Web Apps Server files to be installed (for example, C:\\Program Files\\Microsoft Office Web Apps) and select **Install Now**. If the folder you specified doesn't exist, Setup creates it for you.
     
     We recommend that you install Office Web Apps Server on the system drive.
 
@@ -157,7 +157,7 @@ Complete these steps on any servers that will run Office Web Apps Server.
 
 ## Step 3: Install language packs for Office Web Apps Server
 
-Office Web Apps Server 2013 Language Packs let users view web-based Office files in multiple languages, whether they’re opened from SharePoint 2013 document libraries, Outlook Web Access (as attachment previews), and Lync 2013 (as PowerPoint broadcasts). Learn more about how the language packs work in [Planning language packs for Office Web Apps Server](plan-office-web-apps-server.md).
+Office Web Apps Server 2013 Language Packs let users view web-based Office files in multiple languages, whether they're opened from SharePoint 2013 document libraries, Outlook Web Access (as attachment previews), and Lync 2013 (as PowerPoint broadcasts). Learn more about how the language packs work in [Planning language packs for Office Web Apps Server](plan-office-web-apps-server.md).
 
 To install the language packs, follow these steps.
 
@@ -176,7 +176,7 @@ To install the language packs, follow these steps.
 > <LI>
 > <P>To install language packs after the Office Web Apps Server farm is created, you must remove a server from the farm, install the language pack on it, and then add the server back to the farm.</P>
 > <LI>
-> <P>For a language pack to work correctly, you’ll need to install it on all servers in the farm.</P></LI></UL>
+> <P>For a language pack to work correctly, you'll need to install it on all servers in the farm.</P></LI></UL>
 
 
 
@@ -186,13 +186,13 @@ Follow the procedures in one of the following three sections, based on what kind
 
 
 > [!TIP]
-> If Windows PowerShell doesn’t recognize the <STRONG>New-OfficeWebAppsFarm</STRONG> cmdlet when you run it, you may need to import the <STRONG>OfficeWebApps</STRONG> module. Use this command:<BR><CODE>Import-Module -Name OfficeWebApps</CODE>
+> If Windows PowerShell doesn't recognize the <STRONG>New-OfficeWebAppsFarm</STRONG> cmdlet when you run it, you may need to import the <STRONG>OfficeWebApps</STRONG> module. Use this command:<BR><CODE>Import-Module -Name OfficeWebApps</CODE>
 
 
 
 ## Deploy a single-server Office Web Apps Server farm that uses HTTP
 
-If you’re only deploying Office Web Apps Server for testing or internal use, and you don’t need to provide Office Web Apps Server functionality to Lync Server 2013, this procedure is for you. Here, you’ll install a single-server Office Web Apps Server farm that uses HTTP. You won’t need a certificate or load balancer, but you will need a dedicated physical server or virtual machine instance that isn’t running any other server application.
+If you're only deploying Office Web Apps Server for testing or internal use, and you don't need to provide Office Web Apps Server functionality to Lync Server 2013, this procedure is for you. Here, you'll install a single-server Office Web Apps Server farm that uses HTTP. You won't need a certificate or load balancer, but you will need a dedicated physical server or virtual machine instance that isn't running any other server application.
 
 You can use this Office Web Apps Server farm to provide Office Web Apps functionality to SharePoint 2013.
 
@@ -216,9 +216,9 @@ Use the **New-OfficeWebAppsFarm** command to create a new Office Web Apps Server
 
   - **–EditingEnabled** enables editing in Office Web Apps when used with SharePoint 2013. This parameter isn't used by Lync Server 2013 because that host doesn't support editing.
 
-Additional parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
+Additional parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
-If you see “500 Web Service Exceptions” or “500.21 – Internal Server Error” messages
+If you see "500 Web Service Exceptions" or "500.21 – Internal Server Error" messages
 
 ## Step 2: Verify that the Office Web Apps Server farm was created successfully
 
@@ -249,7 +249,7 @@ The farm is now ready to provide Office Web Apps functionality to hosts over HTT
 ## Deploy a single-server Office Web Apps Server farm that uses HTTPS
 <a name="singlehttps"> </a>
 
-For most production environments, we strongly recommend the use of HTTPS for its security features. Also, HTTPS is required if you want to provide Office Web Apps Server functionality to Lync Server 2013, which lets users view PowerPoint broadcasts in a browser. Here’s how to install a single-server Office Web Apps Server farm that uses HTTPS. You'll need to install a certificate on the server as described in [Securing Office Web Apps Server communications by using HTTPS](plan-office-web-apps-server.md).
+For most production environments, we strongly recommend the use of HTTPS for its security features. Also, HTTPS is required if you want to provide Office Web Apps Server functionality to Lync Server 2013, which lets users view PowerPoint broadcasts in a browser. Here's how to install a single-server Office Web Apps Server farm that uses HTTPS. You'll need to install a certificate on the server as described in [Securing Office Web Apps Server communications by using HTTPS](plan-office-web-apps-server.md).
 
 This Office Web Apps Server farm will provide Office Web Apps functionality to SharePoint 2013 and Lync Server 2013.
 
@@ -275,9 +275,9 @@ Use the **New-OfficeWebAppsFarm** command to create a new Office Web Apps Server
 
   - **–EditingEnabled** is optional and enables editing in Office Web Apps when used with SharePoint 2013. This parameter isn't used by Lync Server 2013 because that host doesn't support editing.
 
-Additional parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
+Additional parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
-If you see “500 Web Service Exceptions” or “500.21 – Internal Server Error” messages
+If you see "500 Web Service Exceptions" or "500.21 – Internal Server Error" messages
 
 ## Step 2: Verify that the Office Web Apps Server farm was created successfully
 
@@ -315,7 +315,7 @@ The farm is now ready to provide Office Web Apps functionality to hosts over HTT
 ## Deploy a multi-server, load-balanced Office Web Apps Server farm that uses HTTPS
 <a name="multihttps"> </a>
 
-If you anticipate lots of traffic to your Office Web Apps Server farm, and you want it to be available over the Internet as well as on your internal network, this type of topology is the way to go. This section shows how to install a multi-server Office Web Apps Server farm that uses a load balancer and HTTPS. If you’re interested, [read more about this topology](plan-office-web-apps-server.md).
+If you anticipate lots of traffic to your Office Web Apps Server farm, and you want it to be available over the Internet as well as on your internal network, this type of topology is the way to go. This section shows how to install a multi-server Office Web Apps Server farm that uses a load balancer and HTTPS. If you're interested, [read more about this topology](plan-office-web-apps-server.md).
 
 Before you begin, make sure your load balancer is configured as described in [Load balancer requirements for Office Web Apps Server](plan-office-web-apps-server.md). Also, you'll need to install a certificate on the load balancer as described in [Securing Office Web Apps Server communications by using HTTPS](plan-office-web-apps-server.md). This Office Web Apps Server farm will provide Office Web Apps functionality to SharePoint 2013 andLync Server 2013.
 
@@ -341,9 +341,9 @@ Use the **New-OfficeWebAppsFarm** command to create a new Office Web Apps Server
 
   - **–EditingEnabled** is optional and enables editing in Office Web Apps when used with SharePoint 2013. This parameter isn't used by Lync Server 2013 because that host doesn't support editing.
 
-Other parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
+Other parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
-If you see “500 Web Service Exceptions” or “500.21 – Internal Server Error” messages
+If you see "500 Web Service Exceptions" or "500.21 – Internal Server Error" messages
 
 ## Step 2: Add more servers to the farm
 
@@ -353,7 +353,7 @@ After the first server is running Office Web Apps Server, run the **New-OfficeWe
     New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
 ```
 
-Want more information about these parameters? You can find them in [New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps).
+Want more information about these parameters? You can find them in [New-OfficeWebAppsMachine](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps).
 
 ## Step 3: Verify that the Office Web Apps Server farm was created successfully
 
@@ -381,9 +381,9 @@ The farm is now ready to provide Office Web Apps functionality to hosts over HTT
 
   - [Deploying Office Web Apps Server and Lync Server 2013](https://go.microsoft.com/fwlink/p/?linkid=256902)
 
-## If you see “500 Web Service Exceptions” or “500.21 – Internal Server Error” messages
+## If you see "500 Web Service Exceptions" or "500.21 – Internal Server Error" messages
 
-If features of the .NET Framework 3.5 were installed and then removed, you might see “500 Web Service Exceptions” or “500.21 – Internal Server Error” messages when you run OfficeWebApps cmdlets. To fix this, run the following sample commands from an elevated command prompt to clean up settings that could prevent Office Web Apps Server from functioning correctly:
+If features of the .NET Framework 3.5 were installed and then removed, you might see "500 Web Service Exceptions" or "500.21 – Internal Server Error" messages when you run OfficeWebApps cmdlets. To fix this, run the following sample commands from an elevated command prompt to clean up settings that could prevent Office Web Apps Server from functioning correctly:
 
 **For Windows Server 2008 R2**
 
@@ -404,8 +404,8 @@ If features of the .NET Framework 3.5 were installed and then removed, you might
 ## See also
 
 
-[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
-[New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  
+[New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
+[New-OfficeWebAppsMachine](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  
 
 
 [Content roadmap for Office Web Apps Server](content-roadmap-for-office-web-apps-server.md)  
