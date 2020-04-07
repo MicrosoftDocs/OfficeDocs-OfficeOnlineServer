@@ -296,4 +296,4 @@ Once you have completed the data connection wizard, you can create your report a
   
     
     
- [Configure the Secure Store Service (SharePoint Server 2013)](http://technet.microsoft.com/library/29c0bc76-d835-401b-a2fb-abb069e84125.aspx)
+ [Configure the Secure Store Service (SharePoint Server 2013)](https://technet.microsoft.com/library/29c0bc76-d835-401b-a2fb-abb069e84125.aspx)

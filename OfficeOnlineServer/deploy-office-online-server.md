@@ -109,7 +109,7 @@ Complete these steps on any servers that will run Office Online Server.
 ### To install Office Online Server
 
 
-1. Download Office Online Server from the  [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). Office Online Server is a component of Office, so it is available under each of the product pages including Office Standard 2016, Office Professional Plus 2016, and Office 2015 for Mac Standard.
+1. Download Office Online Server from the  [Volume Licensing Service Center (VLSC)](https://go.microsoft.com/fwlink/p/?LinkId=256561). Office Online Server is a component of Office, so it is available under each of the product pages including Office Standard 2016, Office Professional Plus 2016, and Office 2015 for Mac Standard.
   
   
 2. Run Setup.exe.
@@ -146,7 +146,7 @@ To install the language packs, follow these steps.
     
     
 
-1. Download the Office Online Server Language Packs from the  [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=798136).
+1. Download the Office Online Server Language Packs from the  [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=798136).
     
   
 2. Run **wacserverlanguagepack.exe**.
@@ -522,4 +522,4 @@ Add-WindowsFeature NET-Framework-45-Core, NET-Framework-45-ASPNET, Web-Asp-Net45
      
 [Office Online Server release schedule](office-online-server-release-schedule.md)
  
-[Plan Office Online Server](https://docs.microsoft.com/en-us/officeonlineserver/plan-office-online-server) 
+[Plan Office Online Server](https://docs.microsoft.com/officeonlineserver/plan-office-online-server) 
