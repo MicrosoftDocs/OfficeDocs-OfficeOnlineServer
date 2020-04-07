@@ -42,7 +42,7 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 <td><p>Provides information about Office Web Apps, how to obtain them, and how they work on-premises with SharePoint 2013.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="what's-new-with-office-web-apps-when-used-with-sharepoint-2013.md">What's new with Office Web Apps when used with SharePoint 2013?</a></p></td>
+<td><p><a href="what%E2%80%99s-new-with-office-web-apps-when-used-with-sharepoint-2013.md">What's new with Office Web Apps when used with SharePoint 2013?</a></p></td>
 <td><p>Describes new features available to SharePoint 2013 users and admins when using Office Web Apps.</p></td>
 </tr>
 <tr class="odd">
