@@ -210,7 +210,7 @@ Choose Kerberos delegation for secure and fast authentication to enterprise-scal
 
 #### Secure Store
 
-Choose  [Secure Store](http://technet.microsoft.com/library/e1196de0-1eb9-4c50-aeca-93e0eba7be0d%28Office.14%29.aspx) for authentication to enterprise-scale relational data sources that may or may not support Windows Authentication. Secure Store is also useful in scenarios in which you want to control user credential mappings.
+Choose  [Secure Store](https://technet.microsoft.com/library/e1196de0-1eb9-4c50-aeca-93e0eba7be0d%28Office.14%29.aspx) for authentication to enterprise-scale relational data sources that may or may not support Windows Authentication. Secure Store is also useful in scenarios in which you want to control user credential mappings.
   
     
     
@@ -320,4 +320,4 @@ If there are no previously cached versions of this workbook, any of these action
   
     
     
- [Configure Analysis Services and Kerberos Constrained Delegation (KCD)](https://docs.microsoft.com/en-us/sql/analysis-services/instances/install-windows/configure-analysis-services-and-kerberos-constrained-delegation-kcd)
+ [Configure Analysis Services and Kerberos Constrained Delegation (KCD)](https://docs.microsoft.com/sql/analysis-services/instances/install-windows/configure-analysis-services-and-kerberos-constrained-delegation-kcd)
