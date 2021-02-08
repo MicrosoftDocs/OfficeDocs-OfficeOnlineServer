@@ -46,7 +46,7 @@ Use one of the following procedures to set the OpenInClient feature in SharePoin
 
 
 > [!NOTE]
-> You can complete tasks in Office 2013 suites by using a mouse, keyboard shortcuts, or touch. For information about how to use keyboard shortcuts and touch with Office products and services, see <A href="http://go.microsoft.com/fwlink/p/?linkid=249150">Keyboard Shortcuts</A> and <A href="http://go.microsoft.com/fwlink/p/?linkid=253163">Office Touch Guide</A>.
+> You can complete tasks in Office 2013 suites by using a mouse, keyboard shortcuts, or touch. For information about how to use keyboard shortcuts and touch with Office products and services, see <A href="https://go.microsoft.com/fwlink/p/?linkid=249150">Keyboard Shortcuts</A> and <A href="https://go.microsoft.com/fwlink/p/?linkid=253163">Office Touch Guide</A>.
 
 
 
