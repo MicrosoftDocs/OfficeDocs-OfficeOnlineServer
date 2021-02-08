@@ -2,7 +2,7 @@
 title: Open behavior for browser-enabled documents in Office Web Apps
 TOCTitle: Set the default open behavior for browser enabled documents
 ms:assetid: e27e0bc8-5fb5-4bb1-8157-d7c90654175e
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ee837425(v=office.15)
+ms:mtpsurl: https://technet.microsoft.com/library/Ee837425(v=office.15)
 ms:contentKeyID: 50117655
 ms.date: 07/24/2014
 mtps_version: v=office.15
@@ -16,21 +16,21 @@ _**Applies to:** SharePoint Server 2013, SharePoint Foundation 2013, Office Web 
 
 **Audience:** IT Professionals
 
-To open a document in a SharePoint 2013 document library, you just click its title. What happens next (whether the file opens in a client application or in the browser) depends on several factors, such as what type of file it is, how you’ve set up your Office Web Apps Server farm, and how you’ve set the OpenInClient feature settings of the library or site collection. The following steps show how to configure the default open behavior for Office documents where you have SharePoint 2013 configured to use Office Web Apps Server.
+To open a document in a SharePoint 2013 document library, you just click its title. What happens next (whether the file opens in a client application or in the browser) depends on several factors, such as what type of file it is, how you've set up your Office Web Apps Server farm, and how you've set the OpenInClient feature settings of the library or site collection. The following steps show how to configure the default open behavior for Office documents where you have SharePoint 2013 configured to use Office Web Apps Server.
 
 ## Set how documents are opened from SharePoint 2013 libraries
 
 By default, after you configure SharePoint 2013 to use Office Web Apps Server, clicking a Word, PowerPoint, Excel, or OneNote file opens it in the browser. PDF documents open in the Word Web App. There are two ways to change the default behavior so that files open in the client applications (or the default PDF reader) instead:
 
-  - **For the SharePoint 2013 farm**   You can adjust the default open behavior on a per-file-type basis for the SharePoint 2013 farm by using the [New-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps) and [Set-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIBinding?view=sharepoint-ps) Windows PowerShell cmdlets. These cmdlets can also be used to [adjust the behavior of PDF documents](http://go.microsoft.com/fwlink/p/?linkid=330246).
+  - **For the SharePoint 2013 farm**   You can adjust the default open behavior on a per-file-type basis for the SharePoint 2013 farm by using the [New-SPWOPIBinding](https://docs.microsoft.com/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps) and [Set-SPWOPIBinding](https://docs.microsoft.com/powershell/module/sharepoint-server/Set-SPWOPIBinding?view=sharepoint-ps) Windows PowerShell cmdlets. These cmdlets can also be used to [adjust the behavior of PDF documents](https://go.microsoft.com/fwlink/p/?linkid=330246).
 
-  - **In site collections or document libraries**   Site collection administrators and users can use the OpenInClient feature in SharePoint 2013 to specify whether Office files will be opened in the client application or in the browser. Users can change this setting in the document library properties, and site collection administrators can change it in Site Collection Administration or by using the [Enable-SPFeature](https://technet.microsoft.com/en-us/library/ff607803\(v=office.15\)) cmdlet to enable the OpenInClient feature. See the next section for several different methods to enable the OpenInClient feature.
+  - **In site collections or document libraries**   Site collection administrators and users can use the OpenInClient feature in SharePoint 2013 to specify whether Office files will be opened in the client application or in the browser. Users can change this setting in the document library properties, and site collection administrators can change it in Site Collection Administration or by using the [Enable-SPFeature](https://technet.microsoft.com/library/ff607803\(v=office.15\)) cmdlet to enable the OpenInClient feature. See the next section for several different methods to enable the OpenInClient feature.
 
-In general, the OpenInClient feature overrides any WOPI bindings you’ve set between SharePoint 2013 and Office Web Apps Server. In other words, if the OpenInClient feature of a SharePoint 2013 library or site collection is enabled, documents will open in the client application even if you've configured the SharePoint 2013 server to use Office Web Apps Server.
+In general, the OpenInClient feature overrides any WOPI bindings you've set between SharePoint 2013 and Office Web Apps Server. In other words, if the OpenInClient feature of a SharePoint 2013 library or site collection is enabled, documents will open in the client application even if you've configured the SharePoint 2013 server to use Office Web Apps Server.
 
 
 > [!NOTE]
-> Configuring the default open behavior for browser-enabled documents won’t affect whether users can use the <STRONG>Check Out</STRONG> and <STRONG>Send To</STRONG> features in SharePoint 2013 to download documents. For information about how to configure check out, download, and view permissions in SharePoint 2013, see <A href="https://technet.microsoft.com/en-us/library/cc262939(v=office.15)">Permissions planning for sites and content in SharePoint 2013</A>.
+> Configuring the default open behavior for browser-enabled documents won't affect whether users can use the <STRONG>Check Out</STRONG> and <STRONG>Send To</STRONG> features in SharePoint 2013 to download documents. For information about how to configure check out, download, and view permissions in SharePoint 2013, see <A href="https://technet.microsoft.com/en-us/library/cc262939(v=office.15)">Permissions planning for sites and content in SharePoint 2013</A>.
 
 
 
@@ -68,13 +68,13 @@ Use one of the following procedures to set the OpenInClient feature in SharePoin
     
       - Administrators group on the server on which you are running Windows PowerShell cmdlets.
     
-    Also, take a look at [about\_Execution\_Policies](http://go.microsoft.com/fwlink/p/?linkid=193050) and add any other required memberships.
+    Also, take a look at [about\_Execution\_Policies](https://go.microsoft.com/fwlink/p/?linkid=193050) and add any other required memberships.
     
     An administrator can use the **Add-SPShellAdmin** cmdlet to grant permissions to use SharePoint 2013 cmdlets.
     
 
     > [!NOTE]
-    > If you don’t have permissions, contact your Setup administrator or SQL Server administrator to request them. For additional information about Windows PowerShell permissions, see <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</A> and <A href="https://technet.microsoft.com/en-us/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
+    > If you don't have permissions, contact your Setup administrator or SQL Server administrator to request them. For additional information about Windows PowerShell permissions, see <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</A> and <A href="https://technet.microsoft.com/en-us/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
 
 
 
@@ -154,13 +154,13 @@ Use one of the following procedures to set the OpenInClient feature in SharePoin
     
       - Administrators group on the server on which you are running Windows PowerShell cmdlets.
     
-    Also, take a look at [about\_Execution\_Policies](http://go.microsoft.com/fwlink/p/?linkid=193050) and add any other required memberships.
+    Also, take a look at [about\_Execution\_Policies](https://go.microsoft.com/fwlink/p/?linkid=193050) and add any other required memberships.
     
     An administrator can use the **Add-SPShellAdmin** cmdlet to grant permissions to use SharePoint 2013 cmdlets.
     
 
     > [!NOTE]
-    > If you don’t have permissions, contact your Setup administrator or SQL Server administrator to request them. For additional information about Windows PowerShell permissions, see <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</A> and <A href="https://technet.microsoft.com/en-us/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
+    > If you don't have permissions, contact your Setup administrator or SQL Server administrator to request them. For additional information about Windows PowerShell permissions, see <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</A> and <A href="https://technet.microsoft.com/en-us/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
 
 
 
@@ -199,15 +199,15 @@ Use one of the following procedures to set the OpenInClient feature in SharePoin
 ## See also
 
 
-[Get-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIBinding?view=sharepoint-ps)  
+[Get-SPWOPIBinding](https://docs.microsoft.com/powershell/module/sharepoint-server/Get-SPWOPIBinding?view=sharepoint-ps)  
 
 
 [Content roadmap for Office Web Apps Server](content-roadmap-for-office-web-apps-server.md)  
-[Use Windows PowerShell to administer SharePoint 2013](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps)  
+[Use Windows PowerShell to administer SharePoint 2013](https://docs.microsoft.com/powershell/module/sharepoint-server/?view=sharepoint-ps)  
 [Office Web Apps Server](office-web-apps-server.md)  
 
 
-[Get-SPWeb](https://technet.microsoft.com/en-us/library/ff607807\(v=office.15\))  
-[Get-SPSite](https://technet.microsoft.com/en-us/library/ff607950\(v=office.15\))  
-[Get-SPFeature](https://technet.microsoft.com/en-us/library/ff607945\(v=office.15\))
+[Get-SPWeb](https://technet.microsoft.com/library/ff607807\(v=office.15\))  
+[Get-SPSite](https://technet.microsoft.com/library/ff607950\(v=office.15\))  
+[Get-SPFeature](https://technet.microsoft.com/library/ff607945\(v=office.15\))
 

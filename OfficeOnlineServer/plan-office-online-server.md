@@ -77,10 +77,10 @@ You can run Office Online Server on the following operating systems:
 - The 64-bit edition of Windows Server 2012 R2
     
   
-- The 64-bit edition of Windows Server 2016 (Office Online Server April 2017 or later required).
+- The 64-bit edition of Windows Server 2016 (Office Online Server November 2018 or later required).
     
 > [!NOTE]
-> Office Online Server only supports the "Server with Desktop Experience" installation option of Windows Server 2016. For additional information about Windows Server offerings, see [Windows Server Semi-annual Channel Overview](https://docs.microsoft.com/en-us/windows-server/get-started/semi-annual-channel-overview).
+> Office Online Server only supports the "Server with Desktop Experience" installation option of Windows Server 2016. For additional information about Windows Server offerings, see [Windows Server Semi-annual Channel Overview](https://docs.microsoft.com/windows-server/get-started/semi-annual-channel-overview).
 
 > [!NOTE]
 > Office Online Server does not support Windows Server 2019.
@@ -206,7 +206,7 @@ Office Online Server Language Packs enable users to view web-based Office files 
 - The languages are installed and are available on all servers in the Office Online Server farm.
     
   
-Here's where to  [download the language packs for Office Web Apps Server](http://go.microsoft.com/fwlink/p/?LinkId=798136).
+Here's where to  [download the language packs for Office Web Apps Server](https://go.microsoft.com/fwlink/p/?LinkId=798136).
   
     
     
@@ -241,7 +241,7 @@ The following is a list of recommendations that you should keep in mind as your 
 - **Plan for incoming and outgoing communications.** In an Internet-facing deployment, route all outgoing communications through a NAT device. In a multi-server farm, handle all incoming communications with a load balancer.
     
   
-- **Make sure all servers in the Office Online Server farm are joined to a domain and are part of the same organizational unit (OU).** Use the **FarmOU** parameter in the [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) cmdlet to prevent other servers that are not in this OU from joining the farm.
+- **Make sure all servers in the Office Online Server farm are joined to a domain and are part of the same organizational unit (OU).** Use the **FarmOU** parameter in the [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) cmdlet to prevent other servers that are not in this OU from joining the farm.
     
   
 - **Use Hypertext Transfer Protocol Secure (HTTPS) for all incoming requests.**
@@ -351,7 +351,7 @@ When you set up a new Office Online Server farm, SSL offloading is set to Off by
 ### Restrict which servers can join an Office Online Server farm based on OU membership
 <a name="certificate"> </a>
 
-You can prevent unauthorized servers from joining an Office Online Server farm by creating an organizational unit for those servers and then specifying the FarmOU parameter when you create the farm. For more information about the FarmOU parameter, see  [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
+You can prevent unauthorized servers from joining an Office Online Server farm by creating an organizational unit for those servers and then specifying the FarmOU parameter when you create the farm. For more information about the FarmOU parameter, see  [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
   
     
     
@@ -363,7 +363,7 @@ The Allow List is a security feature that prevents unwanted hosts from connectin
   
     
     
-You can add domains to the Allow List after you've created the Office Online Server farm. To learn how to add domains to the Allow List, see  [New-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps).
+You can add domains to the Allow List after you've created the Office Online Server farm. To learn how to add domains to the Allow List, see  [New-OfficeWebAppsHost](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps).
   
     
     
@@ -378,7 +378,7 @@ You can add domains to the Allow List after you've created the Office Online Ser
 ## Planning for Online Viewers with Office Online Server
 <a name="viewers"> </a>
 
-By default, Online Viewers functionality is enabled after you install Office Online Server. Review the following guidelines if you're planning to use Online Viewers in your organization. In some cases, you might want to disable some features within Online Viewers. These guidelines refer to parameters that are set by using the Microsoft PowerShell cmdlets  [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) and [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps).
+By default, Online Viewers functionality is enabled after you install Office Online Server. Review the following guidelines if you're planning to use Online Viewers in your organization. In some cases, you might want to disable some features within Online Viewers. These guidelines refer to parameters that are set by using the Microsoft PowerShell cmdlets  [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) and [Set-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps).
   
     
     
@@ -389,7 +389,7 @@ Files that are intended to be viewed through a web browser by using Online Viewe
   
     
     
-For the same reason, if you have set up the Office Online Server to connect only to the Internet, we strongly recommend that you disable UNC support in Online Viewers. To disable UNC support, set the OpenFromUncEnabled parameter to False by using the Microsoft PowerShell cmdlets  [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (for new farms) or [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (for existing farms).
+For the same reason, if you have set up the Office Online Server to connect only to the Internet, we strongly recommend that you disable UNC support in Online Viewers. To disable UNC support, set the OpenFromUncEnabled parameter to False by using the Microsoft PowerShell cmdlets  [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (for new farms) or [Set-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (for existing farms).
   
     
     
@@ -404,7 +404,7 @@ As an additional security precaution, Online Viewers are limited to viewing Offi
   
     
     
-You can configure Online Viewers by using the following Microsoft PowerShell parameters in  [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (for new farms) or [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (for existing farms).
+You can configure Online Viewers by using the following Microsoft PowerShell parameters in [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (for new farms) or [Set-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (for existing farms).
   
     
     
@@ -430,11 +430,11 @@ Applying Office Online Server updates by using the Microsoft automatic updates p
   
     
     
-We recommend that you manage updates by using Windows Server Update Services (WSUS) or by using System Center Configuration Manager, which uses WSUS. WSUS allows you to fully manage the distribution of updates that are released through Microsoft Update for each server in the Office Online Server farm. By using WSUS, you can decide which updates can be automatically applied to the server farm and which updates, such as Office Online Server updates, have to be manually applied. For more information about WSUS, see  [Windows Server Update Services](https://go.microsoft.com/fwlink/p/?LinkId=294822).
+We recommend that you manage updates by using Windows Server Update Services (WSUS) or by using Microsoft Endpoint Configuration Manager, which uses WSUS. WSUS allows you to fully manage the distribution of updates that are released through Microsoft Update for each server in the Office Online Server farm. By using WSUS, you can decide which updates can be automatically applied to the server farm and which updates, such as Office Online Server updates, have to be manually applied. For more information about WSUS, see  [Windows Server Update Services](https://go.microsoft.com/fwlink/p/?LinkId=294822).
   
     
     
-If you do not use WSUS or System Center Configuration Manager, set Microsoft automatic updates on each server in the Office Online Server farm to **Automatically download but notify user for install**. When you're notified of an Office Online Server update, follow the steps in  [Apply software updates to Office Online Server](apply-software-updates-to-office-online-server.md). To have Windows updates applied and keep your servers secure, accept the Windows updates when you're notified that updates are available.
+If you do not use WSUS or Microsoft Endpoint Configuration Manager, set Microsoft automatic updates on each server in the Office Online Server farm to **Automatically download but notify user for install**. When you're notified of an Office Online Server update, follow the steps in  [Apply software updates to Office Online Server](apply-software-updates-to-office-online-server.md). To have Windows updates applied and keep your servers secure, accept the Windows updates when you're notified that updates are available.
   
 ## ULS Logs Changes from 2018 Update
 
