@@ -1,4 +1,4 @@
-﻿---
+---
 title: Plan Office Web Apps (Used with SharePoint 2013)
 TOCTitle: Plan Office Web Apps
 ms:assetid: 3bd0a617-5f12-4a7e-bb75-b15c86c7e504
@@ -23,7 +23,7 @@ To plan how Office Web Apps is used with SharePoint 2013 on-premises, you should
 
 
 > [!IMPORTANT]
-> This article is part of the <A href="content-roadmap-for-office-web-apps-server.md">Content roadmap for Office Web Apps Server</A>. Use the roadmap as a starting point for articles, downloads, and videos that help you deploy and manage Office Web Apps Server.<BR><STRONG>Are you looking for help with Office Web Apps on your desktop or mobile device?</STRONG> You can find this information by searching for "Office Web Apps" on <A href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</A>.
+> This article is part of the <A href="content-roadmap-for-office-web-apps-server.md">Content roadmap for Office Web Apps Server</A>. Use the roadmap as a starting point for articles, downloads, and videos that help you deploy and manage Office Web Apps Server.<BR><STRONG>Are you looking for help with Office Web Apps on your desktop or mobile device?</STRONG> You can find this information by searching for "Office Web Apps" on <A href="https://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</A>.
 
 
 
