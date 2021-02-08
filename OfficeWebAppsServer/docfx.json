@@ -55,15 +55,15 @@
                                          "feedback_system": "None",
                                          "hideEdit": true,
                                          "titleSuffix": "Office Web Apps Server",
-										 "contributors_to_exclude": [ 
-											"rjagiewich", 
-											"traya1", 
-											"rmca14", 
-											"claydetels19", 
-											"jborsecnik",
-											"tiburd",
-											"garycentric"
-										 ],
+					 "contributors_to_exclude": [ 
+					 	"rjagiewich", 
+						 "traya1", 
+						 "rmca14", 
+						 "claydetels19", 
+						 "jborsecnik",
+					         "tiburd",
+						 "garycentric"
+					 ],
                                      },
                   "fileMetadata":  {
 
