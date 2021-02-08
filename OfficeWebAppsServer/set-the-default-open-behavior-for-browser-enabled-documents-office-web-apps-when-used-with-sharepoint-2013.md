@@ -1,4 +1,4 @@
-﻿---
+---
 title: Open behavior for browser-enabled documents in Office Web Apps
 TOCTitle: Set the default open behavior for browser enabled documents
 ms:assetid: e27e0bc8-5fb5-4bb1-8157-d7c90654175e
@@ -30,7 +30,7 @@ In general, the OpenInClient feature overrides any WOPI bindings you've set betw
 
 
 > [!NOTE]
-> Configuring the default open behavior for browser-enabled documents won't affect whether users can use the <STRONG>Check Out</STRONG> and <STRONG>Send To</STRONG> features in SharePoint 2013 to download documents. For information about how to configure check out, download, and view permissions in SharePoint 2013, see <A href="https://technet.microsoft.com/en-us/library/cc262939(v=office.15)">Permissions planning for sites and content in SharePoint 2013</A>.
+> Configuring the default open behavior for browser-enabled documents won't affect whether users can use the <STRONG>Check Out</STRONG> and <STRONG>Send To</STRONG> features in SharePoint 2013 to download documents. For information about how to configure check out, download, and view permissions in SharePoint 2013, see <A href="https://technet.microsoft.com/library/cc262939(v=office.15)">Permissions planning for sites and content in SharePoint 2013</A>.
 
 
 
@@ -40,7 +40,7 @@ Use one of the following procedures to set the OpenInClient feature in SharePoin
 
 
 > [!NOTE]
-> Some of these procedures use the SharePoint 2013 Management Shell to run SharePoint cmdlets. If you choose to use the Windows PowerShell console, you must add the Microsoft.SharePoint.PowerShell snap-in by using the <STRONG>Add-PSSnapin</STRONG> cmdlet. For more information about how to use Windows PowerShell with SharePoint 2013, see <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Use Windows PowerShell to administer SharePoint 2013</A>.
+> Some of these procedures use the SharePoint 2013 Management Shell to run SharePoint cmdlets. If you choose to use the Windows PowerShell console, you must add the Microsoft.SharePoint.PowerShell snap-in by using the <STRONG>Add-PSSnapin</STRONG> cmdlet. For more information about how to use Windows PowerShell with SharePoint 2013, see <A href="https://docs.microsoft.com/powershell/module/sharepoint-server/?view=sharepoint-ps">Use Windows PowerShell to administer SharePoint 2013</A>.
 
 
 
@@ -74,7 +74,7 @@ Use one of the following procedures to set the OpenInClient feature in SharePoin
     
 
     > [!NOTE]
-    > If you don't have permissions, contact your Setup administrator or SQL Server administrator to request them. For additional information about Windows PowerShell permissions, see <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</A> and <A href="https://technet.microsoft.com/en-us/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
+    > If you don't have permissions, contact your Setup administrator or SQL Server administrator to request them. For additional information about Windows PowerShell permissions, see <A href="https://docs.microsoft.com/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</A> and <A href="https://technet.microsoft.com/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
 
 
 
@@ -160,7 +160,7 @@ Use one of the following procedures to set the OpenInClient feature in SharePoin
     
 
     > [!NOTE]
-    > If you don't have permissions, contact your Setup administrator or SQL Server administrator to request them. For additional information about Windows PowerShell permissions, see <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</A> and <A href="https://technet.microsoft.com/en-us/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
+    > If you don't have permissions, contact your Setup administrator or SQL Server administrator to request them. For additional information about Windows PowerShell permissions, see <A href="https://docs.microsoft.com/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</A> and <A href="https://technet.microsoft.com/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
 
 
 
