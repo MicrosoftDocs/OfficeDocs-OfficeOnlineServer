@@ -27,7 +27,7 @@ If you are an IT professional looking for information about Outlook Web App, see
 
 
 > [!IMPORTANT]
-> This article is for administrators who deploy and manage Office Web Apps Server for their organizations.<BR><STRONG>Are you looking for help with Office Web Apps on your desktop or mobile device?</STRONG> You may be looking to <A href="http://go.microsoft.com/fwlink/p/?linkid=269811">get started with Office Web Apps</A>.
+> This article is for administrators who deploy and manage Office Web Apps Server for their organizations.<BR><STRONG>Are you looking for help with Office Web Apps on your desktop or mobile device?</STRONG> You may be looking to <A href="https://go.microsoft.com/fwlink/p/?linkid=269811">get started with Office Web Apps</A>.
 
 
 
