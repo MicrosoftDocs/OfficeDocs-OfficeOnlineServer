@@ -87,18 +87,18 @@ Remove-OfficeWebAppsMachine
 3. Install the Office Online Server update or new version on that server. If prompted, restart the server.
     
   
-4. Open the Microsoft PowerShell prompt as an administrator and run the **New-OfficeWebAppsFarm** cmdlet to re-create an Office Online Server farm. The URL you specify for **-InternalURL** is the name of the server that runs Office Online Server, such as **https://Contoso-OOS**. In this case, you would use the same name that you used for the previous Office Online Server farm. Use the same additional parameters that you used when you first created the Office Online Server farm. For example, the the **-EditingEnabled** parameter enables editing in Office Online when it is used together with SharePoint Server 2016.
+4. Open the Microsoft PowerShell prompt as an administrator and run the **New-OfficeWebAppsFarm** cmdlet to re-create an Office Online Server farm. The URL you specify for **-InternalURL** is the name of the server that runs Office Online Server, such as **https://oos.contoso.com**. In this case, you would use the same name that you used for the previous Office Online Server farm. Use the same additional parameters that you used when you first created the Office Online Server farm. For example, the the **-EditingEnabled** parameter enables editing in Office Online when it is used together with SharePoint Server.
     
-    The code in the following example creates a new Office Online Server farm named https://Contoso-OOS.
+    The code in the following example creates a new Office Online Server farm named https://oos.contoso.com.
     
 
 
   ```
-  New-OfficeWebAppsFarm -InternalURL "https://Contoso-OOS" -EditingEnabled
+  New-OfficeWebAppsFarm -InternalURL "https://oos.contoso.com" -EditingEnabled
   ```
 
 
-    Additional parameters that configure translation services, proxy servers, clipart support, and Online Viewers are described in  [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
+Additional parameters that configure translation services, proxy servers, clipart support, and Online Viewers are described in  [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
     
   
 
@@ -130,18 +130,18 @@ To apply software updates or new versions to a multiple Office Online Server far
 4. Install the Office Online Server update or new version on that server. If prompted, restart the server.
     
   
-5. Open the Microsoft PowerShell prompt as an administrator and create an updated Office Online Server farm by using the cmdlet **New-OfficeWebAppsFarm**. The URL you specify for **-InternalURL** is the name of the server that runs Office Online Server, such as **https://Contoso-OOS**. In this case, you use the same name as the existing Office Online Server farm. Use the same additional parameters that you used when you first created the Office Online Server farm. For example, the **-EditingEnabled** parameter enables editing in Office Online when it is used together with SharePoint Server 2016.
+5. Open the Microsoft PowerShell prompt as an administrator and create an updated Office Online Server farm by using the cmdlet **New-OfficeWebAppsFarm**. The URL you specify for **-InternalURL** contains the DNS A record of the Office Online Server farm, such as **https://oos.contoso.com**. In this case, you use the same name as the existing Office Online Server farm. Use the same additional parameters that you used when you first created the Office Online Server farm. For example, the **-EditingEnabled** parameter enables editing in Office Online when it is used together with SharePoint Server.
     
-    The code in the following example creates a new Office Online Server farm named https://Contoso-OOS.
+    The code in the following example creates a new Office Online Server farm named https://oos.contoso.com.
     
 
 
   ```
-  New-OfficeWebAppsFarm -InternalURL "https://Contoso-OOS"  -EditingEnabled
+  New-OfficeWebAppsFarm -InternalURL "https://oos.contoso.com"  -EditingEnabled
   ```
 
 
-    Additional parameters that configure translation services, proxy servers, clipart support, and Online Viewers are described in  [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
+Additional parameters that configure translation services, proxy servers, clipart support, and Online Viewers are described in  [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
     
   
 6. Depending on how many servers that you have in the Office Online Server farm, load balance traffic to the new farm. You may delay this step until you have more updated servers to join the farm. 
