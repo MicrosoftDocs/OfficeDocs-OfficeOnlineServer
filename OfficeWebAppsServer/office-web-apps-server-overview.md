@@ -1,4 +1,4 @@
-﻿---
+---
 title: Office Web Apps Server overview
 TOCTitle: 'Overview: Office Web Apps Server'
 ms:assetid: 4b199a88-387f-4121-820d-7af580e2a3e8
@@ -97,7 +97,7 @@ You can find more about Online Viewers in [Planning for Online Viewers](plan-off
 
 
 > [!NOTE]
-> Microsoft hosts an Internet-only facing version of Create URL on <A href="http://go.microsoft.com/fwlink/?linkid=256548%26clcid=0x409">Office.com</A>.
+> Microsoft hosts an Internet-only facing version of Create URL on <A href="https://go.microsoft.com/fwlink/?linkid=256548%26clcid=0x409">Office.com</A>.
 
 
 
