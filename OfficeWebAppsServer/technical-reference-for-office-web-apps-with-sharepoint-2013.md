@@ -39,7 +39,7 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/powershell/module/sharepoint-server/?view=sharepoint-ps">Windows PowerShell for Office Web Apps (SharePoint 2013)</a></p></td>
+<td><p><a href="/powershell/module/sharepoint-server/?view=sharepoint-ps">Windows PowerShell for Office Web Apps (SharePoint 2013)</a></p></td>
 <td><p>Lists the Windows PowerShell cmdlets for configure SharePoint 2013 to use Office Web Apps.</p></td>
 </tr>
 </tbody>
@@ -60,7 +60,7 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 <td><p><strong>Newly published content</strong></p></td>
 <td><p>See the following article for a list of new or recently updated Office Web Apps Server articles.</p>
 <ul>
-<li><p><a href="https://technet.microsoft.com/library/ff433481(v=office.15)">Newly published content for Office Web Apps and Office Web Apps Server</a></p></li>
+<li><p><a href="/previous-versions/office/office-2010/ff433481(v=office.14)">Newly published content for Office Web Apps and Office Web Apps Server</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -78,7 +78,7 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 <p>Explore these links to learn how to implement Office Web Apps Server and SharePoint 2013.</p>
 <ul>
 <li><p><a href="deploy-the-infrastructure-office-web-apps-server.md">Deploy the infrastructure: Office Web Apps Server</a></p></li>
-<li><p><a href="https://technet.microsoft.com/library/cc303422(v=office.15)">SharePoint 2013</a></p></li>
+<li><p><a href="/SharePoint/sharepoint-server">SharePoint 2013</a></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -106,7 +106,7 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 <ul>
 <li><p><a href="https://technet.microsoft.com/evalcenter/hh973391">Office 365 ProPlus</a></p></li>
 <li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=507653">Office 365</a></p></li>
-<li><p><a href="https://technet.microsoft.com/evalcenter/ee390818.aspx">Office 2013</a></p></li>
+<li><p><a href="/office/">Office 2013</a></p></li>
 <li><p><a href="https://code.msdn.microsoft.com/office/">Office code samples</a></p></li>
 <li><p><a href="https://gallery.technet.microsoft.com/office/">Office scripts and sample files</a></p></li>
 <li><p><a href="https://msdn.microsoft.com/office/aa905351">Office developer downloads</a></p></li>
@@ -115,35 +115,35 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 </ul></td>
 <td><p><strong>How To</strong></p>
 <ul>
-<li><p><a href="https://technet.microsoft.com/library/jj220060.aspx">Build apps for Office</a></p></li>
-<li><p><a href="https://technet.microsoft.com/library/cc178982.aspx">Deploy Office 2013</a></p></li>
-<li><p><a href="https://technet.microsoft.com/library/cc179068.aspx">Manage Office 2013</a></p></li>
-<li><p><a href="https://technet.microsoft.com/office/ff381682.aspx">Train Office 2010 end users</a></p></li>
+<li><p><a href="/office/dev/add-ins/publish/publish">Build apps for Office</a></p></li>
+<li><p><a href="/deployoffice/">Deploy Office 2013</a></p></li>
+<li><p><a href="/previous-versions/office/office-2013-resource-kit/cc179068(v=office.15)">Manage Office 2013</a></p></li>
+<li><p><a href="/previous-versions/office/office-2010/cc303401(v=office.14)">Train Office 2010 end users</a></p></li>
 <li><p><a href="https://msdn.microsoft.com/office/aa905496.aspx">Office SDKs</a></p></li>
 <li><p><a href="https://msdn.microsoft.com/office/aa905375">Office developer training</a></p></li>
 <li><p><a href="https://www.microsoft.com/resources/msdn/office/media/video/video.html?cid=odc%26from=mscomodc">Office developer videos</a></p></li>
 <li><p><a href="https://www.microsoft.com/resources/msdn/office/media/video/video.html?cid=o365%26from=mscomo365">Office 365 developer videos</a></p></li>
-<li><p><a href="https://technet.microsoft.com/office/ff519671">Office IT pro training</a></p></li>
+<li><p><a href="/previous-versions/office/office-2010/cc303401(v=office.14)">Office IT pro training</a></p></li>
 <li><p><a href="https://www.microsoft.com/resources/technet/office/media/video/video.html?cid=otc%26from=mscomotc">Office IT pro videos</a></p></li>
 <li><p><a href="https://www.microsoft.com/resources/technet/office/media/video/video.html?cid=o365%26from=mscomo365">Office 365 IT pro videos</a></p></li>
-<li><p><a href="https://msdn.microsoft.com/openspecifications/">Open specifications</a></p></li>
-<li><p><a href="https://msdn.microsoft.com/library/cc307282(v=office.12).aspx">Office protocols</a></p></li>
+<li><p><a href="/openspecs/dev_center/ms-devcentlp/51a0d3ff-9f77-464c-b83f-2de08ed28134">Open specifications</a></p></li>
+<li><p><a href="/openspecs/office_protocols/ms-offprotlp/5859f0f1-a929-475b-9b23-554994675456">Office protocols</a></p></li>
 </ul></td>
 <td><p><strong>Sites</strong></p>
 <ul>
 <li><p><a href="https://msdn.microsoft.com/office">Office developers</a></p></li>
-<li><p><a href="https://technet.microsoft.com/office">Office IT Pros</a></p></li>
+<li><p><a href="/office/">Office IT Pros</a></p></li>
 <li><p><a href="https://msdn.microsoft.com/office/hh506337">Office 365 developers</a></p></li>
 <li><p><a href="https://technet.microsoft.com/hh912691">Office 365 IT pros</a></p></li>
-<li><p><a href="https://technet.microsoft.com/library/cc303401.aspx">Office 2013 Resource Kit</a></p></li>
-<li><p><a href="https://msdn.microsoft.com/sharepoint">SharePoint developers</a></p></li>
-<li><p><a href="https://technet.microsoft.com/sharepoint">SharePoint IT Pros</a></p></li>
+<li><p><a href="/deployoffice/">Office 2013 Resource Kit</a></p></li>
+<li><p><a href="/previous-versions/office/fp161348(v=office.15)">SharePoint developers</a></p></li>
+<li><p><a href="/sharepoint/">SharePoint IT Pros</a></p></li>
 <li><p><a href="https://msdn.microsoft.com/vstudio/aa718325">Visual Studio developers</a></p></li>
 <li><p><a href="https://office.microsoft.com/">Office.com</a></p></li>
 </ul></td>
 <td><p><strong>Help</strong></p>
 <ul>
-<li><p><a href="https://technet.microsoft.com/office/ee748587.aspx">Office updates</a></p></li>
+<li><p><a href="/office/">Office updates</a></p></li>
 <li><p><a href="https://blogs.msdn.com/b/officeapps">Apps for Office and SharePoint blog</a></p></li>
 <li><p><a href="https://social.msdn.microsoft.com/forums/en-us/category/officedev%2coldevelopment%2csharepoint2010%2csharepoint%2cprojectserver2010%2cprojectprofessional2010%2cuc/">Forums: Office for Developers</a></p></li>
 <li><p><a href="https://community.office365.com/forums/default.aspx">Forums: Office 365</a></p></li>
@@ -156,4 +156,3 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 </tr>
 </tbody>
 </table>
-

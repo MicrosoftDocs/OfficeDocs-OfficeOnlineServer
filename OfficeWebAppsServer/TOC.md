@@ -1,1 +1,1 @@
-﻿# [Index](index.md)
+﻿# [Index](./office-web-apps-server.md)
