@@ -40,7 +40,7 @@ On a regular basis, Microsoft makes a series of software updates and new version
 
 
 > [!CAUTION]
-> Applying Office Online Server updates or new versions by using the automatic updates process isn't supported with Office Online Server. This is because updates to an Office Online Server must be applied in a specific way, as described in this article. If Office Online Server updates are applied automatically, users may be unable to view or edit documents in Office Online. If this happens, you have to rebuild your Office Online Server farm. To rebuild a farm, you must remove the Office Online Server from the farm by using  [Remove-OfficeWebAppsMachine](https://docs.microsoft.com/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps), uninstall Office Online Server by using Add or remove programs, and then reinstall Office Online Server by following the steps that are described in  [Deploy Office Online Server](deploy-office-online-server.md). After you have reinstalled, apply the update by following the steps that are described in this article. > It is important that you review the guidelines in  [Planning updates for Office Online Server](plan-office-online-server.md#BKMK_Updates) and establish an update process for the Office Online Server farm.
+> Applying Office Online Server updates or new versions by using the automatic updates process isn't supported with Office Online Server. This is because updates to an Office Online Server must be applied in a specific way, as described in this article. If Office Online Server updates are applied automatically, users may be unable to view or edit documents in Office Online. If this happens, you have to rebuild your Office Online Server farm. To rebuild a farm, you must remove the Office Online Server from the farm by using  [Remove-OfficeWebAppsMachine](/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps), uninstall Office Online Server by using Add or remove programs, and then reinstall Office Online Server by following the steps that are described in  [Deploy Office Online Server](deploy-office-online-server.md). After you have reinstalled, apply the update by following the steps that are described in this article. > It is important that you review the guidelines in  [Planning updates for Office Online Server](plan-office-online-server.md#BKMK_Updates) and establish an update process for the Office Online Server farm.
   
     
     
@@ -53,11 +53,11 @@ Updates that are released for Office Online Server will update Office Online Ser
   
     
     
-As part of the update process, you'll have to re-create the Office Online Server farm. To prepare to re-create the Office Online Server farm, review your current Office Online Server farm properties by running the Microsoft PowerShell cmdlet **Get-OfficeWebAppsFarm** and review the parameters for [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps). The parameters that you use for **New-OfficeWebAppsFarm** should be the same parameters that you used when you first set up the Office Online Server farm.
+As part of the update process, you'll have to re-create the Office Online Server farm. To prepare to re-create the Office Online Server farm, review your current Office Online Server farm properties by running the Microsoft PowerShell cmdlet **Get-OfficeWebAppsFarm** and review the parameters for [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps). The parameters that you use for **New-OfficeWebAppsFarm** should be the same parameters that you used when you first set up the Office Online Server farm.
   
     
     
-Note that when you've completed updating your farm, you need to re-add any  [data model servers](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsexcelbiserver?view=officewebapps-ps) that you had configured for Excel Online.
+Note that when you've completed updating your farm, you need to re-add any  [data model servers](/powershell/module/officewebapps/new-officewebappsexcelbiserver?view=officewebapps-ps) that you had configured for Excel Online.
   
     
     
@@ -98,7 +98,7 @@ Remove-OfficeWebAppsMachine
   ```
 
 
-Additional parameters that configure translation services, proxy servers, clipart support, and Online Viewers are described in  [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
+Additional parameters that configure translation services, proxy servers, clipart support, and Online Viewers are described in  [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
     
   
 
@@ -141,7 +141,7 @@ To apply software updates or new versions to a multiple Office Online Server far
   ```
 
 
-Additional parameters that configure translation services, proxy servers, clipart support, and Online Viewers are described in  [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
+Additional parameters that configure translation services, proxy servers, clipart support, and Online Viewers are described in  [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
     
   
 6. Depending on how many servers that you have in the Office Online Server farm, load balance traffic to the new farm. You may delay this step until you have more updated servers to join the farm. 
@@ -172,19 +172,19 @@ Additional parameters that configure translation services, proxy servers, clipar
   
     
     
- [Remove-OfficeWebAppsMachine](https://docs.microsoft.com/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps)
+ [Remove-OfficeWebAppsMachine](/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps)
   
     
     
- [New-OfficeWebAppsMachine](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)
+ [New-OfficeWebAppsMachine](/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)
   
     
     
- [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)
+ [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)
   
     
     
- [Get-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/get-officewebappsfarm?view=officewebapps-ps)
+ [Get-OfficeWebAppsFarm](/powershell/module/officewebapps/get-officewebappsfarm?view=officewebapps-ps)
 #### 
 
 

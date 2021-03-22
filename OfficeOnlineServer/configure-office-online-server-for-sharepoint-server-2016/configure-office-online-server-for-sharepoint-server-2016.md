@@ -40,7 +40,7 @@ A few things to check before getting started:
 - These instructions also apply to SharePoint Server 2013, however SharePoint Server 2013 cannot use the Excel Online external data connectivity and data refresh functionality in Office Online Server.
     
 
-- Install SharePoint Server 2016. See  [Install SharePoint Server](https://docs.microsoft.com/SharePoint/install/install) for guidance.
+- Install SharePoint Server 2016. See  [Install SharePoint Server](/SharePoint/install/install) for guidance.
     
   
 - Make sure all SharePoint Server 2016 web applications use claims-based authentication. Office Online rendering and editing won't work on SharePoint Server 2016 web applications that use classic mode authentication. 
@@ -316,5 +316,3 @@ If, for any reason, you want to disconnect SharePoint Server 2016 from Office On
 
 Remove-SPWOPIBinding -All:$true
 ```
-
-

@@ -110,7 +110,7 @@ Office Online integration for attachment previews is available to all Exchange O
   
     
     
-For more information about how to configure Exchange Server to use Office Online Server, see  [Office Online Server Integration](https://go.microsoft.com/fwlink/p/?LinkId=627464).
+For more information about how to configure Exchange Server to use Office Online Server, see  [Office Online Server Integration](/Exchange/plan-and-deploy/install-office-online-server).
   
     
     
