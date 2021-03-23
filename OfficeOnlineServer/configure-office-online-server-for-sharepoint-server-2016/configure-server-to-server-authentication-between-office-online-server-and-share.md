@@ -185,10 +185,10 @@ Perform the following procedure twice - once for each <RegisteredIssuer> GUID.
   ## See Also
   <a name="SeeAlso"> </a>
   
-  [New-SPTrustedSecurityTokenIssuer](https://docs.microsoft.com/powershell/module/sharepoint-server/new-sptrustedsecuritytokenissuer)
+  [New-SPTrustedSecurityTokenIssuer](/powershell/module/sharepoint-server/new-sptrustedsecuritytokenissuer)
   
-  [New-SPTrustedRootAuthority](https://docs.microsoft.com/powershell/module/sharepoint-server/new-sptrustedrootauthority)
+  [New-SPTrustedRootAuthority](/powershell/module/sharepoint-server/new-sptrustedrootauthority)
   
-  [Get-SPAppPrincipal](https://docs.microsoft.com/powershell/module/sharepoint-server/get-spappprincipal)
+  [Get-SPAppPrincipal](/powershell/module/sharepoint-server/get-spappprincipal)
   
-  [Set-SPAppPrincipalPermission](https://docs.microsoft.com/powershell/module/sharepoint-server/set-spappprincipalpermission)
+  [Set-SPAppPrincipalPermission](/powershell/module/sharepoint-server/set-spappprincipalpermission)

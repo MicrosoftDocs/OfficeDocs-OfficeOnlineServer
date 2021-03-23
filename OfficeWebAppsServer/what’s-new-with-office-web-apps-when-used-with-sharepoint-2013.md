@@ -92,7 +92,7 @@ Users who work with Office files in document libraries in SharePoint 2013 can be
 </tr>
 <tr class="even">
 <td><p>Licensing</p></td>
-<td><p>SharePoint 2013 provides new license enforcement that works with Office Web Apps. If you enable SharePoint licensing and then enable Office Web Apps editing, only the users who have the appropriate license can actually edit Office files in a browser. If no Office Web Apps editing licenses are applied for users, only viewing is supported. For more information about how licensing works in SharePoint 2013, see <a href="https://technet.microsoft.com/library/jj219627(v=office.15)">Configure licensing in SharePoint Server 2013</a>.</p></td>
+<td><p>SharePoint 2013 provides new license enforcement that works with Office Web Apps. If you enable SharePoint licensing and then enable Office Web Apps editing, only the users who have the appropriate license can actually edit Office files in a browser. If no Office Web Apps editing licenses are applied for users, only viewing is supported. For more information about how licensing works in SharePoint 2013, see <a href="/sharepoint/administration/administration">Configure licensing in SharePoint Server 2013</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -131,7 +131,3 @@ You can learn more about how to use mobile devices with SharePoint 2013 in [Over
 
 [Content roadmap for Office Web Apps Server](content-roadmap-for-office-web-apps-server.md)  
 [Plan Office Web Apps (Used with SharePoint 2013)](plan-office-web-apps-used-with-sharepoint-2013.md)  
-  
-
-[](plan-office-web-apps-used-with-sharepoint-2013.md)
-

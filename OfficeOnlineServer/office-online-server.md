@@ -33,7 +33,7 @@ Office Online Server can be downloaded from the  [Volume Licensing Service Cente
 For customers whose licenses qualify for OOS, but cannot obtain it through the VLSC, the following actions are possible: 
 
 - VL Open customers can contact their [Support Center](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx).
-- Customers who purchased O365 online from Microsoft can submit a request from their Office 365 admin center or [contact support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+- Customers who purchased O365 online from Microsoft can submit a request from their Office 365 admin center or [contact support](/microsoft-365/admin/contact-support-for-business-products).
 
 ## Office Online Server version compatibility list
 <a name="version"> </a>
@@ -56,5 +56,3 @@ The following table shows the compatibility between Office Web Apps Server and O
 > SharePoint Server 2013 cannot use the Excel Online external data connectivity and data refresh functionality in Office Online Server. This functionality is available starting with SharePoint Server 2016.
   
     
-    
-

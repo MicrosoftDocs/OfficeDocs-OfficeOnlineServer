@@ -1,4 +1,4 @@
-﻿---
+---
 title: How Office Web Apps work on-premises with SharePoint 2013
 TOCTitle: Office Web Apps on-premises with SharePoint 2013
 ms:assetid: 8480064e-14a4-4b46-ad6b-0c836b192af2
@@ -44,7 +44,7 @@ For exact details about your license, refer to the Microsoft Software License Te
 
 SharePoint 2013 provides new license enforcement that works with Office Web Apps. If you enable SharePoint licensing and then enable Office Web Apps editing, only the users who have the appropriate license can actually edit Office files in a browser. If no Office Web Apps editing licenses are applied for users, only viewing is supported.
 
-For more information about how licensing works in SharePoint 2013, see [Configure licensing in SharePoint Server 2013](https://technet.microsoft.com/library/jj219627\(v=office.15\)). The EditingEnabled parameter that enables editing is described in [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) and [Set-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps).
+For more information about how licensing works in SharePoint 2013, see [Configure licensing in SharePoint Server 2013](https://technet.microsoft.com/library/jj219627\(v=office.15\)). The EditingEnabled parameter that enables editing is described in [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) and [Set-OfficeWebAppsFarm](/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps).
 
 Files that are sent by the Share by link feature in SharePoint 2013 can be edited in Office Web Apps even when no editing license is present and when editing is disabled for the Office Web Apps Server farm.
 
@@ -52,7 +52,7 @@ Files that are sent by the Share by link feature in SharePoint 2013 can be edite
 
 Office Web Apps Server provides Office Mobile Viewers to make Office Web Apps available to mobile users who access SharePoint Server sites. Office Mobile Viewers are enabled by default, but can be disabled by the SharePoint Server site administrator. When they're enabled, users can navigate to the SharePoint Server site by using the browser on their mobile device, tap the document they want to open in the SharePoint Server library, and the document will open in the mobile browser.
 
-You can find more details about SharePoint libraries on mobile devices in [What's new for mobile devices in SharePoint 2013](https://technet.microsoft.com/library/fp161352\(v=office.15\)) and [Overview of mobile devices and SharePoint Server 2013](https://technet.microsoft.com/library/fp161351\(v=office.15\)). Users can learn more about how to use Office Mobile Viewers on their mobile device in [Use Office Web Apps on your Android, iPhone, or Windows Phone](https://go.microsoft.com/fwlink/p/?linkid=271045). If you decide to disable Office Mobile Viewers on SharePoint 2013, use the [Remove-SPWOPIBinding](https://docs.microsoft.com/powershell/module/sharepoint-server/Remove-SPWOPIBinding?view=sharepoint-ps) cmdlet.
+You can find more details about SharePoint libraries on mobile devices in [What's new for mobile devices in SharePoint 2013](https://technet.microsoft.com/library/fp161352\(v=office.15\)) and [Overview of mobile devices and SharePoint Server 2013](https://technet.microsoft.com/library/fp161351\(v=office.15\)). Users can learn more about how to use Office Mobile Viewers on their mobile device in [Use Office Web Apps on your Android, iPhone, or Windows Phone](https://go.microsoft.com/fwlink/p/?linkid=271045). If you decide to disable Office Mobile Viewers on SharePoint 2013, use the [Remove-SPWOPIBinding](/powershell/module/sharepoint-server/Remove-SPWOPIBinding?view=sharepoint-ps) cmdlet.
 
 ## Differences between Excel Web App and Excel Services in SharePoint
 
@@ -62,14 +62,10 @@ But there are certain differences between Excel Web App and Excel Services in Sh
 
 For details about the differences between the Excel Web App and Excel Services, see [Overview of Excel Services in SharePoint Server 2013](https://technet.microsoft.com/library/ee424405\(v=office.15\)) and [Comparing Excel Services in SharePoint to Excel Web App](https://go.microsoft.com/fwlink/p/?linkid=255460).
 
-If your organization decides to use Excel Services instead of Excel Web App to view workbooks in the browser, you can use the Windows PowerShell **New-SPWOPISuppressionSettings** cmdlet to turn off Excel Web App for Excel workbooks. For more information, see [New-SPWOPISuppressionSetting](https://docs.microsoft.com/powershell/module/sharepoint-server/New-SPWOPISuppressionSetting?view=sharepoint-ps).
+If your organization decides to use Excel Services instead of Excel Web App to view workbooks in the browser, you can use the Windows PowerShell **New-SPWOPISuppressionSettings** cmdlet to turn off Excel Web App for Excel workbooks. For more information, see [New-SPWOPISuppressionSetting](/powershell/module/sharepoint-server/New-SPWOPISuppressionSetting?view=sharepoint-ps).
 
 ## See also
 
 
 [Content roadmap for Office Web Apps Server](content-roadmap-for-office-web-apps-server.md)  
 [Plan Office Web Apps (Used with SharePoint 2013)](plan-office-web-apps-used-with-sharepoint-2013.md)  
-  
-
-[](plan-office-web-apps-used-with-sharepoint-2013.md)
-

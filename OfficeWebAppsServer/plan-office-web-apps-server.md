@@ -1,4 +1,4 @@
-﻿---
+---
 title: Plan Office Web Apps Server
 TOCTitle: Plan Office Web Apps Server
 ms:assetid: 2e147f11-6f47-46bc-90bf-b2f179958d11
@@ -25,7 +25,7 @@ It’s important to carefully plan so that all hosts, such as SharePoint 2013 an
 
   - [Plan Office Web Apps (Used with SharePoint 2013)](plan-office-web-apps-used-with-sharepoint-2013.md)
 
-  - [Deploying Office Web Apps Server and Lync Server 2013](https://go.microsoft.com/fwlink/p/?linkid=256902)
+  - [Deploying Office Web Apps Server and Lync Server 2013](/previous-versions/office/lync-server-2013/lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013)
 
 
 > [!NOTE]
@@ -284,9 +284,9 @@ Make sure the following ports aren’t blocked by firewalls on either the server
 
 We recommend a load balancing solution when you run Office Web Apps Server on two or more servers. Just about any load balancing solution will work, including a server that runs the Web Server (IIS) role running Application Request Routing (ARR). In fact, you can run ARR on one of the servers that runs Office Web Apps Server. If you don’t have a load balancing solution, take a look at these resources for using IIS with ARR:
 
-  - [Install Application Request Routing](https://go.microsoft.com/fwlink/?linkid=236955)
+  - [Install Application Request Routing](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee683903(v=ws.10))
 
-  - [Application Request Routing Help](https://go.microsoft.com/fwlink/?linkid=236956)
+  - [Application Request Routing Help](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee683905(v=ws.10))
 
 Ideally, try to find a load balancing solution that supports the following features:
 
@@ -330,7 +330,7 @@ The following is a list of recommendations that you should keep in mind as your 
 
   - **Plan for incoming and outgoing communications.** In an Internet-facing deployment, route all outgoing communications through a NAT device. In a multi-server farm, handle all incoming communications with a load balancer.
 
-  - **Make sure all servers in the Office Web Apps Server farm are joined to a domain and are part of the same organizational unit (OU).** Use the **FarmOU** parameter in the [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) cmdlet to prevent other servers that are not in this OU from joining the farm.
+  - **Make sure all servers in the Office Web Apps Server farm are joined to a domain and are part of the same organizational unit (OU).** Use the **FarmOU** parameter in the [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) cmdlet to prevent other servers that are not in this OU from joining the farm.
 
   - **Use Hypertext Transfer Protocol Secure (HTTPS) for all incoming requests.**
 
@@ -388,13 +388,13 @@ Note that when you use HTTP, traffic from the load balancer to the servers that 
 
 ## Restrict which servers can join an Office Web Apps Server farm based on OU membership
 
-You can prevent unauthorized servers from joining an Office Web Apps Server farm by creating an organizational unit for those servers and then specifying the FarmOU parameter when you create the farm. For more information about the FarmOU parameter, see [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
+You can prevent unauthorized servers from joining an Office Web Apps Server farm by creating an organizational unit for those servers and then specifying the FarmOU parameter when you create the farm. For more information about the FarmOU parameter, see [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 ## Limit host access for Office Web Apps Server by using the Allow List
 
 The Allow List is a security feature that prevents unwanted hosts from connecting to an Office Web Apps Server farm and using it for file operations without your consent. By adding the domains that contain approved hosts to the Allow List, you can limit the hosts to which Office Web Apps Server allows file operations requests, such as file retrieval, metadata retrieval, and file changes.
 
-You can add domains to the Allow List after you’ve created the Office Web Apps Server farm. To learn how to add domains to the Allow List, see [New-OfficeWebAppsHost](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps).
+You can add domains to the Allow List after you’ve created the Office Web Apps Server farm. To learn how to add domains to the Allow List, see [New-OfficeWebAppsHost](/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps).
 
 
 > [!IMPORTANT]
@@ -404,19 +404,19 @@ You can add domains to the Allow List after you’ve created the Office Web Apps
 
 ## Planning for Online Viewers with Office Web Apps Server
 
-By default, Online Viewers functionality is enabled after you install Office Web Apps Server. Review the following guidelines if you’re planning to use Online Viewers in your organization. In some cases, you might want to disable some features within Online Viewers. These guidelines refer to parameters that are set by using the Windows PowerShell cmdlets [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) and [Set-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps).
+By default, Online Viewers functionality is enabled after you install Office Web Apps Server. Review the following guidelines if you’re planning to use Online Viewers in your organization. In some cases, you might want to disable some features within Online Viewers. These guidelines refer to parameters that are set by using the Windows PowerShell cmdlets [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) and [Set-OfficeWebAppsFarm](/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps).
 
 ## Security considerations for Online Viewers
 
 Files that are intended to be viewed through a web browser by using Online Viewers must not require authentication. In other words, the files must be available publicly because Online Viewers can’t perform authentication when it is retrieving files. We strongly recommend that the Office Web Apps Server farm that you use for Online Viewers is only able to access either the intranet or the Internet, but not both. This is because Office Web Apps Server doesn’t differentiate between requests for intranet and Internet URLs. Somebody on the Internet could request an intranet URL, for example, causing a security leak if an internal document is viewed.
 
-For the same reason, if you have set up the Office Web Apps Server to connect only to the Internet, we strongly recommend that you disable UNC support in Online Viewers. To disable UNC support, set the OpenFromUncEnabled parameter to False by using the Windows PowerShell cmdlets [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (for new farms) or [Set-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (for existing farms).
+For the same reason, if you have set up the Office Web Apps Server to connect only to the Internet, we strongly recommend that you disable UNC support in Online Viewers. To disable UNC support, set the OpenFromUncEnabled parameter to False by using the Windows PowerShell cmdlets [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (for new farms) or [Set-OfficeWebAppsFarm](/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (for existing farms).
 
 As an additional security precaution, Online Viewers are limited to viewing Office files that are 10 MB or less.
 
 ## Configuration options for Online Viewers
 
-You can configure Online Viewers by using the following Windows PowerShell parameters in [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (for new farms) or [Set-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (for existing farms).
+You can configure Online Viewers by using the following Windows PowerShell parameters in [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (for new farms) or [Set-OfficeWebAppsFarm](/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (for existing farms).
 
   - **OpenFromUrlEnabled**   Turns the Online Viewers on or off. This parameter controls Online Viewers for files that have URL and UNC paths. By default, this parameter is set to False (disabled) when you create a new Office Web Apps Server farm.
 
@@ -430,7 +430,7 @@ Before deploying Office Web Apps Server, you need to decide how your organizatio
 
 Applying Office Web Apps Server updates by using the Microsoft automatic updates process isn’t supported with Office Web Apps Server. Updates to an Office Web Apps Server must be applied in a specific way, as described in [Apply software updates to Office Web Apps Server](apply-software-updates-to-office-web-apps-server.md). If Office Web Apps Server updates are applied automatically, users might be unable to view or edit documents in Office Web Apps. If this happens, you have to rebuild your Office Web Apps Server farm.
 
-We recommend that you manage updates by using Windows Server Update Services (WSUS) or by using Microsoft Endpoint Configuration Manager, which uses WSUS. WSUS allows you to fully manage the distribution of updates that are released through Microsoft Update for each server in the Office Web Apps Server farm. By using WSUS, you can decide which updates can be automatically applied to the server farm and which updates, such as Office Web Apps Server updates, have to be manually applied. For more information about WSUS, see [Windows Server Update Services](https://go.microsoft.com/fwlink/p/?linkid=294822).
+We recommend that you manage updates by using Windows Server Update Services (WSUS) or by using Microsoft Endpoint Configuration Manager, which uses WSUS. WSUS allows you to fully manage the distribution of updates that are released through Microsoft Update for each server in the Office Web Apps Server farm. By using WSUS, you can decide which updates can be automatically applied to the server farm and which updates, such as Office Web Apps Server updates, have to be manually applied. For more information about WSUS, see [Windows Server Update Services](/windows/deployment/deploy-whats-new).
 
 If you do not use WSUS or Microsoft Endpoint Configuration Manager, set Microsoft automatic updates on each server in the Office Web Apps Server farm to **Automatically download but notify user for install**. When you’re notified of an Office Web Apps Server update, follow the steps in [Apply software updates to Office Web Apps Server](apply-software-updates-to-office-web-apps-server.md). To have Windows updates applied and keep your servers secure, accept the Windows updates when you’re notified that updates are available.
 
@@ -444,7 +444,3 @@ If you do not use WSUS or Microsoft Endpoint Configuration Manager, set Microsof
 
 
 [Office.com (for help with Office Web Apps on your desktop or mobile device)](https://go.microsoft.com/fwlink/p/?linkid=266657)  
-  
-
-[](apply-software-updates-to-office-web-apps-server.md)
-
