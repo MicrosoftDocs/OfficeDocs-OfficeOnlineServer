@@ -1,4 +1,4 @@
-﻿---
+---
 title: Office Web Apps Server
 TOCTitle: '@NoTitle'
 ms:assetid: e75c9827-f5ce-4099-a08c-b42fde72ea98
@@ -155,6 +155,3 @@ _**Applies to:** Office Web Apps, Office Web Apps Server, SharePoint Foundation 
 </tr>
 </tbody>
 </table>
-
-
-[](use-office-web-apps-with-sharepoint-2013.md)
