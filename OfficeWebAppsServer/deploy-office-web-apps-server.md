@@ -1,4 +1,4 @@
-﻿---
+---
 title: Deploy Office Web Apps Server
 TOCTitle: Deploy Office Web Apps Server
 ms:assetid: e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5
@@ -414,6 +414,3 @@ If features of the .NET Framework 3.5 were installed and then removed, you might
 
 
 [Deploying Office Web Apps Server and Lync Server 2013](/previous-versions/office/lync-server-2013/lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013)  
-  
-
-[](configure-office-web-apps-for-sharepoint-2013.md)
