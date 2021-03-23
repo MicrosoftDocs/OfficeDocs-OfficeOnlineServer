@@ -109,4 +109,4 @@ You can find more about Online Viewers in [Planning for Online Viewers](plan-off
 [Deploy Office Web Apps Server](deploy-office-web-apps-server.md)  
   
 
-[](deploy-office-web-apps-server.md)
+[Deploy Office Web Apps Server](deploy-office-web-apps-server.md)
