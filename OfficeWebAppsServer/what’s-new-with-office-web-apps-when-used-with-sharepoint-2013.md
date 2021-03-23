@@ -131,6 +131,3 @@ You can learn more about how to use mobile devices with SharePoint 2013 in [Over
 
 [Content roadmap for Office Web Apps Server](content-roadmap-for-office-web-apps-server.md)  
 [Plan Office Web Apps (Used with SharePoint 2013)](plan-office-web-apps-used-with-sharepoint-2013.md)  
-  
-
-[](plan-office-web-apps-used-with-sharepoint-2013.md)
