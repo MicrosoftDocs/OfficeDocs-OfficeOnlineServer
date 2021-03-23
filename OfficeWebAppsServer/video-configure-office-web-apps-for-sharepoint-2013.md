@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Video: Configure Office Web Apps for SharePoint 2013'
 TOCTitle: 'Video: Configure Office Web Apps for SharePoint 2013'
 ms:assetid: 0c02633f-3839-448b-ae83-24f24c254179
@@ -57,6 +57,3 @@ For more detail about each of these steps, see the following sections in the art
 [Content roadmap for Office Web Apps Server](content-roadmap-for-office-web-apps-server.md)  
 [Plan Office Web Apps (Used with SharePoint 2013)](plan-office-web-apps-used-with-sharepoint-2013.md)  
 [How Office Web Apps work on-premises with SharePoint 2013](how-office-web-apps-work-on-premises-with-sharepoint-2013.md)  
-  
-
-[](how-office-web-apps-work-on-premises-with-sharepoint-2013.md)
