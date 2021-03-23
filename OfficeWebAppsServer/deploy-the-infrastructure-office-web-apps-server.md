@@ -169,5 +169,3 @@ Office Web Apps Server is a new Office server product that delivers browser-base
 </tbody>
 </table>
 
-
-[](use-office-web-apps-with-sharepoint-2013.md)
