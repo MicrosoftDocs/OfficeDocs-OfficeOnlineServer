@@ -1,4 +1,4 @@
-﻿---
+---
 title: Apply software updates to Office Web Apps Server
 TOCTitle: Apply software updates to Office Web Apps Server
 ms:assetid: 5d15dbd9-374e-422a-a870-43270dd0a2db
@@ -129,4 +129,4 @@ To apply software updates to a multiple Office Web Apps Server farm, you first r
 [Content roadmap for Office Web Apps Server](content-roadmap-for-office-web-apps-server.md)  
   
 
-[](content-roadmap-for-office-web-apps-server.md)
+[Content roadmap for Office Web Apps Server](content-roadmap-for-office-web-apps-server.md)
