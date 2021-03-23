@@ -1,4 +1,4 @@
-﻿---
+---
 title: Configure Office Web Apps for SharePoint 2013
 TOCTitle: Configure Office Web Apps for SharePoint 2013
 ms:assetid: a5276781-133b-413c-beca-b851e17c2081
@@ -315,4 +315,4 @@ Need help? See [Remove-SPWOPIBinding](/powershell/module/sharepoint-server/Remov
 [Deploy Office Web Apps Server](deploy-office-web-apps-server.md)  
   
 
-[](deploy-office-web-apps-server.md)
+[Deploy Office Web Apps Server](deploy-office-web-apps-server.md)
