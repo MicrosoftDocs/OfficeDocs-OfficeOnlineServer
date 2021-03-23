@@ -1,4 +1,4 @@
-﻿---
+---
 title: Technical reference for Office Web Apps Server
 TOCTitle: Technical reference
 ms:assetid: aa64a67c-d83a-4548-ac85-9f749b7dc407
@@ -159,6 +159,3 @@ _**Applies to:** Office Web Apps Server_
 </tr>
 </tbody>
 </table>
-
-
-[](use-office-web-apps-with-sharepoint-2013.md)
