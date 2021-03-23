@@ -79,6 +79,3 @@ You can configure whether Word, PowerPoint, Excel, and OneNote files are opened 
 
 
 [Configure SharePoint 2013 Preview to use Office Web Apps Server Preview in a test environment that uses HTTP](configure-office-web-apps-for-sharepoint-2013.md)  
-  
-
-[](how-office-web-apps-work-on-premises-with-sharepoint-2013.md)
