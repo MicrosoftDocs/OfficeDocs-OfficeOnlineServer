@@ -129,7 +129,7 @@ Complete these steps on any servers that will run Office Online Server.
 5. When Setup finishes installing Office Online Server, choose **Close**.
     
   
-6. If you're planning to use Kerberos Constrained Delegation with Excel Online, then, in **Services**, set the **Claims to Windows Token Service** [to start automatically](https://go.microsoft.com/fwlink/p/?LinkId=620769) on this server.
+6. If you're planning to use Kerberos Constrained Delegation with Excel Online, then, in **Services**, set the **Claims to Windows Token Service** [to start automatically](/previous-versions/windows-identity-foundation/ee517278(v=msdn.10)) on this server.
     
   
 If you plan to use Kerberos Constrained Delegation with Excel Online, be sure to add each server in the Office Online Server farm to the Active Directory Domain Services delegation list.
@@ -299,7 +299,7 @@ The farm is now ready to provide Office Online functionality to hosts over HTTP.
 > This also applies to SharePoint Server 2019.
     
   
--  [Office Online Server integration with Exchange](https://go.microsoft.com/fwlink/p/?LinkId=620075)
+-  [Office Online Server integration with Exchange](/Exchange/plan-and-deploy/install-office-online-server)
     
   
 
@@ -400,7 +400,7 @@ The farm is now ready to provide Office Online functionality to hosts over HTTPS
 > [!NOTE]
 > This also applies to SharePoint Server 2019.
 
--  [Office Online Server integration with Exchange](https://go.microsoft.com/fwlink/p/?LinkId=620075)
+-  [Office Online Server integration with Exchange](/Exchange/plan-and-deploy/install-office-online-server)
     
   
 
@@ -502,7 +502,7 @@ The farm is now ready to provide Office Online functionality to hosts over HTTPS
 > [!NOTE]
 > This also applies to SharePoint Server 2019.
   
--  [Office Online Server integration with Exchange](https://go.microsoft.com/fwlink/p/?LinkId=620075)
+-  [Office Online Server integration with Exchange](/Exchange/plan-and-deploy/install-office-online-server)
     
   
 
@@ -531,5 +531,4 @@ Add-WindowsFeature NET-Framework-45-Core, NET-Framework-45-ASPNET, Web-Asp-Net45
 [Office Online Server release schedule](office-online-server-release-schedule.md)
  
 
-[Plan Office Online Server](https://docs.microsoft.com/officeonlineserver/plan-office-online-server) 
-
+[Plan Office Online Server](./plan-office-online-server.md)

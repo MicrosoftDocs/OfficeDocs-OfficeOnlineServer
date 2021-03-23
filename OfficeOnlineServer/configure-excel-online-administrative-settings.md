@@ -240,7 +240,7 @@ You can configure Analysis Services servers to work with Excel Online by using t
 - **Remove-OfficeWebAppsExcelBIServer** Removes a server from the Allow List.
     
   
-To use this feature, you must also configure each computer in your Office Online Server farm as an  [Analysis Services administrator](https://go.microsoft.com/fwlink/p/?LinkId=717498).
+To use this feature, you must also configure each computer in your Office Online Server farm as an  [Analysis Services administrator](/analysis-services/instances/grant-server-admin-rights-to-an-analysis-services-instance?viewFallbackFrom=sql-server-ver15).
   
     
     
@@ -267,7 +267,7 @@ New-OfficeWebAppsExcelBIServer -ServerID "SSAS01"
 Remove-OfficeWebAppsExcelBIServer -ServerID "SSAS01"
 ```
 
-The OfficeWebAppsExcelBIServer cmdlets also support  [common parameters](https://go.microsoft.com/fwlink/?LinkID=113216).
+The OfficeWebAppsExcelBIServer cmdlets also support  [common parameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters).
   
     
     
@@ -288,7 +288,7 @@ To configure this option, you have to do the following:
     
     
 
-- Configure each computer in your Office Online Server farm as an  [Analysis Services administrator](https://go.microsoft.com/fwlink/p/?LinkId=717498).
+- Configure each computer in your Office Online Server farm as an  [Analysis Services administrator](/analysis-services/instances/grant-server-admin-rights-to-an-analysis-services-instance?viewFallbackFrom=sql-server-ver15).
     
   
 - Use PowerShell to enable EffectiveUserName in Excel Online (described below).
@@ -349,5 +349,3 @@ Add the following value to the settings.xml file, where  *TimeoutValue*  is the 
 Note that a timeout value of 0 will make the timeout indefinite. This is not recommended as it increases the risk of a denial-of-service attack.
   
     
-    
-
