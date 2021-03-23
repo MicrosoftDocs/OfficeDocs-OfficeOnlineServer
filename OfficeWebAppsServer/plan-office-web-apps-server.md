@@ -1,4 +1,4 @@
-﻿---
+---
 title: Plan Office Web Apps Server
 TOCTitle: Plan Office Web Apps Server
 ms:assetid: 2e147f11-6f47-46bc-90bf-b2f179958d11
@@ -444,6 +444,3 @@ If you do not use WSUS or Microsoft Endpoint Configuration Manager, set Microsof
 
 
 [Office.com (for help with Office Web Apps on your desktop or mobile device)](https://go.microsoft.com/fwlink/p/?linkid=266657)  
-  
-
-[](apply-software-updates-to-office-web-apps-server.md)
