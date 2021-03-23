@@ -1,4 +1,4 @@
-﻿---
+---
 title: How Office Web Apps work on-premises with SharePoint 2013
 TOCTitle: Office Web Apps on-premises with SharePoint 2013
 ms:assetid: 8480064e-14a4-4b46-ad6b-0c836b192af2
@@ -69,6 +69,3 @@ If your organization decides to use Excel Services instead of Excel Web App to v
 
 [Content roadmap for Office Web Apps Server](content-roadmap-for-office-web-apps-server.md)  
 [Plan Office Web Apps (Used with SharePoint 2013)](plan-office-web-apps-used-with-sharepoint-2013.md)  
-  
-
-[](plan-office-web-apps-used-with-sharepoint-2013.md)
