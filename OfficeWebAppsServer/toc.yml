@@ -16,7 +16,7 @@
       href: technical-reference-for-office-web-apps-server.md
       items:
       - name: Windows PowerShell for Office Web Apps Server
-        href: https://docs.microsoft.com/en-us/powershell/module/officewebapps/?view=officewebapps-ps
+        href: /powershell/module/officewebapps/?view=officewebapps-ps
   - name: Use Office Web Apps with SharePoint 2013
     href: use-office-web-apps-with-sharepoint-2013.md
     items:
@@ -36,6 +36,6 @@
       href: technical-reference-for-office-web-apps-with-sharepoint-2013.md
       items:
       - name: Windows PowerShell for Office Web Apps
-        href: https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps
+        href: /powershell/module/sharepoint-server/?view=sharepoint-ps
   - name: Apply software updates to Office Web Apps Server
     href: apply-software-updates-to-office-web-apps-server.md
