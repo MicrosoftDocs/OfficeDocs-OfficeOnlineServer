@@ -53,6 +53,7 @@
                                          "ms.prod":  "office-web-app-server",
                                          "ms.technology":  "server-general",
                                          "feedback_system": "None",
+			  		 "recommendations": true,
                                          "hideEdit": true,
                                          "titleSuffix": "Office Web Apps Server",
 					 "contributors_to_exclude": [ 
