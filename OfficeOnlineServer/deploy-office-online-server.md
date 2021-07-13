@@ -41,7 +41,7 @@ Office Online Server is the next version of Office Web Apps Server. Deploying Of
 Perform these procedures on all servers that will run Office Online Server. This server must be Windows Server 2012 R2 or Windows Server 2016.
 
 > [!IMPORTANT]
-> Windows Server 2016 requires Office Online Server April 2017 or later. Windows Server 2019 is not supported at this time.
+> Windows Server 2016 requires Office Online Server April 2017 or later.
 
 Office Online Server was designed and tested for server operating systems configured with default settings.  If you need to deploy with non-default settings, it is recommended to begin installation and setup with the default settings.  Once the system is verified as working, then incrementally add and test Group Policies, security settings and other modifications.
     
