@@ -46,8 +46,6 @@ You can run Office Online Server on the following operating systems:
 > [!NOTE]
 > Office Online Server only supports the "Server with Desktop Experience" installation option of Windows Server 2016. For additional information about Windows Server offerings, see [Windows Server Semi-annual Channel Overview](/windows-server/get-started/semi-annual-channel-overview).
 
-> [!NOTE]
-> Office Online Server does not support Windows Server 2019.
 
 ### Domain requirements for Office Online Server
 
