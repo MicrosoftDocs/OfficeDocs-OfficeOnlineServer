@@ -42,7 +42,7 @@ Perform these procedures on all servers that will run Office Online Server. The 
 
 > [!IMPORTANT]
 > The Office Online Server November 2018 release is required.<br><br>
-> Windows Server 2019 also requires installation of the [July 2021 security update](https://support.microsoft.com/topic/description-of-the-security-update-for-office-online-server-july-13-2021-kb5001973-d9f20977-c147-4022-9087-5f90380e39f5).
+> Windows Server 2019 also requires installation of the [July 2021 security update](https://support.microsoft.com/topic/description-of-the-security-update-for-office-online-server-july-13-2021-kb5001973-d9f20977-c147-4022-9087-5f90380e39f5) or later.
 
 Office Online Server was designed and tested for server operating systems configured with default settings.  If you need to deploy with non-default settings, it is recommended to begin installation and setup with the default settings.  Once the system is verified as working, then incrementally add and test Group Policies, security settings and other modifications.
     
