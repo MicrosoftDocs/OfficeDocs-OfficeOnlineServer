@@ -161,34 +161,15 @@ Additional parameters that configure translation services, proxy servers, clipar
   New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
   ```
 
-
 ## See also
 <a name="before"> </a>
-
-
-#### 
-
-
-  
-    
-    
+ 
  [Remove-OfficeWebAppsMachine](/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps)
-  
-    
-    
+
  [New-OfficeWebAppsMachine](/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)
-  
-    
-    
- [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)
-  
-    
+   
+ [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
     
  [Get-OfficeWebAppsFarm](/powershell/module/officewebapps/get-officewebappsfarm?view=officewebapps-ps)
-#### 
 
-
-  
-    
-    
  [Office Online Server release schedule](office-online-server-release-schedule.md)
