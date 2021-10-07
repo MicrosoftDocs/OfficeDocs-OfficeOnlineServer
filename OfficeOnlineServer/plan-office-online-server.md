@@ -42,9 +42,13 @@ You can run Office Online Server on the following operating systems:
 - The 64-bit edition of Windows Server 2012 R2
 
 - The 64-bit edition of Windows Server 2016 (Office Online Server November 2018 or later required).
+
+- The 64-bit edition of Windows Server 2019 (Office Online Server July 2021 patch or later required)
+
+
     
 > [!NOTE]
-> Office Online Server only supports the "Server with Desktop Experience" installation option of Windows Server 2016. For additional information about Windows Server offerings, see [Windows Server Semi-annual Channel Overview](/windows-server/get-started/semi-annual-channel-overview).
+> Office Online Server only supports the "Server with Desktop Experience" installation option of Windows Server 2016 and Windows Server 2019. For additional information about Windows Server offerings, see [Windows Server Semi-annual Channel Overview](/windows-server/get-started/semi-annual-channel-overview).
 
 
 ### Domain requirements for Office Online Server
