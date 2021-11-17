@@ -39,14 +39,14 @@ The basic steps covered in this article are:
 
 
 - Enable strong cryptography in .NET Framework.  
-<br>NOTE :- As of the July 2021 cumulative security update (https://support.microsoft.com/topic/description-of-the-security-update-for-office-online-server-july-13-2021-kb5001973-d9f20977-c147-4022-9087-5f90380e39f5), this step is not required. Anyone who applies this patch can skip this step. <br>
+> [!NOTE]
+> As of the July 2021 cumulative security update (https://support.microsoft.com/topic/description-of-the-security-update-for-office-online-server-july-13-2021-kb5001973-d9f20977-c147-4022-9087-5f90380e39f5), this step is not required. Anyone who applies this patch can skip this step.
 
     
 - (Optional) Disable earlier versions of SSL and TLS
     
-  
-
-Note that using TLS 1.1 and TLS 1.2 onwards with Office Online Server requires that TLS 1.1 and TLS 1.2 onwards be enabled on Windows Server for each computer in your Office Online Server farm. They are enabled by default for Windows Server 2012 R2.
+> [!NOTE]
+> Using TLS 1.1 and TLS 1.2 onwards with Office Online Server requires that TLS 1.1 and TLS 1.2 onwards be enabled on Windows Server for each computer in your Office Online Server farm. They are enabled by default for Windows Server 2012 R2.
   
     
     
@@ -59,7 +59,8 @@ Follow these steps on each server in your Office Online Server farm.
 
 
 ## Enable strong cryptography in .NET Framework 4.5 or higher
-NOTE :- As of the July 2021 cumulative security update (https://support.microsoft.com/topic/description-of-the-security-update-for-office-online-server-july-13-2021-kb5001973-d9f20977-c147-4022-9087-5f90380e39f5), this step is not required. Anyone who applies this patch can skip this step.
+> [!NOTE]
+> As of the July 2021 cumulative security update (https://support.microsoft.com/topic/description-of-the-security-update-for-office-online-server-july-13-2021-kb5001973-d9f20977-c147-4022-9087-5f90380e39f5), this step is not required. Anyone who applies this patch can skip this step.
 
 Using TLS 1.1 and TLS 1.2 onwards with Office Online Server requires strong cryptography in .NET Framework 4.5 or higher. To enable strong cryptography in .NET Framework 4.5 or higher, add the following registry keys:
   
