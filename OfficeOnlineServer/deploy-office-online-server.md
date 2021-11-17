@@ -38,10 +38,13 @@ Office Online Server is the next version of Office Web Apps Server. Deploying Of
 ## Prepare servers to run Office Online Server
 <a name="prerequisites"> </a>
 
-Perform these procedures on all servers that will run Office Online Server. This server must be Windows Server 2012 R2, Windows Server 2016 or Windows Server 2019.
+Perform these procedures on all servers that will run Office Online Server. This server must be Windows Server 2012 R2, Windows Server 2016 or Windows Server 2019 or Windows Server 2022.
 
 > [!IMPORTANT]
-> Windows Server 2016 requires Office Online Server April 2017 or later.
+> - Windows Server 2016 requires Office Online Server April 2017 or later.
+> - Windows Server 2019 requires Office Online Server July 2021 patch or later.
+> - Windows Server 2022 requires Office Online Server Nov 2021 patch or later.
+
 
 Office Online Server was designed and tested for server operating systems configured with default settings.  If you need to deploy with non-default settings, it is recommended to begin installation and setup with the default settings.  Once the system is verified as working, then incrementally add and test Group Policies, security settings and other modifications.
     
@@ -66,7 +69,7 @@ Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-
 
   ```
     
-   **Windows Server 2016 and 2019:**
+   **Windows Server 2016, 2019, 2022:**
     
 
 
@@ -513,7 +516,7 @@ If features of the .NET Framework 4.6 were installed and then removed, you might
   
     
     
- **For Windows Server 2012 R2, Windows Server 2016 or Windows Server 2019**
+ **For Windows Server 2012 R2, Windows Server 2016 or Windows Server 2019 or Windows Server 2022**
   
     
 
