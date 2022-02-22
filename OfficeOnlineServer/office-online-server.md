@@ -45,6 +45,7 @@ The following table shows the compatibility between Office Web Apps Server and O
 |SharePoint Server 2013  <br/> |Yes  <br/> |Yes*  <br/> |
 |SharePoint Server 2016  <br/> |No  <br/> |Yes  <br/> |
 |SharePoint Server 2019  <br/> |No  <br/> |Yes  <br/> |
+|SharePoint Server Subscription Edition  <br/> |No  <br/> |Yes  <br/> |
 |Lync Server 2013  <br/> |Yes  <br/> |Yes  <br/> |
 |Skype for Business Server 2015  <br/> |Yes  <br/> |Yes  <br/> |
 |Skype for Business Server 2019  <br/> |Yes  <br/> |Yes  <br/> |
