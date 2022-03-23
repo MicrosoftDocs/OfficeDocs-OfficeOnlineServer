@@ -85,7 +85,7 @@ To get started, open an elevated SharePoint 2016 Management Shell. (Right-click 
   
     
     
-Run the following command, where <WacServerName> is the fully qualified domain name (FQDN) of the URL that you set for the internal URL. This is the point of entry for Office Online Server traffic. For this test environment, you need to specify the -AllowHTTP parameter to allow SharePoint Server 2016 to receive discovery information from the Office Online Server farm by using HTTP. If you don't specify -AllowHTTP, SharePoint Server 2016 will try to use HTTPS to communicate with the Office Online Server farm, and this command won't work.
+Run the following command, where \<WacServerName> is the fully qualified domain name (FQDN) of the URL that you set for the internal URL. This is the point of entry for Office Online Server traffic. For this test environment, you need to specify the -AllowHTTP parameter to allow SharePoint Server 2016 to receive discovery information from the Office Online Server farm by using HTTP. If you don't specify -AllowHTTP, SharePoint Server 2016 will try to use HTTPS to communicate with the Office Online Server farm, and this command won't work.
   
     
     
@@ -186,11 +186,11 @@ Run the following command again to verify that the AllowOAuthOverHttp setting is
 #### Step 5: Enable the Excel SOAP API
 <a name="oauth"> </a>
 
-The Excel SOAP API is needed for scheduled data refresh with Excel Online, and for Excel Web Part rendering. To enable the Excel SOAP API, you need to add the WopiLegacySoapSupport property to the SharePoint Server farm properties using by PowerShell. The input parameter is the URL to ExcelServiceInternal.asmx. This URL can address multiple OOS servers via load balancing. Simply replace the <string> with your Office Online Server path.
+The Excel SOAP API is needed for scheduled data refresh with Excel Online, and for Excel Web Part rendering. To enable the Excel SOAP API, you need to add the WopiLegacySoapSupport property to the SharePoint Server farm properties using by PowerShell. The input parameter is the URL to ExcelServiceInternal.asmx. This URL can address multiple OOS servers via load balancing. Simply replace the \<string> with your Office Online Server path.
   
     
     
-To enable the Excel SOAP API, run the following PowerShell where <URL> is the URL of your Office Online Server farm. (For example, http://OfficeOnlineServer.contoso.com.)
+To enable the Excel SOAP API, run the following PowerShell where \<URL> is the URL of your Office Online Server farm. (For example, http://OfficeOnlineServer.contoso.com.)
   
     
     
@@ -228,7 +228,7 @@ To get started, open an elevated SharePoint 2016 Management Shell. (Right-click 
   
     
     
-Run the following command, where <WacServerName> is the fully qualified domain name (FQDN) of the URL that you set for the internal URL. This is the point of entry for Office Online Server traffic. 
+Run the following command, where \<WacServerName> is the fully qualified domain name (FQDN) of the URL that you set for the internal URL. This is the point of entry for Office Online Server traffic. 
   
     
     
@@ -277,11 +277,11 @@ Set-SPWOPIZone -zone "external-https"
 
 #### Step 4: Enable the Excel SOAP API
 
-The Excel SOAP API is needed for scheduled data refresh with Excel Online, and for Excel Web Part rendering. To enable the Excel SOAP API, you need to add the WopiLegacySoapSupport property to the SharePoint Server farm properties using by PowerShell. The input parameter is the URL to ExcelServiceInternal.asmx. This URL can address multiple OOS servers via load balancing. Simply replace the <string> with your Office Online Server path.
+The Excel SOAP API is needed for scheduled data refresh with Excel Online, and for Excel Web Part rendering. To enable the Excel SOAP API, you need to add the WopiLegacySoapSupport property to the SharePoint Server farm properties using by PowerShell. The input parameter is the URL to ExcelServiceInternal.asmx. This URL can address multiple OOS servers via load balancing. Simply replace the \<string> with your Office Online Server path.
   
     
     
-To enable the Excel SOAP API, run the following PowerShell where <URL> is the URL of your Office Online Server farm. (For example, https://OfficeOnlineServer.contoso.com.)
+To enable the Excel SOAP API, run the following PowerShell where \<URL> is the URL of your Office Online Server farm. (For example, https://OfficeOnlineServer.contoso.com.)
   
     
     

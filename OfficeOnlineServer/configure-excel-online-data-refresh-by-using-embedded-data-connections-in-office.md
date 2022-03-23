@@ -89,7 +89,7 @@ Follow these steps to create a SQL Server logon and grant Read access to the dat
 5. In the **Select a page** section, click **User Mapping**.
     
   
-6. Select the **Map** check box for the database that you want to provide access to, and then, under **Database role membership for: <database>**, select the **db_datareader** check box.
+6. Select the **Map** check box for the database that you want to provide access to, and then, under **Database role membership for: \<database>**, select the **db_datareader** check box.
     
   
 7. Click **OK**.
@@ -226,9 +226,6 @@ With the target application specified in the Excel Online authentication setting
 
 ## See also
 <a name="ConfigureWorkbook"> </a>
-
-
-#### 
 
 
   

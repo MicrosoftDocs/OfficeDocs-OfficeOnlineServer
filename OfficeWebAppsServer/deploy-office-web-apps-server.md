@@ -200,7 +200,7 @@ You can use this Office Web Apps Server farm to provide Office Web Apps function
 
 ![The three main steps to deploy a single-server Office Web Apps Server farm.](images/JJ219455.de5b3ed2-d7a7-489e-9de2-f3f068ebe836(Office.15).gif "The three main steps to deploy a single-server Office Web Apps Server farm.")
 
-## Step 1: Create the Office Web Apps Server farm
+## Step 1: Create an Office Web Apps Server farm
 
 Use the **New-OfficeWebAppsFarm** command to create a new Office Web Apps Server farm that consists of a single server, as shown in the following example.
 
@@ -220,7 +220,7 @@ Additional parameters that configure translation services, proxy servers, ClipAr
 
 If you see "500 Web Service Exceptions" or "500.21 – Internal Server Error" messages
 
-## Step 2: Verify that the Office Web Apps Server farm was created successfully
+## Step 2: Verify the Office Web Apps Server farm was created successfully
 
 After the farm is created, details about the farm are displayed in the Windows PowerShell prompt. To verify that Office Web Apps Server is installed and configured correctly, use a web browser to access the Office Web Apps Server discovery URL, as shown in the following example. The discovery URL is the *InternalUrl* parameter you specified when you configured your Office Web Apps Server farm, followed by **/hosting/discovery**, for example:
 
@@ -304,7 +304,7 @@ default="true" ext="xls"/><action name="view"
 > [!NOTE]
 > Depending on the security settings of your web browser, you might see a message that prompts you to select <STRONG>Show all content</STRONG> before the contents of the discovery XML file are displayed.
 
-## Step 3: Configure the host
+## Step 3: Configure host
 
 The farm is now ready to provide Office Web Apps functionality to hosts over HTTPS. Visit the following articles for more information about how to configure hosts.
 
@@ -373,7 +373,7 @@ If Office Web Apps Server works as expected, you should see a Web Application Op
 > [!NOTE]
 > Depending on the security settings of your web browser, you might see a message that prompts you to select <STRONG>Show all content</STRONG> before the contents of the discovery XML file are displayed.
 
-## Step 4: Configure the host
+## Step 4: Configure host
 
 The farm is now ready to provide Office Web Apps functionality to hosts over HTTPS. Visit the following articles for more information about how to configure hosts.
 

@@ -73,7 +73,7 @@ Choose the procedure that corresponds to your server operating system.
 
 3.  In the app bar, click **Run as administrator**.
 
-## Step 2: Create the binding between SharePoint 2013 and Office Web Apps Server
+## Step 2: Create a binding between SharePoint 2013 and Office Web Apps Server
 
 Run the following command, where \<WacServerName\> is the fully qualified domain name (FQDN) of the URL that you set for the internal URL. This is the point of entry for Office Web Apps Server traffic. For this test environment, you need to specify the –AllowHTTP parameter to allow SharePoint 2013 to receive discovery information from the Office Web Apps Server farm by using HTTP. If you don't specify –AllowHTTP, SharePoint 2013 will try to use HTTPS to communicate with the Office Web Apps Server farm, and this command won't work.
 
