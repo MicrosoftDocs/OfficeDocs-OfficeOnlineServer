@@ -38,7 +38,7 @@ _**Applies to:** Office Web Apps Server_
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="/powershell/module/officewebapps/?view=officewebapps-ps">Windows PowerShell for Office Web Apps Server</a></p></td>
+<td><p><a href="/powershell/module/officewebapps/">Windows PowerShell for Office Web Apps Server</a></p></td>
 <td><p>Lists the Windows PowerShell cmdlets for Office Web Apps Server.</p></td>
 </tr>
 </tbody>
