@@ -4,6 +4,7 @@ TOCTitle: Technical reference
 ms:assetid: ef0b4cbd-f198-44a8-80f4-355494488f80
 ms:mtpsurl: https://technet.microsoft.com/library/Ee890081(v=office.15)
 ms:contentKeyID: 48409086
+description: Find technical reference articles, such as help for the SPWOPI Windows PowerShell cmdlets, for Office Web Apps.
 ms.date: 12/13/2016
 mtps_version: v=office.15
 ---
