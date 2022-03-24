@@ -6,6 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ219447(v=office.15)
 ms:contentKeyID: 48409072
 ms.date: 12/13/2016
 mtps_version: v=office.15
+description: Technical reference for Office Web Apps Server
 ---
 
 # Technical reference for Office Web Apps Server
@@ -26,8 +27,8 @@ _**Applies to:** Office Web Apps Server_
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -48,9 +49,9 @@ _**Applies to:** Office Web Apps Server_
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -98,10 +99,10 @@ _**Applies to:** Office Web Apps Server_
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">

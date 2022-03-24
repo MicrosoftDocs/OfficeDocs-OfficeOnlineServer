@@ -6,6 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn135237(v=office.15)
 ms:contentKeyID: 53921643
 ms.date: 02/26/2016
 mtps_version: v=office.15
+description: A guide to the articles, downloads, and other resources that help IT professionals deploy and manage Office Web Apps Server
 ---
 
 # Content roadmap for Office Web Apps Server

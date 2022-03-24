@@ -6,6 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/Ee837425(v=office.15)
 ms:contentKeyID: 50117655
 ms.date: 07/24/2014
 mtps_version: v=office.15
+description: 'How to configure the default open behavior for Office documents in SharePoint site collections and document libraries.'
 ---
 
 # Set the default open behavior for browser-enabled documents (Office Web Apps when used with SharePoint 2013) 
@@ -106,7 +107,7 @@ Use one of the following procedures to set the OpenInClient feature in SharePoin
             Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
       ```
         
-        where \<SiteCollURL\> is the URL of the site collection.
+      where \<SiteCollURL\> is the URL of the site collection.
     
       - To enable the OpenInClient feature for all site collections (to open documents in the client application), type this command:
 
@@ -120,7 +121,7 @@ Use one of the following procedures to set the OpenInClient feature in SharePoin
             Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
       ```
         
-        where \<SiteCollURL\> is the URL of the site collection.
+      where \<SiteCollURL\> is the URL of the site collection.
     
       - To disable the OpenInClient feature for all site collections (to open documents in the browser), type this command:
 
