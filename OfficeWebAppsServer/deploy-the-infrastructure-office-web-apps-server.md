@@ -6,6 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ219458(v=office.15)
 ms:contentKeyID: 48409085
 ms.date: 12/13/2016
 mtps_version: v=office.15
+description: 'Articles about Office Web Apps Server and how it provides Office Web Apps functionality to hosts'
 ---
 
 # Deploy the infrastructure: Office Web Apps Server

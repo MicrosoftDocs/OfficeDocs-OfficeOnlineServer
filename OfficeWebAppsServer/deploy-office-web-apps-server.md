@@ -6,6 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ219455(v=office.15)
 ms:contentKeyID: 48409082
 ms.date: 10/05/2017
 mtps_version: v=office.15
+description: How to deploy Office Web Apps Server on-premises for use by SharePoint 2013 and Lync Server 2013
 ---
 
 # Deploy Office Web Apps Server
@@ -216,7 +217,7 @@ Use the **New-OfficeWebAppsFarm** command to create a new Office Web Apps Server
 
   - **–EditingEnabled** enables editing in Office Web Apps when used with SharePoint 2013. This parameter isn't used by Lync Server 2013 because that host doesn't support editing.
 
-Additional parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
+Additional parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm).
 
 If you see "500 Web Service Exceptions" or "500.21 – Internal Server Error" messages
 
@@ -275,7 +276,7 @@ Use the **New-OfficeWebAppsFarm** command to create a new Office Web Apps Server
 
   - **–EditingEnabled** is optional and enables editing in Office Web Apps when used with SharePoint 2013. This parameter isn't used by Lync Server 2013 because that host doesn't support editing.
 
-Additional parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
+Additional parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm).
 
 If you see "500 Web Service Exceptions" or "500.21 – Internal Server Error" messages
 
@@ -341,7 +342,7 @@ Use the **New-OfficeWebAppsFarm** command to create a new Office Web Apps Server
 
   - **–EditingEnabled** is optional and enables editing in Office Web Apps when used with SharePoint 2013. This parameter isn't used by Lync Server 2013 because that host doesn't support editing.
 
-Other parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
+Other parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm).
 
 If you see "500 Web Service Exceptions" or "500.21 – Internal Server Error" messages
 
@@ -353,7 +354,7 @@ After the first server is running Office Web Apps Server, run the **New-OfficeWe
     New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
 ```
 
-Want more information about these parameters? You can find them in [New-OfficeWebAppsMachine](/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps).
+Want more information about these parameters? You can find them in [New-OfficeWebAppsMachine](/powershell/module/officewebapps/new-officewebappsmachine).
 
 ## Step 3: Verify that the Office Web Apps Server farm was created successfully
 
@@ -404,8 +405,8 @@ If features of the .NET Framework 3.5 were installed and then removed, you might
 ## See also
 
 
-[New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
-[New-OfficeWebAppsMachine](/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  
+[New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm)  
+[New-OfficeWebAppsMachine](/powershell/module/officewebapps/new-officewebappsmachine)  
 
 
 [Content roadmap for Office Web Apps Server](content-roadmap-for-office-web-apps-server.md)  
