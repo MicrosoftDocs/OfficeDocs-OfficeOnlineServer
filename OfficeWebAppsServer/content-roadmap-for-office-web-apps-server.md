@@ -100,7 +100,7 @@ The following table describes resources that are available to IT professionals w
 <li><p>If you'll deploy Office Web Apps Server to use with SharePoint 2013, <a href="plan-office-web-apps-used-with-sharepoint-2013.md">plan Office Web Apps when used with SharePoint 2013</a>.</p></li>
 <li><p><a href="/SharePoint/install/browser-support-planning">Browser support</a> for Office Web Apps is the same as for SharePoint 2013.</p></li>
 <li><p>Office Web Apps can be used only by SharePoint 2013 web applications that use <a href="plan-office-web-apps-used-with-sharepoint-2013.md">claims-based authentication</a>.</p></li>
-<li><p>Viewing files by using Office Web Apps is free, but you'll need to <a href="plan-office-web-apps-used-with-sharepoint-2013.md">purchase an editing license</a> if you want to <a href="/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps">enable Office Web Apps for editing</a> when Office Web Apps Server is used with SharePoint 2013 on-premises.</p></li>
+<li><p>Viewing files by using Office Web Apps is free, but you'll need to <a href="plan-office-web-apps-used-with-sharepoint-2013.md">purchase an editing license</a> if you want to <a href="/powershell/module/officewebapps/new-officewebappsfarm">enable Office Web Apps for editing</a> when Office Web Apps Server is used with SharePoint 2013 on-premises.</p></li>
 </ul>
 <p><br />
 </p>
@@ -163,10 +163,10 @@ The following table describes resources that are available to IT professionals w
 <p>If you've deployed Office Web Apps Server to use with SharePoint 2013, the default open of Office documents will be in the browser. But, you can <a href="set-the-default-open-behavior-for-browser-enabled-documents-office-web-apps-when-used-with-sharepoint-2013.md">change this behavior so that Office documents open in a client</a>.</p>
 <p><br />
 </p>
-<p>If your organization decides to use Excel Services instead of Excel Web App to view workbooks in the browser, you can use the Windows PowerShell cmdlet <a href="/powershell/module/sharepoint-server/New-SPWOPISuppressionSetting?view=sharepoint-ps">New-SPWOPISuppressionSetting</a> to turn off Excel Web App for Excel workbooks.</p>
+<p>If your organization decides to use Excel Services instead of Excel Web App to view workbooks in the browser, you can use the Windows PowerShell cmdlet <a href="/powershell/module/sharepoint-server/New-SPWOPISuppressionSetting">New-SPWOPISuppressionSetting</a> to turn off Excel Web App for Excel workbooks.</p>
 <p><br />
 </p>
-<p>If you want to <a href="configure-office-web-apps-for-sharepoint-2013.md">disconnect SharePoint 2013 from Office Web Apps Server</a>, use the Windows PowerShell cmdlet <a href="/powershell/module/sharepoint-server/Remove-SPWOPIBinding?view=sharepoint-ps">Remove-SPWOPIBinding</a>.</p></td>
+<p>If you want to <a href="configure-office-web-apps-for-sharepoint-2013.md">disconnect SharePoint 2013 from Office Web Apps Server</a>, use the Windows PowerShell cmdlet <a href="/powershell/module/sharepoint-server/Remove-SPWOPIBinding">Remove-SPWOPIBinding</a>.</p></td>
 </tr>
 <tr class="even">
 <td><img src="images/Dn135237.17bfbe9e-7e0e-48dd-887b-b94f8d8f9f22(Office.15).png" title="Troubleshoot icon" alt="Troubleshoot icon" /></td>
@@ -181,13 +181,13 @@ The following table describes resources that are available to IT professionals w
 </p>
 <p>Office Web Apps Server</p>
 <ul>
-<li><p><a href="/powershell/module/officewebapps/?view=officewebapps-ps">Windows PowerShell for Office Web Apps Server</a></p></li>
+<li><p><a href="/powershell/module/officewebapps/">Windows PowerShell for Office Web Apps Server</a></p></li>
 </ul>
 <p><br />
 </p>
 <p>SharePoint 2013</p>
 <ul>
-<li><p><a href="/powershell/module/sharepoint-server/?view=sharepoint-ps">Windows PowerShell for Office Web Apps (SharePoint 2013)</a></p></li>
+<li><p><a href="/powershell/module/sharepoint-server/">Windows PowerShell for Office Web Apps (SharePoint 2013)</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
