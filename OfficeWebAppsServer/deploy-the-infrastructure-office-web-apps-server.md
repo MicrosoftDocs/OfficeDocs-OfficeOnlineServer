@@ -6,6 +6,8 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ219458(v=office.15)
 ms:contentKeyID: 48409085
 ms.date: 12/13/2016
 mtps_version: v=office.15
+manager: serdars
+description: 'Articles about Office Web Apps Server and how it provides Office Web Apps functionality to hosts'
 ---
 
 # Deploy the infrastructure: Office Web Apps Server
@@ -27,8 +29,8 @@ Office Web Apps Server is a new Office server product that delivers browser-base
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col/>
+<col/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -61,9 +63,9 @@ Office Web Apps Server is a new Office server product that delivers browser-base
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -107,10 +109,10 @@ Office Web Apps Server is a new Office server product that delivers browser-base
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
 <tbody>
 <tr class="odd">

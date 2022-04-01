@@ -5,6 +5,8 @@ ms:assetid: 4b199a88-387f-4121-820d-7af580e2a3e8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ219437(v=office.15)
 ms:contentKeyID: 48409059
 ms.date: 05/27/2017
+manager: serdars 
+description: Overview of Office Web Apps Server
 mtps_version: v=office.15
 ---
 

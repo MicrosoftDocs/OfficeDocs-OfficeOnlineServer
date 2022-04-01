@@ -5,6 +5,8 @@ ms:assetid: 3bd0a617-5f12-4a7e-bb75-b15c86c7e504
 ms:mtpsurl: https://technet.microsoft.com/library/Ff431682(v=office.15)
 ms:contentKeyID: 48409058
 ms.date: 04/08/2015
+manager: serdars
+description: Planning guidance for Office Web Apps when it is used with SharePoint 2013 on-premises.
 mtps_version: v=office.15
 ---
 
@@ -67,7 +69,7 @@ If you installed Office Web Apps together with SharePoint 2010, Office Web Apps 
 
 You can configure whether Word, PowerPoint, Excel, and OneNote files are opened in a client application (if it is installed) or in the browser. By default, after SharePoint 2013 is configured to use Office Web Apps Server, Office files are opened in the browser. There are two ways to change the default behavior to allow client applications to open files directly:
 
-  - **For the SharePoint 2013 farm** You can adjust the default open behavior on a per-file-type basis for the SharePoint 2013 farm by using the [New-SPWOPIBinding](/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps) and [Set-SPWOPIBinding](/powershell/module/sharepoint-server/Set-SPWOPIBinding?view=sharepoint-ps) Windows PowerShell cmdlets.
+  - **For the SharePoint 2013 farm** You can adjust the default open behavior on a per-file-type basis for the SharePoint 2013 farm by using the [New-SPWOPIBinding](/powershell/module/sharepoint-server/New-SPWOPIBinding) and [Set-SPWOPIBinding](/powershell/module/sharepoint-server/Set-SPWOPIBinding) Windows PowerShell cmdlets.
 
   - **On site collections or document libraries** Site collection administrators and users can specify whether Office files are opened in the client applications if it is installed. Users can change this setting in the document library properties, and site collection administrators can change this setting in Site Collection Administration or by using the Install-SPFeature cmdlet to install the OpenInClient feature. For more information, see [Install-SPFeature](https://technet.microsoft.com/library/ff607825\(v=office.15\)).
 

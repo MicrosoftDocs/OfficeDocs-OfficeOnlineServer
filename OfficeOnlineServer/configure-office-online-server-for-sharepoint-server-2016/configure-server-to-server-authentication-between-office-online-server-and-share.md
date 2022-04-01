@@ -118,7 +118,7 @@ Next, you need to specify this certificate as the S2S certificate for Office Onl
 ### To specify the S2S certificate for Office Online Server
 
 1. Open a Microsoft PowerShell window as Administrator.
-2. Type the following where <friendlyName> is the friendly name of the certificate that you're using.
+2. Type the following where \<friendlyName> is the friendly name of the certificate that you're using.
     
 ```
 Set-OfficeWebAppsFarm -S2SCertificateName "<friendlyName>" -Confirm:$false -Force
@@ -157,12 +157,12 @@ iisreset
 
 You need to register SharePoint Server and SQL Server as trusted token issuers. This is done through PowerShell. Here are the parameters that you'll use:
 
-- **<SPSiteURL>** - The URL of your top-level site collection.
-- **<CertificateIssuer>** - The name of the certificate issuer. You can find this by viewing the **Details** tab of the certificate in IIS Manager.
-- **<X509Certificate>** - The path and file name of the certificate file that you exported.
-- **<RegisteredIssuer>** - The GUID of the trusted token issuer. SharePoint Server is 67e3df25-268a-4324-a550-0de1c7f97287@bd2372e4-0a11-495c-9541-8377c6def195 and SQL Server is 67e3df25-268a-4324-a550-0de1c7f97287@ffab2d74-c6ae-4375-819a-8555d49b699a
+- **\<SPSiteURL>** - The URL of your top-level site collection.
+- **\<CertificateIssuer>** - The name of the certificate issuer. You can find this by viewing the **Details** tab of the certificate in IIS Manager.
+- **\<X509Certificate>** - The path and file name of the certificate file that you exported.
+- **\<RegisteredIssuer>** - The GUID of the trusted token issuer. SharePoint Server is 67e3df25-268a-4324-a550-0de1c7f97287@bd2372e4-0a11-495c-9541-8377c6def195 and SQL Server is 67e3df25-268a-4324-a550-0de1c7f97287@ffab2d74-c6ae-4375-819a-8555d49b699a
 
-Perform the following procedure twice - once for each <RegisteredIssuer> GUID.
+Perform the following procedure twice - once for each \<RegisteredIssuer> GUID.
 
 ### To register a trusted token issuer
 
