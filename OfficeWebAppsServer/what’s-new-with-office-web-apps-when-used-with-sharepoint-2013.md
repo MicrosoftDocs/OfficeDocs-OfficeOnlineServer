@@ -26,8 +26,8 @@ Users who work with Office files in document libraries in SharePoint 2013 can be
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -78,8 +78,8 @@ Users who work with Office files in document libraries in SharePoint 2013 can be
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -104,8 +104,8 @@ Users who work with Office files in document libraries in SharePoint 2013 can be
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
