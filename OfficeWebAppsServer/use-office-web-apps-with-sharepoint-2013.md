@@ -5,6 +5,7 @@ ms:assetid: 8a58e6c2-9a0e-4355-ae41-4df25e5e6eee
 ms:mtpsurl: https://technet.microsoft.com/library/Ee855124(v=office.15)
 ms:contentKeyID: 48409068
 ms.date: 05/27/2017
+manager: serdars
 mtps_version: v=office.15
 ---
 

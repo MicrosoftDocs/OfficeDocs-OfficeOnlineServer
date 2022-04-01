@@ -5,6 +5,8 @@ ms:assetid: fc26f45c-fdd2-45be-a924-c8a1c0a5924c
 ms:mtpsurl: https://technet.microsoft.com/library/Dn455087(v=office.15)
 ms:contentKeyID: 57419940
 ms.date: 07/24/2014
+manager: serdars
+description: 'Describes new features available to SharePoint 2013 users and admins when using Office Web Apps'
 mtps_version: v=office.15
 ---
 

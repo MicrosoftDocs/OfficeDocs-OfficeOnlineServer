@@ -5,6 +5,8 @@ ms:assetid: ef0b4cbd-f198-44a8-80f4-355494488f80
 ms:mtpsurl: https://technet.microsoft.com/library/Ee890081(v=office.15)
 ms:contentKeyID: 48409086
 ms.date: 12/13/2016
+manager: serdars
+description: 'Technical reference articles, including help for the SPWOPI Windows PowerShell cmdlets, for Office Web Apps'
 mtps_version: v=office.15
 ---
 
