@@ -3,7 +3,7 @@ title: Configure server-to-server authentication between Office Online Server an
 description: Configure server-to-server authentication between Office Online Server and SharePoint 2016.
 ms.author: samukhe
 author: santanu-wac
-manager: pamgreen
+manager: serdars
 ms.date: 3/28/2016
 ms.audience: ITPro
 ms.topic: article

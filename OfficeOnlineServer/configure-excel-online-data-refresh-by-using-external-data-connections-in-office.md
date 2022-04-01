@@ -3,7 +3,7 @@ title: Configure Excel Online data refresh by using external data connections in
 description: Configure Excel Online data refresh by using Secure Store and an external Office Data Connection (ODC) file.
 ms.author: samukhe
 author: santanu-wac
-manager: pamgreen
+manager: serdars
 ms.date: 3/28/2016
 ms.audience: ITPro
 ms.topic: article
