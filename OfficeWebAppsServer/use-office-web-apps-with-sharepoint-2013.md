@@ -5,6 +5,7 @@ ms:assetid: 8a58e6c2-9a0e-4355-ae41-4df25e5e6eee
 ms:mtpsurl: https://technet.microsoft.com/library/Ee855124(v=office.15)
 ms:contentKeyID: 48409068
 ms.date: 05/27/2017
+description: Contains articles that will help you learn how to deploy and configure Office Web Apps for SharePoint 2013 on-premises.
 mtps_version: v=office.15
 ---
 
@@ -27,8 +28,8 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -73,9 +74,9 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -121,10 +122,10 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">

@@ -5,6 +5,7 @@ ms:assetid: fc26f45c-fdd2-45be-a924-c8a1c0a5924c
 ms:mtpsurl: https://technet.microsoft.com/library/Dn455087(v=office.15)
 ms:contentKeyID: 57419940
 ms.date: 07/24/2014
+description: Describes new features available to SharePoint 2013 users and admins when using Office Web Apps.
 mtps_version: v=office.15
 ---
 
@@ -24,8 +25,8 @@ Users who work with Office files in document libraries in SharePoint 2013 can be
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -76,8 +77,8 @@ Users who work with Office files in document libraries in SharePoint 2013 can be
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -102,8 +103,8 @@ Users who work with Office files in document libraries in SharePoint 2013 can be
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
