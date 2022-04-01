@@ -5,6 +5,7 @@ ms:assetid: e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ219455(v=office.15)
 ms:contentKeyID: 48409082
 ms.date: 10/05/2017
+manager: serdars
 mtps_version: v=office.15
 description: How to deploy Office Web Apps Server on-premises for use by SharePoint 2013 and Lync Server 2013
 ---
