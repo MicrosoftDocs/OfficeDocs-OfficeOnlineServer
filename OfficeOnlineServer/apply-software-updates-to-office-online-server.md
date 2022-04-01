@@ -3,7 +3,7 @@ title: Apply software updates to Office Online Server
 description: Explains how to apply software updates or new versions to an Office Online Server farm.
 ms.author: samukhe
 author: santanu-wac
-manager: pamgreen
+manager: serdars
 ms.date: 5/12/2017
 ms.audience: ITPro
 ms.topic: article
