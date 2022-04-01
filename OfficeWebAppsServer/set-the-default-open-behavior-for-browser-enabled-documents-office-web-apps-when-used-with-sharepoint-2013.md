@@ -5,6 +5,7 @@ ms:assetid: e27e0bc8-5fb5-4bb1-8157-d7c90654175e
 ms:mtpsurl: https://technet.microsoft.com/library/Ee837425(v=office.15)
 ms:contentKeyID: 50117655
 ms.date: 07/24/2014
+manager: serdars
 mtps_version: v=office.15
 description: 'How to configure the default open behavior for Office documents in SharePoint site collections and document libraries.'
 ---

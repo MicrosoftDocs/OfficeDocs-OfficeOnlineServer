@@ -5,6 +5,7 @@ ms:assetid: a5276781-133b-413c-beca-b851e17c2081
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Ff431687(v=office.15)
 ms:contentKeyID: 48409069
 ms.date: 07/24/2014
+manager: serdars
 mtps_version: v=office.15
 description: How to configure SharePoint to use Office Web Apps
 ---
