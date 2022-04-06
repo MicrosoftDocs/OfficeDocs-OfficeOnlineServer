@@ -3,7 +3,7 @@ title: Office Online Server overview
 description: Learn about Office Online Server and how it provides browser-based Office functionality to supported hosts.
 ms.author: samukhe
 author: santanu-wac
-manager: pamgreen
+manager: serdars
 ms.date: 12/20/2016
 ms.audience: ITPro
 ms.topic: article
@@ -141,11 +141,6 @@ You can find more about Online Viewers in  [Planning for Online Viewers with Off
 ## See also
 <a name="onlineviewers"> </a>
 
-
-#### 
-
-
-  
     
     
  [Plan Office Online Server](plan-office-online-server.md)

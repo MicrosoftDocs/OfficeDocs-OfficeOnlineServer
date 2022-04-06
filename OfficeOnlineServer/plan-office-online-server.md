@@ -3,7 +3,7 @@ title: Plan Office Online Server
 description: Describes Office Online Server requirements and prerequisites, including HTTPS, certificates, virtualization, load balancing, topologies, and security.
 ms.author: samukhe
 author: santanu-wac
-manager: pamgreen
+manager: serdars
 ms.date: 5/12/2017
 ms.audience: ITPro
 ms.topic: article
@@ -145,7 +145,7 @@ The following is a list of recommendations that you should keep in mind as your 
 
 - **Plan for incoming and outgoing communications.** In an Internet-facing deployment, route all outgoing communications through a NAT device. In a multi-server farm, handle all incoming communications with a load balancer.
 
-- **Make sure all servers in the Office Online Server farm are joined to a domain and are part of the same organizational unit (OU).** Use the **FarmOU** parameter in the [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) cmdlet to prevent other servers that are not in this OU from joining the farm.
+- **Make sure all servers in the Office Online Server farm are joined to a domain and are part of the same organizational unit (OU).** Use the **FarmOU** parameter in the [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarmofficewebapps-ps) cmdlet to prevent other servers that are not in this OU from joining the farm.
 
 - **Use Hypertext Transfer Protocol Secure (HTTPS) for all incoming requests.**  
 
@@ -210,14 +210,14 @@ When you set up a new Office Online Server farm, SSL offloading is set to Off by
 ### Restrict which servers can join an Office Online Server farm based on OU membership
 <a name="certificate"> </a>
 
-You can prevent unauthorized servers from joining an Office Online Server farm by creating an organizational unit for those servers and then specifying the FarmOU parameter when you create the farm. For more information about the FarmOU parameter, see  [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
+You can prevent unauthorized servers from joining an Office Online Server farm by creating an organizational unit for those servers and then specifying the FarmOU parameter when you create the farm. For more information about the FarmOU parameter, see  [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarmofficewebapps-ps).
 
 ### Limit host access for Office Online Server by using the Allow List
 <a name="certificate"> </a>
 
 The Allow List is a security feature that prevents unwanted hosts from connecting to an Office Online Server farm and using it for file operations without your consent. By adding the domains that contain approved hosts to the Allow List, you can limit the hosts to which Office Online Server allows file operations requests, such as file retrieval, metadata retrieval, and file changes.
 
-You can add domains to the Allow List after you've created the Office Online Server farm. To learn how to add domains to the Allow List, see  [New-OfficeWebAppsHost](/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps).
+You can add domains to the Allow List after you've created the Office Online Server farm. To learn how to add domains to the Allow List, see  [New-OfficeWebAppsHost](/powershell/module/officewebapps/new-officewebappshostofficewebapps-ps).
 
 > [!IMPORTANT]
 > If you do not add domains to the Allow List, Office Online Server allows file requests to hosts in any domain. Don't leave this list blank if your Office Online Server farm can be accessed from the Internet. Otherwise, anyone can use your Office Online Server farm to view and edit content.
@@ -225,19 +225,19 @@ You can add domains to the Allow List after you've created the Office Online Ser
 ## Planning for Online Viewers with Office Online Server
 <a name="viewers"> </a>
 
-By default, Online Viewers functionality is enabled after you install Office Online Server. Review the following guidelines if you're planning to use Online Viewers in your organization. In some cases, you might want to disable some features within Online Viewers. These guidelines refer to parameters that are set by using the Microsoft PowerShell cmdlets  [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) and [Set-OfficeWebAppsFarm](/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps).
+By default, Online Viewers functionality is enabled after you install Office Online Server. Review the following guidelines if you're planning to use Online Viewers in your organization. In some cases, you might want to disable some features within Online Viewers. These guidelines refer to parameters that are set by using the Microsoft PowerShell cmdlets  [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarmofficewebapps-ps) and [Set-OfficeWebAppsFarm](/powershell/module/officewebapps/set-officewebappsfarmofficewebapps-ps).
 
 ### Security considerations for Online Viewers
 
 Files that are intended to be viewed through a web browser by using Online Viewers must not require authentication. In other words, the files must be available publicly because Online Viewers can't perform authentication when it is retrieving files. We strongly recommend that the Office Online Server farm that you use for Online Viewers is only able to access either the intranet or the Internet, but not both. This is because Office Online Server doesn't differentiate between requests for intranet and Internet URLs. Somebody on the Internet could request an intranet URL, for example, causing a security leak if an internal document is viewed.
 
-For the same reason, if you have set up the Office Online Server to connect only to the Internet, we strongly recommend that you disable UNC support in Online Viewers. To disable UNC support, set the OpenFromUncEnabled parameter to False by using the Microsoft PowerShell cmdlets  [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (for new farms) or [Set-OfficeWebAppsFarm](/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (for existing farms).
+For the same reason, if you have set up the Office Online Server to connect only to the Internet, we strongly recommend that you disable UNC support in Online Viewers. To disable UNC support, set the OpenFromUncEnabled parameter to False by using the Microsoft PowerShell cmdlets  [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarmofficewebapps-ps) (for new farms) or [Set-OfficeWebAppsFarm](/powershell/module/officewebapps/set-officewebappsfarmofficewebapps-ps) (for existing farms).
 
 As an additional security precaution, Online Viewers are limited to viewing Office files that are 10 MB or less.
 
 ### Configuration options for Online Viewers
 
-You can configure Online Viewers by using the following Microsoft PowerShell parameters in [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (for new farms) or [Set-OfficeWebAppsFarm](/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (for existing farms).
+You can configure Online Viewers by using the following Microsoft PowerShell parameters in [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarmofficewebapps-ps) (for new farms) or [Set-OfficeWebAppsFarm](/powershell/module/officewebapps/set-officewebappsfarmofficewebapps-ps) (for existing farms).
 
 - **OpenFromUrlEnabled** Turns the Online Viewers on or off. This parameter controls Online Viewers for files that have URL and UNC paths. By default, this parameter is set to False (disabled) when you create a new Office Online Server farm.
 

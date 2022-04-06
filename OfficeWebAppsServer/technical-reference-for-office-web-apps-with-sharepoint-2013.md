@@ -4,7 +4,9 @@ TOCTitle: Technical reference
 ms:assetid: ef0b4cbd-f198-44a8-80f4-355494488f80
 ms:mtpsurl: https://technet.microsoft.com/library/Ee890081(v=office.15)
 ms:contentKeyID: 48409086
+description: Find technical reference articles, such as help for the SPWOPI Windows PowerShell cmdlets, for Office Web Apps.
 ms.date: 12/13/2016
+manager: serdars
 mtps_version: v=office.15
 ---
 
@@ -28,8 +30,8 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -39,7 +41,7 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="/powershell/module/sharepoint-server/?view=sharepoint-ps">Windows PowerShell for Office Web Apps (SharePoint 2013)</a></p></td>
+<td><p><a href="/powershell/module/sharepoint-server/">Windows PowerShell for Office Web Apps (SharePoint 2013)</a></p></td>
 <td><p>Lists the Windows PowerShell cmdlets for configure SharePoint 2013 to use Office Web Apps.</p></td>
 </tr>
 </tbody>
@@ -50,9 +52,9 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -95,10 +97,10 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
