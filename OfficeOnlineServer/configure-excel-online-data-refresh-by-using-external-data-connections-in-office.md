@@ -3,7 +3,7 @@ title: Configure Excel Online data refresh by using external data connections in
 description: Configure Excel Online data refresh by using Secure Store and an external Office Data Connection (ODC) file.
 ms.author: samukhe
 author: santanu-wac
-manager: pamgreen
+manager: serdars
 ms.date: 3/28/2016
 ms.audience: ITPro
 ms.topic: article
@@ -98,7 +98,7 @@ Follow these steps to create a SQL Server logon and grant Read access to the dat
 5. In the **Select a page** section, click **User Mapping**.
     
   
-6. Select the **Map** check box for the database that you want to provide access to, and then, in the **Database role membership for: <database>** section, select the **db_datareader** check box.
+6. Select the **Map** check box for the database that you want to provide access to, and then, in the **Database role membership for: \<database>** section, select the **db_datareader** check box.
     
   
 7. Click **OK**.
@@ -288,10 +288,6 @@ Once you have completed the data connection wizard, you can create your report a
 
 ## See also
 <a name="part4"> </a>
-
-
-#### 
-
 
   
     

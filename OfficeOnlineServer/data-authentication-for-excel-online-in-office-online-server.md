@@ -3,7 +3,7 @@ title: Data authentication for Excel Online in Office Online Server
 description: Learn how Excel Online supports connections with SQL Server Analysis Services (SSAS), SQL Server databases, and OLE DB and ODBC data sources.
 ms.author: samukhe
 author: santanu-wac
-manager: pamgreen
+manager: serdars
 ms.date: 8/8/2017
 ms.audience: ITPro
 ms.topic: article
@@ -199,14 +199,16 @@ Choose Kerberos delegation for secure and fast authentication to enterprise-scal
     
   
 - The c2wtshost.exe.config file (located at \\Program Files\\Windows Identity Foundation\\v3.5) must be updated and the comment tags removed from  _NT AUTHORITY\\Network Service_ allowedCallers list:
-<allowedCallers>
-      <clear/>
-      <add value="NT AUTHORITY\\Network Service" />
-      <!-- <add value="NT AUTHORITY\\Local Service" /> -->
-      <!-- <add value="NT AUTHORITY\\System" /> -->
-      <!-- <add value="NT AUTHORITY\\Authenticated Users" /> -->
-    </allowedCallers>
 
+    ```
+    <allowedCallers>
+       <clear/>
+       <add value="NT AUTHORITY\\Network Service" />
+       <!-- <add value="NT AUTHORITY\\Local Service" /> -->
+       <!-- <add value="NT AUTHORITY\\System" /> -->
+       <!-- <add value="NT AUTHORITY\\Authenticated Users" /> -->
+     </allowedCallers>
+    ```
 
 #### Secure Store
 
@@ -314,10 +316,7 @@ If there are no previously cached versions of this workbook, any of these action
 ## See also
 
 
-#### 
 
 
-  
-    
     
  [Configure Analysis Services and Kerberos Constrained Delegation (KCD)](/sql/analysis-services/instances/install-windows/configure-analysis-services-and-kerberos-constrained-delegation-kcd)

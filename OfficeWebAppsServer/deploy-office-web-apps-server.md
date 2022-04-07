@@ -5,7 +5,9 @@ ms:assetid: e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ219455(v=office.15)
 ms:contentKeyID: 48409082
 ms.date: 10/05/2017
+manager: serdars
 mtps_version: v=office.15
+description: How to deploy Office Web Apps Server on-premises for use by SharePoint 2013 and Lync Server 2013
 ---
 
 # Deploy Office Web Apps Server
@@ -200,7 +202,7 @@ You can use this Office Web Apps Server farm to provide Office Web Apps function
 
 ![The three main steps to deploy a single-server Office Web Apps Server farm.](images/JJ219455.de5b3ed2-d7a7-489e-9de2-f3f068ebe836(Office.15).gif "The three main steps to deploy a single-server Office Web Apps Server farm.")
 
-## Step 1: Create the Office Web Apps Server farm
+## Step 1: Create an Office Web Apps Server farm
 
 Use the **New-OfficeWebAppsFarm** command to create a new Office Web Apps Server farm that consists of a single server, as shown in the following example.
 
@@ -216,11 +218,11 @@ Use the **New-OfficeWebAppsFarm** command to create a new Office Web Apps Server
 
   - **–EditingEnabled** enables editing in Office Web Apps when used with SharePoint 2013. This parameter isn't used by Lync Server 2013 because that host doesn't support editing.
 
-Additional parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
+Additional parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm).
 
 If you see "500 Web Service Exceptions" or "500.21 – Internal Server Error" messages
 
-## Step 2: Verify that the Office Web Apps Server farm was created successfully
+## Step 2: Verify the Office Web Apps Server farm was created successfully
 
 After the farm is created, details about the farm are displayed in the Windows PowerShell prompt. To verify that Office Web Apps Server is installed and configured correctly, use a web browser to access the Office Web Apps Server discovery URL, as shown in the following example. The discovery URL is the *InternalUrl* parameter you specified when you configured your Office Web Apps Server farm, followed by **/hosting/discovery**, for example:
 
@@ -275,7 +277,7 @@ Use the **New-OfficeWebAppsFarm** command to create a new Office Web Apps Server
 
   - **–EditingEnabled** is optional and enables editing in Office Web Apps when used with SharePoint 2013. This parameter isn't used by Lync Server 2013 because that host doesn't support editing.
 
-Additional parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
+Additional parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm).
 
 If you see "500 Web Service Exceptions" or "500.21 – Internal Server Error" messages
 
@@ -304,7 +306,7 @@ default="true" ext="xls"/><action name="view"
 > [!NOTE]
 > Depending on the security settings of your web browser, you might see a message that prompts you to select <STRONG>Show all content</STRONG> before the contents of the discovery XML file are displayed.
 
-## Step 3: Configure the host
+## Step 3: Configure host
 
 The farm is now ready to provide Office Web Apps functionality to hosts over HTTPS. Visit the following articles for more information about how to configure hosts.
 
@@ -341,7 +343,7 @@ Use the **New-OfficeWebAppsFarm** command to create a new Office Web Apps Server
 
   - **–EditingEnabled** is optional and enables editing in Office Web Apps when used with SharePoint 2013. This parameter isn't used by Lync Server 2013 because that host doesn't support editing.
 
-Other parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
+Other parameters that configure translation services, proxy servers, ClipArt support, and Online Viewers are described in [New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm).
 
 If you see "500 Web Service Exceptions" or "500.21 – Internal Server Error" messages
 
@@ -353,7 +355,7 @@ After the first server is running Office Web Apps Server, run the **New-OfficeWe
     New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
 ```
 
-Want more information about these parameters? You can find them in [New-OfficeWebAppsMachine](/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps).
+Want more information about these parameters? You can find them in [New-OfficeWebAppsMachine](/powershell/module/officewebapps/new-officewebappsmachine).
 
 ## Step 3: Verify that the Office Web Apps Server farm was created successfully
 
@@ -373,7 +375,7 @@ If Office Web Apps Server works as expected, you should see a Web Application Op
 > [!NOTE]
 > Depending on the security settings of your web browser, you might see a message that prompts you to select <STRONG>Show all content</STRONG> before the contents of the discovery XML file are displayed.
 
-## Step 4: Configure the host
+## Step 4: Configure host
 
 The farm is now ready to provide Office Web Apps functionality to hosts over HTTPS. Visit the following articles for more information about how to configure hosts.
 
@@ -404,8 +406,8 @@ If features of the .NET Framework 3.5 were installed and then removed, you might
 ## See also
 
 
-[New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
-[New-OfficeWebAppsMachine](/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  
+[New-OfficeWebAppsFarm](/powershell/module/officewebapps/new-officewebappsfarm)  
+[New-OfficeWebAppsMachine](/powershell/module/officewebapps/new-officewebappsmachine)  
 
 
 [Content roadmap for Office Web Apps Server](content-roadmap-for-office-web-apps-server.md)  
