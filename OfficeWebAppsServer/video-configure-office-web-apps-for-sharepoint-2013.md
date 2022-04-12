@@ -4,6 +4,8 @@ TOCTitle: 'Video: Configure Office Web Apps for SharePoint 2013'
 ms:assetid: 0c02633f-3839-448b-ae83-24f24c254179
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn455088(v=office.15)
 ms:contentKeyID: 57419939
+manager: serdars
+description: This video walks you through the steps to configure an Office Web Apps Server farm to work with SharePoint 2013
 ms.date: 03/20/2015
 mtps_version: v=office.15
 ---
