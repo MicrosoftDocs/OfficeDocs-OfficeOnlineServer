@@ -47,7 +47,7 @@ A few things to check before getting started:
 
   - If you log on to SharePoint 2013 by using the System Account, you won't be able to test the connection between SharePoint 2013 and Office Web Apps Server. Log on with a different account to test the connection.
 
-  - Low memory conditions can cause Office document previews to fail in Office Web Apps. Review the article, [Hardware requirements—web servers, application servers, and single server installations](https://technet.microsoft.com/4d88c402-24f2-449b-86a6-6e7afcfec0cd\(office.15\)#hwforwebserver), for SharePoint 2013. These are the same requirements used by Office Web Apps Server.
+  - Low memory conditions can cause Office document previews to fail in Office Web Apps. Review the article, [Hardware requirements—web servers, application servers, and single server installations](/sharepoint/install/hardware-software-requirements-2013), for SharePoint 2013. These are the same requirements used by Office Web Apps Server.
 
 ## Configure SharePoint 2013 to use Office Web Apps Server
 
