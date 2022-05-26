@@ -65,13 +65,11 @@ In environments that contain actual user data, we always recommend that you use 
 
 ## Hardware requirements for Office Web Apps Server
 
-Office Web Apps Server uses the same minimum hardware requirements as SharePoint Server 2013. You can find the full set of SharePoint 2013 requirements in [Hardware requirements—web servers, application servers, and single server installations](https://technet.microsoft.com/4d88c402-24f2-449b-86a6-6e7afcfec0cd\(office.15\)#hwforwebserver).
+Office Web Apps Server uses the same minimum hardware requirements as SharePoint Server 2013. You can find the full set of SharePoint 2013 requirements in [Hardware requirements—web servers, application servers, and single server installations](/sharepoint/install/system-requirements-for-sharepoint-2013).
 
 ## Supported operating systems for Office Web Apps Server
 
 You can run Office Web Apps Server on the following operating systems:
-
-  - The 64-bit edition of Windows Server 2008 R2 Service Pack 1 (SP1) Standard, Enterprise, or Datacenter with the [Update for Windows Server 2008 R2 x64 Edition](https://go.microsoft.com/fwlink/p/?linkid=236954) installed
 
   - The 64-bit edition of Windows Server 2012 Standard or Datacenter
 
