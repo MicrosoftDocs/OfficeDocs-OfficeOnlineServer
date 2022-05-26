@@ -126,7 +126,7 @@ Users who work with Office files in document libraries in SharePoint 2013 can be
 </table>
 
 
-You can learn more about how to use mobile devices with SharePoint 2013 in [Overview of mobile devices and SharePoint Server 2013](https://technet.microsoft.com/library/fp161351\(v=office.15\)). To learn more about how to use Office Mobile Viewers on your mobile device, see [Use Office Web Apps on your Android, iPhone, or Windows Phone](https://go.microsoft.com/fwlink/p/?linkid=271045).
+You can learn more about how to use mobile devices with SharePoint 2013 in [Overview of mobile devices and SharePoint Server 2013](https://technet.microsoft.com/library/fp161351\(v=office.15\)). To learn more about how to use Office Mobile Viewers on your mobile device, see [Use Office Web Apps on your Android, iPhone, or Windows Phone](https://support.microsoft.com/office/view-office-documents-on-your-cell-phone-9c134bbf-7fa5-40ca-b379-2be5ff331504).
 
 ## See also
 
