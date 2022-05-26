@@ -335,7 +335,7 @@ Use the **New-OfficeWebAppsFarm** command to create a new Office Web Apps Server
 
 **Parameters**
 
-  - **–InternalURL** is the fully qualified domain name (FQDN) of the server that runs Office Web Apps Server, such as `**http://servername.contoso.com**`.
+  - **–InternalURL** is the fully qualified domain name (FQDN) of the server that runs Office Web Apps Server, such as `http://servername.contoso.com`.
 
   - **–ExternalURL** is the FQDN name that can be accessed on the Internet.
 
