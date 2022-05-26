@@ -156,7 +156,7 @@ When used with SharePoint 2013 on-premises, Office Web Apps provides updated ver
 </ul></td>
 <td><p><strong>Sites</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/office/dev/add-ins">Office developers</a></p></li>
+<li><p><a href="/office/dev/add-ins">Office developers</a></p></li>
 <li><p><a href="/office/">Office IT Pros</a></p></li>
 <li><p><a href="https://msdn.microsoft.com/office/hh506337">Office 365 developers</a></p></li>
 <li><p><a href="https://technet.microsoft.com/hh912691">Office 365 IT pros</a></p></li>

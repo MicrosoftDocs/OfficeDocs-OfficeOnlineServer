@@ -75,7 +75,7 @@ Windows Server 2008 R2, Windows Server 2012, and Windows Server 2012 R2 have sli
 
 1.  Install the following software:
     
-      - Windows Server 2008 R2 Service Pack 1`(https://go.microsoft.com/fwlink/p/?linkid=252370)`<!--Per https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2008-r2, Windows Server 2008 has reached end of lifecycle.
+      - Windows Server 2008 R2 Service Pack 1`(https://go.microsoft.com/fwlink/p/?linkid=252370)`
     
       - [.NET Framework 4.5](https://go.microsoft.com/fwlink/p/?linkid=256560)
     
