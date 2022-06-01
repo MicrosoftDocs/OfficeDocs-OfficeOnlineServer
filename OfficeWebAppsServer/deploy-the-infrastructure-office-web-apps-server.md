@@ -118,7 +118,6 @@ Office Web Apps Server is a new Office server product that delivers browser-base
 <tr class="odd">
 <td><p><strong>Download</strong></p>
 <ul>
-<li><p><a href="https://technet.microsoft.com/evalcenter/hh973391">Office 365 ProPlus</a></p></li>
 <li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=507653">Office 365</a></p></li>
 <li><p><a href="/office/">Office 2013</a></p></li>
 <li><p><a href="https://code.msdn.microsoft.com/office/">Office code samples</a></p></li>
