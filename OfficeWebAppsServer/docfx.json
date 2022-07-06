@@ -56,6 +56,7 @@
 			  		 "recommendations": true,
                                          "hideEdit": true,
                                          "titleSuffix": "Office Web Apps Server",
+			  		"uhfHeaderId": "MSDocsHeader-M365-IT",
 					 "contributors_to_exclude": [ 
 					 	"rjagiewich", 
 						 "traya1", 
