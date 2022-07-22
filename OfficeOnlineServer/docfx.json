@@ -40,13 +40,16 @@
       "hideEdit": true,
       "recommendations": true,
       "titleSuffix": "Office Online Server",
-      "contributors_to_exclude": [ 
-        "rjagiewich", 
-        "traya1", 
-        "rmca14", 
-        "claydetels19", 
+      "contributors_to_exclude": [
+        "rjagiewich",
+        "traya1",
+        "rmca14",
+        "claydetels19",
         "jborsecnik",
         "tiburd",
+        "AngelaMotherofDragons",
+        "dstrome",
+        "v-dihans",
         "garycentric"
       ]
     },
