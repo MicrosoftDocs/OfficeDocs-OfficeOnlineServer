@@ -6,7 +6,6 @@ ms:mtpsurl: https://technet.microsoft.com/library/JJ219435(v=office.15)
 ms:contentKeyID: 48409056
 ms.date: 10/10/2017
 manager: serdars
-mtps_version: v=office.15
 description: 'Office Web Apps Server requirements and prerequisites, including HTTPS, certificates, virtualization, load balancing, topologies, and security'
 ---
 
