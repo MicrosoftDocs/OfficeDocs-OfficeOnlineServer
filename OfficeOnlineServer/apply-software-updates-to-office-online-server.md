@@ -59,7 +59,7 @@ As part of the update process, you'll have to re-create the Office Online Server
     
 Note that when you've completed updating your farm, you need to re-add any  [data model servers](/powershell/module/officewebapps/new-officewebappsexcelbiserver) that you had configured for Excel Online.
   
-    
+
     
 
 ## Apply software updates or new versions to a single server Office Online Server farm
