@@ -7,7 +7,7 @@ manager: serdars
 ms.date: 11/16/2016
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: office-online-server
 ms.assetid: b06dd801-736a-4621-8945-894449794f51
 ---
 
