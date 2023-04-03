@@ -50,7 +50,7 @@
                                          "ms.topic":  "conceptual",
                                          "author":  "MikePlumleyMSFT",
                                          "ms.author":  "mikeplum",
-                                         "ms.prod":  "office-online-server",
+                                         "ms.service":  "office-online-server",
                                          "feedback_system": "None",
 			  		                             "recommendations": true,
                                          "hideEdit": true,
