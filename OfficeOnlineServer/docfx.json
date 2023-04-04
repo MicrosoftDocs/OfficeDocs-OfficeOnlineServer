@@ -33,6 +33,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
       "breadcrumb_path": "/officeonlineserver/breadcrumb/toc.json",
       "extendBreadcrumb": "true",
       "searchScope": ["Office Online Server"],
