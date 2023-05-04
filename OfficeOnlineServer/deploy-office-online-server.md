@@ -334,7 +334,7 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
     
     
 
-- **-InternalURL** is the fully qualified domain name (FQDN) of the server that runs Office Online Server, such as **http://servername.contoso.com**.
+- **-InternalURL** is the fully qualified domain name (FQDN) of the server that runs Office Online Server, such as `http://servername.contoso.com`.
     
   
 - **-ExternalURL** is the FQDN that can be accessed on the Internet.
@@ -436,7 +436,7 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
     
     
 
-- **-InternalURL** is the fully qualified domain name (FQDN) of the server that runs Office Online Server, such as **http://servername.contoso.com**.
+- **-InternalURL** is the fully qualified domain name (FQDN) of the server that runs Office Online Server, such as `http://servername.contoso.com`.
     
   
 - **-ExternalURL** is the FQDN name that can be accessed on the Internet.
